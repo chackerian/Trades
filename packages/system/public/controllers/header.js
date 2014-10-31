@@ -36,3 +36,4 @@ angular.module('mean.system').controller('HeaderController', ['$scope', '$rootSc
 
   }
 ]);
+//console.log(menus.main);

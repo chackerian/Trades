@@ -3,6 +3,7 @@
 /*
  * Defining the Package
  */
+ /*jshint -W079 */
 var Module = require('meanio').Module,
   favicon = require('serve-favicon'),
   express = require('express');

@@ -12,6 +12,19 @@
 .text-edit {
     padding: 13px 0 0 0;
 }
+
+a:visited{
+    color: red;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid blue;
+    margin: 0 auto;
+}
+
 .account {
     text-align:right;
 }
@@ -26,6 +39,23 @@
     margin-top: 70px;
     width: 100%
 }
+#name{
+    color:#9933FF;
+    font-weight:bold;
+    font-size: 30px;
+}
+.col-md-4{
+    background-color: white;
+    padding: 10px;
+}
+
+.navbar-nav,
+.navbar-brand,
+.navbar-inverse{
+    background-color:#3366FF;
+    color:#fff !important;
+}
+
 footer {
 	position: fixed;
 	left: 0;
