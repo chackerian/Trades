@@ -20,13 +20,14 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       }
     };
 
+
     $scope.packages = {
       'gmap':{
         'name':'gmap',
         'text':'gmap lets you add geographical information to your applications objects',
         'author':'linnovate',
         'link':'http://www.qed42.com',
-        'image':'/theme/assets/img/shoes.jpg'
+        'images':['/theme/assets/img/nike-1.jpg','/theme/assets/img/nike-2.jpg']
       },
       'bet':{
         'knife':'Not into your passport picture',

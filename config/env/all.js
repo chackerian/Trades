@@ -1,5 +1,3 @@
-
-
 /*
 'use strict';
 var path = require('path'), 
@@ -51,6 +49,7 @@ http: {
 //thead tbody tfoot
 //$index
 //$new
+//ARIA Accessible Rich Internet Applications
 
 }
 }

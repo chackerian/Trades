@@ -14,7 +14,7 @@
 }
 
 a:visited{
-    color: red;
+    opacity:90%;
 }
 .arrow-up {
     width: 0; 
@@ -23,6 +23,35 @@ a:visited{
     border-right: 180px solid transparent;
     border-bottom: 180px solid blue;
     margin: 0 auto;
+}
+
+.image_shoe{
+    background: url(/theme/assets/img/nike-3.jpg);
+    background-color: red;
+}
+
+.symbols{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+span.glyphicon {
+    font-size: 200px;
+    vertical-align: middle;
+}
+
+.dropdown{
+    vertical-align: middle;
+}
+
+.heading{
+    color:#9933FF;
+    font-size: 18px;
 }
 
 .account {
@@ -39,22 +68,43 @@ a:visited{
     margin-top: 70px;
     width: 100%
 }
-#name{
-    color:#9933FF;
-    font-weight:bold;
-    font-size: 30px;
-}
 .col-md-4{
     background-color: white;
     padding: 10px;
 }
 
+
 .navbar-nav,
 .navbar-brand,
 .navbar-inverse{
-    background-color:#3366FF;
-    color:#fff !important;
+    color:yellow !important;
 }
+
+.round{
+    border-radius: 10%;
+}
+
+.search
+{
+    width:900px !important;
+    vertical-align: middle;
+}
+
+.spam{
+    font-family: 'spamFont';
+}
+
+.shoes{
+    color:blue;
+}
+.electronics{
+    color:blue;
+}
+
+.other{
+    color:blue;
+}
+
 
 footer {
 	position: fixed;

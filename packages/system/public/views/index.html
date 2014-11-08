@@ -1,31 +1,91 @@
-<section class="welcome container-fluid" data-ng-controller="IndexController">
-  <div class="col-md-12 first">
-    <span id="name">SpaceTrades</span> facilitates local meetup and trade, cash in hand. We are faster than the mail and better than any other similar service.
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<section class="welcome container" data-ng-controller="IndexController">
+  <div class="col-md-12 text-center symbols">
+    <span class="glyphicon glyphicon-transfer"></span>
+    <span class="glyphicon glyphicon-usd"></span>
+    <span class="glyphicon glyphicon-transfer"></span>
   </div>
+    <div class="input-group">
+      <span class="input-group-addon">New York</span>
+      <input type="text" class="form-control" placeholder="Search" ng-show="">
+    </div>
+  <div class="col-md-12 first">
+    <span class="heading"><a href="/">Space Trades</a></span> facilitates local meetup and trade, cash in hand.</br>Faster than the mail and better than any other similar service.
+  </div>
+  <div class="col-md-12">
+  <iframe id="maps" width="100%" height="150" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/ov1/place?q=New%20York%2C%20NY%2C%20United%20States&key=AIzaSyAi0bRmwNIWv24KjjeiG0DlcU-jFLPJ9FQ"></iframe>
+</div>
   <div class="col-md-4 row col-md-offset-0">
-    <h1>Shoes</h1>
-    <br>
-    Nike, Adidas, Asic, Jordans, Converse, Reebok, Supra, Vans
+    <div class="dropdown">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Shoes
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu"> 
+        <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Supra</a></li> 
+        <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
+      </ul>
+    </div>
   </div>
   <div class="col-md-4 row col-md-offset-0">   
-    <h1>Electronics</h1>
-    <br>
-    Phones & Tablets, Headphones, Game Consoles, Games, Headphones, Laptops
+    <div class="dropdown">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Electronics
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu"> 
+        <li role="presentation"> <a role="menuitem" href="#">Phones</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Tablets</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Headphones</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Game Consoles</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Games</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Laptops</a></li>
+      </ul>
+    </div>
   </div>
   <div class="col-md-4 row col-md-offset-0"> 
-    <h1>Other</h1>
-    <br>
-    Clothing and Accessories, Sunglasses...
+    <div class="dropdown">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Other
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu"> 
+        <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
+        <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
+      </ul>
+    </div>
   </div>
+<br>
+<div class="col-md-12">
+  <span class="spam">S-P-A-M W-A-L-L</span>
+</div>
+<div data-ng-controller="IndexController" class="col-md-3">
+  <div ng-repeat="image in packages.gmap.images"> 
+    <img ng-src="{{image}}">
+  </div>
+</div>
+<div data-ng-controller="IndexController" class="col-md-3"></div>
+<div class="col-md-3"></div>
+<div class="col-md-3"></div>
 </section>
-<div class="col-md-6">
-<iframe id="maps" width="400" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=New%20York%2C%20NY%2C%20United%20States&key=AIzaSyAi0bRmwNIWv24KjjeiG0DlcU-jFLPJ9FQ"></iframe>
-</div>
-<div class="col-md-6">
-<form class="form-search">
-  <input type="text" class="input-medium search-query">
-  <button type="submit" class="btn">Search</button>
-</form>
-</div>
+
+
+
+
+
+
+Multiply(2,3,4,5,6,7,)
+qrwrqwrwsd
+sdsdfsd
+sdfsdf
+hioewrwer]\
+werewrwer
+werwer
+
+
 
 
