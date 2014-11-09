@@ -6,6 +6,9 @@
 .page-header .navbar-nav {
     float: right;
 }
+.green{
+    color: #339966;
+}
 .page-header > div > div, .page-header > div > ul {
     display: inline-block;
 }
@@ -41,7 +44,7 @@ a:visited{
 }
 
 span.glyphicon {
-    font-size: 200px;
+    font-size: 160px;
     vertical-align: middle;
 }
 
@@ -51,7 +54,12 @@ span.glyphicon {
 
 .heading{
     color:#9933FF;
-    font-size: 18px;
+    font-size: 30px;
+}
+
+.concise{
+    color:red;
+    font-size: 27px;
 }
 
 .account {
@@ -77,7 +85,7 @@ span.glyphicon {
 .navbar-nav,
 .navbar-brand,
 .navbar-inverse{
-    color:yellow !important;
+    color:blue;
 }
 
 .round{
