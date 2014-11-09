@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/forever -m 5 server.js -p 80
+web: ./node_modules/.bin/forever -m 5 server.js -p $PORT
