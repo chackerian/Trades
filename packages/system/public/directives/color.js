@@ -19,7 +19,7 @@ angular.module('mean.system').
 						/* jshint ignore:start */
 						var randomColor = Math.floor(Math.random()*16777215).toString(16);
 						/* jshint ignore:end */
-     			 		//angular.element('<span class="glyphicon glyphicon-usd rand"></span>')[0].css(color: '#' + randomColor;);
+     			 		//angular.element('<span class="glyphicon glyphicon-usd rand"></span>')[0].css('color', '#' + randomColor;);
 						
 					}
 				};
