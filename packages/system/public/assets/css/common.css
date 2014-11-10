@@ -37,14 +37,15 @@ a:visited{
     vertical-align: middle;
     text-align: center;
 }
-
+.row,
 .welcome{
     font-size: 15px;
     border-radius: 15px;
+    background: white !important;
 }
 
 span.glyphicon {
-    font-size: 160px;
+    font-size: 130px;
     vertical-align: middle;
 }
 
@@ -58,8 +59,16 @@ span.glyphicon {
 }
 
 .concise{
-    color:red;
+    color:#6600CC;
     font-size: 27px;
+}
+
+.rand{
+    color:#339966;
+}
+
+.glyphicon{
+    color:red !important;
 }
 
 .account {
@@ -100,6 +109,7 @@ span.glyphicon {
 
 .spam{
     font-family: 'spamFont';
+    font-size: 50px;
 }
 
 .shoes{
