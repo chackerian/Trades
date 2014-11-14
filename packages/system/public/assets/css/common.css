@@ -20,6 +20,14 @@ section{
 
 }
 
+a{
+color: #F20E0E;
+}
+
+.nav > li > a{
+display: inline;
+}
+
 .spaceblue{
     color:#1A1C8C;
 }
