@@ -1,7 +1,7 @@
 <div class="page-header" data-ng-controller="HeaderController">
-  <div class="logo pull-left">
+<!--   <div class="logo pull-left">
     <a class="navbar-brand" ui-sref="home" mean-token="'site-title'">Space Trades</a>
-  </div>
+  </div> -->
 
   <div class="left pull-left">
     <ul class="navbar-nav nav">
@@ -17,10 +17,10 @@
       <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
     </div>
     <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
-      <li><a ui-sref='auth.register'>Join</a>
+      <li><a ui-sref='auth.register' class="Join">Join</a>
       </li>
       <li class="divider-vertical"></li>
-      <li><a ui-sref='auth.login'>Log In</a>
+      <li><a ui-sref='auth.login' class="Login">Log In</a>
       </li>
     </ul>
     <ul class="navbar-nav nav" data-ng-show="global.authenticated">
