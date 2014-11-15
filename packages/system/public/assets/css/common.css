@@ -5,7 +5,11 @@
 section{
     background-image: url(/theme/assets/img/small_steps.png) !important;
     background-repeat: repeat !important;
+}
 
+.error-pic{
+    background-image: url(/theme/assets/img/static_2.png) !important;
+    background-repeat: repeat !important;
 }
 
 @media screen and (max-width: 450px) {
