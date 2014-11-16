@@ -7,11 +7,21 @@
 {% endblock %}
 
 {% block content %}
-<div id="error-message-box" class="error-pic">
+<div id="error-message-box">
+<style>
+body{
+    background-image: url(/theme/assets/img/static_2.png) !important;
+    background-repeat: repeat !important;
+    }
+section{
+	background-color: white !important;
+	background-image: none !important;
+}
+</style>
   <div id="error-stack-trace">
-    <pre>
-      <code>{{error}}</code>
-    </pre>
+    <h1>
+     {{ ")-: " + error + ", Just know we tried"}}
+    </h1>
   </div>
 </div>
 {% endblock %}

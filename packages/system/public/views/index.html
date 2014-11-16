@@ -14,7 +14,7 @@
     <input type="text" class="form-control" placeholder="name, brand, location..." ng-show="true">
   </div>
   <div class="row describe">
-    <div class="col-md-6">
+    <div class="col-md-6 text-left">
       <!--<span class="heading">Space Trades</span> -->
       <span class="concise">For:</span> Local meetup and trade
       <i class="fa fa-random"></i>
@@ -23,11 +23,11 @@
       <i class="fa fa-money"></i>
     </div>
 
-    <div class="col-md-6">
-      Faster than the mail
+    <div class="col-md-6 text-right">
+      <span class="concise">Faster</span> than the mail
       <i class="fa fa-envelope-o"></i>
       <br>
-      Better than Facebook
+      <span class="concise">Better</span> than Facebook
       <i class="fa fa-facebook-square"></i>
     </div>
   </div>
@@ -80,7 +80,25 @@
   </div>
   <br>
   
-  <h1>Newly Listed</h1>
+  <h1 class="turquoise">Newly Listed</h1>
+  <div class="row">
+    <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
+      <img ng-src="{{image}}">
+    </div>
+  </div>
+  <h1 class="turquoise">Shoes</h1>
+  <div class="row">
+    <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
+      <img ng-src="{{image}}">
+    </div>
+  </div>
+  <h1 class="turquoise">Electronics</h1>
+  <div class="row">
+    <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
+      <img ng-src="{{image}}">
+    </div>
+  </div>
+  <h1 class="turquoise">Other</h1>
   <div class="row">
     <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
       <img ng-src="{{image}}">
@@ -88,8 +106,10 @@
   </div>
   <div class="feedback">
    <h1>Got an opinion?</h1>
+
+
    <br>
-   <textarea class=" form-control feedback" rows="3"></textarea>
+   <textarea class=" form-control feedback" rows="2"></textarea>
    <button>
    </div>
  </section>

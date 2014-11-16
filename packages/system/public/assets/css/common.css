@@ -10,7 +10,7 @@ section{
 .error-pic{
     background-image: url(/theme/assets/img/static_2.png) !important;
     background-repeat: repeat !important;
-}
+    }
 
 @media screen and (max-width: 450px) {
 
@@ -31,9 +31,14 @@ color: #F20E0E;
 .nav > li > a{
 display: inline;
 }
+/*CUSTOM COLORS*/
+
+.turquoise{
+    color: #00FFCC;
+}
 
 .spaceblue{
-    color:#1A1C8C;
+    color: #1A1C8C;
 }
 
 .page-header .navbar-nav {
