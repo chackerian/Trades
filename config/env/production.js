@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://process.env.DB_USERNAME:process.env.DB_PASSWORD@dogen.mongohq.com:10035/app31419162',
+  db: process.env.MONGOHQ_URL,
   /**
    * Database options that will be passed directly to mongoose.connect
    * Below are some examples.
