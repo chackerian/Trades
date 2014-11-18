@@ -10,8 +10,8 @@ module.exports = {
     name: 'SpaceTrades'
   },
   facebook: {
-    clientID: 'DEFAULT_APP_ID',
-    clientSecret: 'APP_SECRET',
+    clientID: '403772073107923',
+    clientSecret: '4663665d518fef59dbf6643280281a85',
     callbackURL: 'http://localhost:3000/auth/facebook/callback'
   },
   twitter: {

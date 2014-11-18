@@ -1,7 +1,7 @@
-<h1>Space Trades</h1>
+Space Trades
+
 [![Build Status](https://travis-ci.org/chackerian/Trades.svg?branch=master)](https://travis-ci.org/chackerian/Trades)
 [![Dependency Status](https://david-dm.org/chackerian/Trades.svg)](https://david-dm.org/chackerian/Trades)
-<pre>
 npm cache clean
 bower cache clean
 bower install -S
@@ -33,5 +33,5 @@ This will push tags and branches.
 git ls-tree
 /* jshint ignore:start*/
 /* jshint ignore:end*/
-</pre>
+
 

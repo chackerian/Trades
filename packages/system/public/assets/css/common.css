@@ -12,16 +12,28 @@ section{
     background-repeat: repeat !important;
     }
 
+.describe{
+        text-align: center;
+    }
+.categories{
+    text-align: right;
+}
+
+
 @media screen and (max-width: 450px) {
 
     .describe{
-        text-align: center;
+        text-align: center !important;
     }
 
     .categories{
-        text-align: center;
+        text-align: center !important;
     }
 
+}
+
+.form-control:focus{
+    border-color: #db560d !important;
 }
 
 a{
@@ -34,7 +46,23 @@ display: inline;
 /*CUSTOM COLORS*/
 
 .turquoise{
-    color: #00FFCC;
+    color: #22CAA8;
+    font-weight: bold;
+}
+
+.shoey{
+    color: #1A1C8C;
+}
+.shoes{
+    border-color: red;
+}
+
+.electron{
+    color: #27ec21;
+}
+
+.other{
+    color: #c62c31;
 }
 
 .spaceblue{
@@ -57,17 +85,16 @@ display: inline;
     padding: 13px 0 0 0;
 }
 
-/*
-a:visited{
-    opacity:0.9333;
-}
-*/
-
-/*.navbar {
+.navbar {
     position: fixed;
-    min-height: 50px;
+    min-height: 35px;
     margin-bottom: 20px;
-}*/
+    height: 90px;
+}
+
+.navbar-nav > li > a{
+    line-height: 1px;
+}
 
 .symbols{
     vertical-align: middle;
@@ -98,10 +125,12 @@ a:visited{
 
 .heading{
     color: #F20E0E !important;
-    font-size: 50px !important;
+    font-size: 35px !important;
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
     font-weight: bold !important;
     z-index: 1031;
+    opacity: 1.0 !important;
+    padding-left: 600px;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
@@ -147,7 +176,7 @@ a:visited{
 }
 
 .content {
-    margin-top: 90px;
+    margin-top: 20px;
     width: 100%
 }
 

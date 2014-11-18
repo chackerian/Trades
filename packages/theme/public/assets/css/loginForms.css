@@ -3,9 +3,10 @@ html {
 }
 
 body.login, body.register,  body.forgot-password {
-background: url("/theme/assets/img/bg.png");
+background: url("/theme/assets/img/shoes.jpg");
     height: 100%;
     position: relative;
+    opacity: 0.5;
 }
 @font-face {
     font-family: 'futura_bkbook';

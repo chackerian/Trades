@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://admin:pass123@dogen.mongohq.com:10035/app31419162',
+  db: 'mongodb://process.env.DB_USERNAME:process.env.DB_PASSWORD@dogen.mongohq.com:10035/app31419162',
   /**
    * Database options that will be passed directly to mongoose.connect
    * Below are some examples.
@@ -27,11 +27,11 @@ module.exports = {
     */
   },
   app: {
-    name: 'MEAN - A Modern Stack - Production'
+    name: 'SpaceTrades'
   },
   facebook: {
-    clientID: 'APP_ID',
-    clientSecret: 'APP_SECRET',
+    clientID: process.env.FACEBOOK_ID,
+    clientSecret: process.env.FACEBOOK_SECRET,
     callbackURL: 'http://localhost:3000/auth/facebook/callback'
   },
   twitter: {
