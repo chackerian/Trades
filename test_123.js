@@ -6,7 +6,7 @@ describe('All I need in this life of sin is me and my girlfriend', function(){
 		expect(a).toBe(true);
 	});
 
-	it('Big Pimpin, spending Gees, we be big pimping no BLABS', function(){
+	it('Bla Bla Bla', function(){
 		var a = 100;
 		//(a === 100) ? a=200 : 123;
 		expect(a).toBe(200);
