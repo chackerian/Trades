@@ -10,12 +10,12 @@ section {
 .error-pic {
     background-image: url(/theme/assets/img/static_2.png) !important;
     background-repeat: repeat !important;
-    }
+}
 
 .describe {
     text-align: left;
     padding-top: 50px
-    }
+}
 
 .categories {
     text-align: right;
@@ -156,6 +156,7 @@ display: inline;
     font-family: 'Lato', sans-serif !important;
     color: white !important;
     font-size: 30px !important;
+    border-color: black;
 }
 .Join:hover {
     color: #f21124 !important;
@@ -235,5 +236,8 @@ footer {
 .feedback {
    border-top: 1px solid #CCC;
    width: 100%;
+}
 
+.listing-title {
+    font-size: 2em;
 }
