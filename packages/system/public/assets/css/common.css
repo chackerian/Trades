@@ -21,6 +21,12 @@ section {
     text-align: right;
 }
 
+.square {
+    width: 100px !important;
+    height: 100px !important;
+    background: red !important;
+}
+
 
 @media screen and (max-width: 450px) {
 
