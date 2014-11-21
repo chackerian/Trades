@@ -79,6 +79,7 @@ module.exports = {
   db: process.env.MONGOHQ_URL,
   //Enables swig templating engine 
   templateEngine: 'swig',
+  buhBaby:"bubuhbuhbuhbaby",
   // The secret should be set to a non-guessable string
   // Used to compute a session hash
   sessionSecret: 'MEAN',
