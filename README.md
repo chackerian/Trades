@@ -2,6 +2,7 @@ Space Trades
 
 [![Build Status](https://travis-ci.org/chackerian/Trades.svg?branch=master)](https://travis-ci.org/chackerian/Trades)
 [![Dependency Status](https://david-dm.org/chackerian/Trades.svg)](https://david-dm.org/chackerian/Trades)
+<a href="https://spacetrades.hipchat.com/chat"> HIPCHAT SpaceTrades Page</a>
 npm cache clean
 bower cache clean
 bower install -S

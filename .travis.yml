@@ -3,7 +3,5 @@ node_js:
   - "0.10"
 env:
   - NODE_ENV=development
-  - FACEBOOK_ID
-  - FACEBOOK_SECRET
 services:
   - mongodb
