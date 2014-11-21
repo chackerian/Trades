@@ -1,3 +1,4 @@
+'use strict';
 angular.module('mean.system')
 	.directive('color', ['$scope', function($scope) {
 					// Runs during compile
