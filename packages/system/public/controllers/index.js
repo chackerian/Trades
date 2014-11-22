@@ -7,6 +7,5 @@ angular.module('mean.system').
       $scope.shoes = ['/theme/assets/img/nike-1.jpg','/theme/assets/img/nike-2.jpg'];
       $scope.randomcolor = Math.floor(Math.random()*16777215).toString(16);
       $scope.a = document.getElementsByClassName('snoop');
-
     }
 ]);        

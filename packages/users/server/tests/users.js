@@ -342,7 +342,7 @@ describe('<Unit Test>', function() {
 
       it('Should save with valid email #1', function(done) {
         var _user = new User(user1);
-        _user.email = 'john.doe@example.com';
+        _user.email = 'john.dode@example.com';
         _user.save(function(err) {
           if (!err) {
             _user.remove(function() {
@@ -374,7 +374,7 @@ describe('<Unit Test>', function() {
 
       it('Should save with valid email #3', function(done) {
         var _user = new User(user1);
-        _user.email = 'other.email-with-dash@example.com';
+        _user.email = 'other.emadil-with-dash@example.com';
         _user.save(function(err) {
           if (!err) {
             _user.remove(function() {
