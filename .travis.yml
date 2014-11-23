@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "0.10"
 env:
-  - NODE_ENV=development
+  - NODE_ENV=development MONGOHQ_URL=mongodb://heroku:487e7feeebbe1335fd9798bc1a40f906@linus.mongohq.com:10009/app30145818 FACEBOOK_SECRET=4663665d518fef59dbf6643280281a85 FACEBOOK_ID=403772073107923 
+
 services:
   - mongodb
