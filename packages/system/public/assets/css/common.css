@@ -5,6 +5,7 @@
 section {
     background-image: url(/theme/assets/img/small_steps.png) !important;
     background-repeat: repeat !important;
+    padding-top: 40px;
 }
 
 .error-pic {
@@ -14,7 +15,7 @@ section {
 
 .describe {
     text-align: left;
-    padding-top: 50px
+    padding-top: 80px;
 }
 
 .categories {
@@ -46,7 +47,7 @@ section {
 
 a {
 color: #F20E0E;
-text-decoration: none;
+text-decoration: none !important;
 }
 
 /*.nav > li > a {
