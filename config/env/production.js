@@ -32,7 +32,7 @@ module.exports = {
   facebook: {
     clientID: process.env.FACEBOOK_ID,
     clientSecret: process.env.FACEBOOK_SECRET,
-    callbackURL: 'http://localhost:8080/auth/facebook/callback'
+    callbackURL: 'http://spacetrades1.herokuapp.com/auth/facebook/callback'
   },
    twitter: {
     clientID: 'CONSUMER_KEY',
