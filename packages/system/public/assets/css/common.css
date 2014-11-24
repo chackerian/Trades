@@ -257,4 +257,5 @@ footer {
    font-size: 2em;
    text-align: center;
    font-family: sans-serif !important;
+   z-index: 2;
 }
