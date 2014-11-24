@@ -2,9 +2,21 @@
     background: yellow;
 } 
 
-section {
+.back {
     background-image: url(/theme/assets/img/small_steps.png) !important;
     background-repeat: repeat !important;
+   /* background-size: cover;
+    display: block;*/
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 800px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 0;
+}
+
+section{
     padding-top: 20px;
 }
 
@@ -121,6 +133,10 @@ display: inline;
     border-radius: 15px;
 }
 
+.welcome h2{
+    font-size: 35px;
+}
+
 /*span.glyphicon {
     font-size: 130px;
     vertical-align: middle;
@@ -157,7 +173,6 @@ display: inline;
     font-family: 'Lato', sans-serif !important;
     color: blue !important;
     font-size: 30px !important;
-    border: 2px solid red;
 }
 .Join:hover {
     color: #f21124 !important;
@@ -240,4 +255,6 @@ footer {
 
 .listing-title {
    font-size: 2em;
+   text-align: center;
+   font-family: sans-serif !important;
 }
