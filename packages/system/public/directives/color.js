@@ -18,6 +18,7 @@ angular.module('mean.system')
 					link: function($scope, iElm, iAttrs, controller) {
 						/* jshint ignore:start */
 						$scope.randomColor = Math.floor(Math.random()*16777215).toString(16);
+						console.log("Running directive");
 						/* jshint ignore:end */
      			 		//angular.element('<span class="glyphicon glyphicon-usd rand"></span>')[0].css('color', '#' + randomColor;);
 

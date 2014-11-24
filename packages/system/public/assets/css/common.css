@@ -5,7 +5,7 @@
 section {
     background-image: url(/theme/assets/img/small_steps.png) !important;
     background-repeat: repeat !important;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .error-pic {
@@ -15,11 +15,11 @@ section {
 
 .describe {
     text-align: left;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .categories {
-    text-align: right;
+    text-align: center;
 }
 
 .square {
@@ -157,7 +157,7 @@ display: inline;
     font-family: 'Lato', sans-serif !important;
     color: blue !important;
     font-size: 30px !important;
-    border-color: black;
+    border: 2px solid red;
 }
 .Join:hover {
     color: #f21124 !important;
