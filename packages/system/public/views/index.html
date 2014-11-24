@@ -1,15 +1,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="welcome container" data-ng-controller="IndexController"> 
   <div class="row describe">
-    <div class="col-md-6">
+    <div class="col-md-3">
       <span class="concise">For:</span> Local meetup and trade
       <i class="fa fa-random"></i>
       <br> 
       <span class="concise">Strictly:</span> Cash in hand 
       <i class="fa fa-money"></i> 
     </div>
-
-    <div class="col-md-6 text-right"> 
+    <div class="col-md-3 listing">
+      <button class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        Add Listing
+      </button>
+    </div>
+    <div class="col-md-3 request">
+    <button class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        Make a request
+      </button>
+    </div>
+    <div class="col-md-3 text-right"> 
       <span class="concise">Faster</span> than the mail
       <i class="fa fa-envelope-o"></i>
       <br>
@@ -18,7 +29,7 @@
     </div>
   </div>
 
-<color></color>
+  <color></color>
 
   <div class="row categories">
     <div class="col-md-4">
@@ -70,27 +81,47 @@
   <br>
 
   <div class="row">
-  <h2 class="turquoise listing-title">Newly Listed</h2>
-    <div class="col-md-12 shoes" ng-repeat="image in new"> 
-      <img ng-src="{{image}}">
+    <div class="col-md-12">
+      <h2 class="turquoise listing-title">Newly Listed</h2>
+      <div class="col-md-12 shoes" ng-repeat="image in new"> 
+        <img ng-src="{{image}}">
+        <h2>{{user}}</h2>
+        <h2>{{name}}</h2>
+        <h2>{{cost}}</h2>
+      </div>
     </div>
   </div>
   <div class="row">
-  <h2 class="shoey listing-title">Shoes</h2>
-    <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
-      <img ng-src="{{image}}">
+    <div class="col-md-12">
+      <h2 class="shoey listing-title">Shoes</h2>
+      <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
+        <img ng-src="{{image}}">
+        <h2>{{user}}</h2>
+        <h2>{{name}}</h2>
+        <h2>{{cost}}</h2>
+      </div>
     </div>
   </div>
-  <h2 class="electron listing-title">Electronics</h2>
   <div class="row">
-    <div class="col-md-12 shoes" ng-repeat="image in electronics"> 
-      <img ng-src="{{image}}">
+    <div class="col-md-12">
+      <h2 class="electron listing-title">Electronics</h2> 
+      <div class="col-md-12 shoes" ng-repeat="image in electronics">
+        <img ng-src="{{image}}">
+        <h2>{{user}}</h2>
+        <h2>{{name}}</h2>
+        <h2>{{cost}}</h2>
+      </div>
     </div>
   </div>
-  <h2 class="other listing-title">Other</h2>
   <div class="row">
-    <div class="col-md-12 shoes" ng-repeat="image in other"> 
-      <img ng-src="{{image}}">
+    <div class="col-md-12">
+      <h2 class="other listing-title">Other</h2>
+      <div class="col-md-12 shoes" ng-repeat="image in other"> 
+        <img ng-src="{{image}}">
+        <h2>{{user}}</h2>
+        <h2>{{name}}</h2>
+        <h2>{{cost}}</h2>
+      </div>
     </div>
   </div>
   <div class="feedback">

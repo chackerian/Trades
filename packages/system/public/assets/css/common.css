@@ -2,6 +2,11 @@
     background: yellow;
 } 
 
+.listing,
+.request{
+    text-align: center;
+}
+
 .back {
     background-image: url(/theme/assets/img/small_steps.png) !important;
     background-repeat: repeat !important;
@@ -137,6 +142,9 @@ display: inline;
     font-size: 35px;
 }
 
+.btn-lg, .btn-group-lg > .btn{
+    font-size: 25px;
+}
 /*span.glyphicon {
     font-size: 130px;
     vertical-align: middle;
@@ -185,7 +193,7 @@ display: inline;
     color:#339966;
 }
 
-.glyphicon {
+.glyphicon-usd {
     color:red !important;
 }
 
