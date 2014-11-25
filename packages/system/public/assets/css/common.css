@@ -8,16 +8,16 @@
 }
 
 .back {
-    background-image: url(/theme/assets/img/small_steps.png) !important;
-    background-repeat: repeat !important;
+    /*background-image: url(/theme/assets/img/small_steps.png) !important;
+    background-repeat: repeat !important;*/
    /* background-size: cover;
     display: block;*/
-    filter: blur(5px);
+    /*filter: blur(5px);
     -webkit-filter: blur(5px);
     height: 800px;
     left: 0;
     position: fixed;
-    right: 0;
+    right: 0;*/
     z-index: 0;
 }
 
@@ -136,6 +136,7 @@ display: inline;
 .welcome {
     font-size: 15px;
     border-radius: 15px;
+    background-color: #fff !important;
 }
 
 .welcome h2{
@@ -252,9 +253,9 @@ footer {
 	box-shadow: 0 8px 6px 6px black
 }
 
-.categories {
+/*.categories {
     border-bottom: 2px solid #CCC;
-}
+}*/
 
 .feedback {
    border-top: 1px solid #CCC;
