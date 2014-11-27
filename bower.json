@@ -13,6 +13,7 @@
     "angular-ui-router": "#master",
     "font-awesome": "~4.2.0",
     "simple-sidebar": "~1.1.0",
-    "jquery-ui": "~1.11.2"
+    "jquery-ui": "~1.11.2",
+    "semantic-ui": "~1.0.0"
   }
 }

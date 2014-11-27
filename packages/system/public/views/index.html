@@ -1,29 +1,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<section class="welcome container" data-ng-controller="IndexController"> 
+<section class="welcome container" data-ng-controller="IndexController">
+<div class="back-color"> 
   <div class="row describe">
-    <div class="col-md-3" data-ng-hide="global.authenticated">
-      <span class="concise">For:</span> Local meetup and trade
-      <i class="fa fa-random"></i>
-      <br> 
-      <span class="concise">Strictly:</span> Cash in hand 
-      <i class="fa fa-money"></i> 
+    <div class="col-md-6" data-ng-hide="global.authenticated">
+      <span class="concise">For</span> Local meetup and trade
+      <span class="concise">Strictly</span> Cash in hand  
     </div>
-    <div class="col-md-3 listing" data-ng-show="global.authenticated">
+    <div class="col-md-6 listing" data-ng-show="global.authenticated">
       <button class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span>
         Add Listing 
       </button>
     </div>
-    <div class="col-md-3 request" data-ng-show="global.authenticated">
+    <div class="col-md-6 request" data-ng-show="global.authenticated">
       <button class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span>
         Make a request
       </button>
     </div>
-    <div class="col-md-3 text-right" data-ng-hide="global.authenticated"> 
+    <div class="col-md-6 text-right" data-ng-hide="global.authenticated"> 
       <span class="concise">Faster</span> than the mail
       <i class="fa fa-envelope-o"></i>
-      <br>
       <span class="concise">Better</span> than Facebook
       <i class="fa fa-facebook-square"></i>
     </div>
@@ -45,7 +42,7 @@
         </ul>
       </div>
     </div> 
-    <div class="col-md-4">   
+    <div class="col-md-4"> 
       <div class="dropdown">
         <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Shoes
           <span class="caret"></span>
@@ -77,9 +74,18 @@
     </div>
   </div>
   <br>
+  </div>
  
   <div class="row search">
     <div class="col-md-12">
+    <div class="ui segment">
+  <div class="ui active dimmer">
+<div class="ui indeterminate active loader"></div>
+  </div>
+  <br><br>
+  <br><br>
+  <br><br>
+</div>
       <h2 class="turquoise listing-title">Search</h2>
       <ul>
         <li ng-repeat="name in names | filter:search.query">
