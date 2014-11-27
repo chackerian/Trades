@@ -63,6 +63,11 @@ section{
 
 }
 
+.ui .segment{
+    width: 930px;
+    height: 80px;
+}
+
 .form-control:focus {
     border-color: #db560d !important;
 }
