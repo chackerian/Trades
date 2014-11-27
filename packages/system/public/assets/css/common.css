@@ -63,9 +63,9 @@ section{
 
 }
 
-.ui .segment{
-    width: 930px;
-    height: 80px;
+.ui.segment{
+    width: 930px !important;
+    height: 80px !important;
 }
 
 .form-control:focus {

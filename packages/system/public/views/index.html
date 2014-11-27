@@ -1,92 +1,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="welcome container" data-ng-controller="IndexController">
-<div class="back-color"> 
-  <div class="row describe">
-    <div class="col-md-6" data-ng-hide="global.authenticated">
-      <span class="concise">For</span> Local meetup and trade
-      <span class="concise">Strictly</span> Cash in hand  
+  <div class="back-color"> 
+    <div class="row describe">
+      <div class="col-md-6" data-ng-hide="global.authenticated">
+        <span class="concise">For</span> Local meetup and trade
+        <span class="concise">Strictly</span> Cash in hand  
+      </div>
+      <div class="col-md-6 listing" data-ng-show="global.authenticated">
+        <button class="btn btn-success">
+          <span class="glyphicon glyphicon-plus"></span>
+          Add Listing 
+        </button>
+      </div>
+      <div class="ui vertical divider">
+        |
+      </div>
+      <div class="col-md-6 request" data-ng-show="global.authenticated">
+        <button class="btn btn-success">
+          <span class="glyphicon glyphicon-plus"></span>
+          Make a request
+        </button>
+      </div>
+      <div class="col-md-6 text-right" data-ng-hide="global.authenticated"> 
+        <span class="concise">Faster</span> than the mail
+        <i class="fa fa-envelope-o"></i>
+        <span class="concise">Better</span> than Facebook
+        <i class="fa fa-facebook-square"></i>
+      </div>
     </div>
-    <div class="col-md-6 listing" data-ng-show="global.authenticated">
-      <button class="btn btn-success">
-        <span class="glyphicon glyphicon-plus"></span>
-        Add Listing 
-      </button>
-    </div>
-    <div class="ui vertical divider"></div>
-    <div class="col-md-6 request" data-ng-show="global.authenticated">
-      <button class="btn btn-success">
-        <span class="glyphicon glyphicon-plus"></span>
-        Make a request
-      </button>
-    </div>
-    <div class="col-md-6 text-right" data-ng-hide="global.authenticated"> 
-      <span class="concise">Faster</span> than the mail
-      <i class="fa fa-envelope-o"></i>
-      <span class="concise">Better</span> than Facebook
-      <i class="fa fa-facebook-square"></i>
-    </div>
-  </div>
 
-  <div class="row categories">
-    <div class="col-md-4">
-      <div class="dropdown">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Electronics
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu"> 
-          <li role="presentation"> <a role="menuitem" href="#">Phones</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Tablets</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Headphones</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Game Consoles</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Games</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Laptops</a></li>
-        </ul>
-      </div>
-    </div> 
-    <div class="col-md-4"> 
-      <div class="dropdown">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Shoes
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu"> 
-          <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Supra</a></li> 
-          <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
-        </ul>
-      </div>
+    <div class="row categories">
+      <div class="col-md-4">
+        <div class="dropdown">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Electronics
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu"> 
+            <li role="presentation"> <a role="menuitem" href="#">Phones</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Tablets</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Headphones</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Game Consoles</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Games</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Laptops</a></li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-md-4"> 
+        <div class="dropdown">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Shoes
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu"> 
+            <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Supra</a></li> 
+            <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
+          </ul>
+        </div>
 
-    </div>
-    <div class="col-md-4"> 
-      <div class="dropdown">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Other
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu"> 
-          <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
-          <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
-        </ul>
+      </div>
+      <div class="col-md-4"> 
+        <div class="dropdown">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">Other
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu"> 
+            <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
+            <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+    <br>
   </div>
-  <br>
-  </div>
- 
+  
   <div class="row search">
     <div class="col-md-12">
-    <div class="ui segment">
-  <div class="ui active dimmer">
-<div class="ui indeterminate active loader"></div>
-  </div>
-  <br><br>
-  <br><br>
-  <br><br>
-</div>
+      <div class="ui segment">
+        <div class="ui active dimmer">
+          <div class="ui indeterminate active loader"></div>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+      </div>
       <h2 class="turquoise listing-title">Search</h2>
       <ul>
         <li ng-repeat="name in names | filter:search.query">
