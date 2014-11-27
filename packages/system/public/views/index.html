@@ -2,34 +2,32 @@
 <section class="welcome container" data-ng-controller="IndexController"> 
   <div class="row describe">
     <div class="col-md-3">
-      <span class="concise">For:</span> Local meetup and trade
+      <span class="concise" data-ng-hide="global.authenticated">For:</span> Local meetup and trade
       <i class="fa fa-random"></i>
       <br> 
-      <span class="concise">Strictly:</span> Cash in hand 
+      <span class="concise" data-ng-hide="global.authenticated">Strictly:</span> Cash in hand 
       <i class="fa fa-money"></i> 
     </div>
-    <div class="col-md-3 listing">
+    <div class="col-md-3 listing" data-ng-show="global.authenticated">
       <button class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span>
-        Add Listing
+        Add Listing 
       </button>
     </div>
-    <div class="col-md-3 request">
-    <button class="btn btn-success">
+    <div class="col-md-3 request" data-ng-show="global.authenticated">
+      <button class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span>
         Make a request
       </button>
     </div>
     <div class="col-md-3 text-right"> 
-      <span class="concise">Faster</span> than the mail
+      <span class="concise" data-ng-hide="global.authenticated">Faster</span> than the mail
       <i class="fa fa-envelope-o"></i>
       <br>
-      <span class="concise">Better</span> than Facebook
+      <span class="concise" data-ng-hide="global.authenticated">Better</span> than Facebook
       <i class="fa fa-facebook-square"></i>
     </div>
   </div>
-
-  <color></color>
 
   <div class="row categories">
     <div class="col-md-4">
@@ -79,7 +77,17 @@
     </div>
   </div>
   <br>
-
+ 
+  <div class="row search">
+    <div class="col-md-12">
+      <h2 class="turquoise listing-title">Search</h2>
+      <ul>
+        <li ng-repeat="name in names | filter:search.query">
+          {{ name }}
+        </li>
+      </ul>
+    </div>
+  </div> 
   <div class="row">
     <div class="col-md-12">
       <h2 class="turquoise listing-title">Newly Listed</h2>

@@ -1,10 +1,20 @@
 'use strict';
+//Single Quotes
 
 angular.module('mean.system').
-  controller('HeaderController', ['$scope', '$rootScope', 'Global', 'Menus',
+  controller('HeaderController',
+ ['$scope',
+  '$rootScope',
+   'Global',
+    'Menus',
     function($scope, $rootScope, Global, Menus) {
       $scope.global = Global;
       $scope.menus = {};
+      $scope.search = {query: ''};
+      $rootScope.search =  $scope.search;
+      $scope.$watch('search.query', function (){
+        console.log('Changed');
+      });
 
       // Default hard coded menu items for main menu
       var defaultMainMenu = [];
