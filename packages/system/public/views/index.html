@@ -1,11 +1,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="welcome container" data-ng-controller="IndexController"> 
   <div class="row describe">
-    <div class="col-md-3">
-      <span class="concise" data-ng-hide="global.authenticated">For:</span> Local meetup and trade
+    <div class="col-md-3" data-ng-hide="global.authenticated">
+      <span class="concise">For:</span> Local meetup and trade
       <i class="fa fa-random"></i>
       <br> 
-      <span class="concise" data-ng-hide="global.authenticated">Strictly:</span> Cash in hand 
+      <span class="concise">Strictly:</span> Cash in hand 
       <i class="fa fa-money"></i> 
     </div>
     <div class="col-md-3 listing" data-ng-show="global.authenticated">
@@ -20,7 +20,7 @@
         Make a request
       </button>
     </div>
-    <div class="col-md-3 text-right"> 
+    <div class="col-md-3 text-right data-ng-hide="global.authenticated"> 
       <span class="concise" data-ng-hide="global.authenticated">Faster</span> than the mail
       <i class="fa fa-envelope-o"></i>
       <br>
