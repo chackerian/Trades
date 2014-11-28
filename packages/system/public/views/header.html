@@ -9,7 +9,6 @@
         <span class="icon-bar"></span>
       </button>
       <div class="heading">
-      <i class="united states flag top-left"></i>
         <a class="navbar-brand" href="#">
           <a href="/">
             <span class="spaceblue">Space</span>
@@ -38,18 +37,11 @@
         </ul>
       </li>
     </ul>
-    <form class="navbar-form navbar-left" role="search" required>
+    <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
-        <input
-         type="text"
-         name="search"
-         class="form-control search"
-         placeholder="Brand, Name, Borough, Size, Price..."
-         data-ng-model="search.query"
-         data-ng-maxlength="20"
-        >
+        <input type="text" class="form-control search" placeholder="Name, Brand, Location...">
       </div>
-      <button type="submit" class="btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
+      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
     </form>
     <div class="left pull-left">
       <ul class="navbar-nav nav">
@@ -75,9 +67,9 @@
         <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
       </div>
       <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
-        <li><a ui-sref='auth.register' ng-click="open()" class="Join">Join</a>
+        <li><a ui-sref='auth.register' class="Join">Join</a>
         </li>
-        <li><a ui-sref='auth.login' ng-click="open()" class="Login">Log In</a>
+        <li><a ui-sref='auth.login' class="Login">Log In</a>
         </li>
     </ul>
     </div>
