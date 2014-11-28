@@ -6,6 +6,32 @@
 .request{
     text-align: center;
 }
+/*.container{
+
+}*/
+
+.col-md-4 {
+    padding: none;
+}
+
+body {
+    /*background-color: white;*/
+    background-image: url(/theme/assets/img/worn_dots.png) !important;
+    background-repeat: repeat !important;
+}
+
+.finnly {
+    border-right: thick 3px blue;
+}
+
+.top-left{
+    z-index:3;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    left: 1px;
+    top: -8px;
+}
 
 .back {
     /*background-image: url(/theme/assets/img/small_steps.png) !important;
@@ -37,6 +63,15 @@ section{
 
 .categories {
     text-align: center;
+    background-image: url(/theme/assets/img/space.jpg) !important;
+}
+
+.ui-dimmer{
+    width: 300%;
+}
+
+.ui.segment{
+    z-index: 1;
 }
 
 .square {
@@ -58,6 +93,11 @@ section{
 
 }
 
+.ui.segment{
+    width: 930px !important;
+    height: 80px !important;
+}
+
 .form-control:focus {
     border-color: #db560d !important;
 }
@@ -74,6 +114,11 @@ display: inline;
 
 .turquoise {
     color: #22CAA8;
+    font-weight: bold;
+}
+
+.faq {
+    color: #1A1C8C;
     font-weight: bold;
 }
 
@@ -136,7 +181,7 @@ display: inline;
 .welcome {
     font-size: 15px;
     border-radius: 15px;
-    background-color: #fff !important;
+    /*background-color: #fff !important;*/
 }
 
 .welcome h2{
@@ -172,10 +217,15 @@ display: inline;
 
 .concise {
     color: #6600CC;
-    font-size: 27px;
+    font-size: 60px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
+
+/*.back-color{
+    background-image: url(/theme/assets/img/space.jpg) !important;
+    z-index: 1;
+}*/
 
 .Join,
 .Login {
@@ -225,7 +275,7 @@ display: inline;
 }
 
 .search{
-    width: 350px !important;
+    width: 400px !important;
 }
 
 img {
@@ -258,7 +308,6 @@ footer {
 }*/
 
 .feedback {
-   border-top: 1px solid #CCC;
    width: 100%;
 }
 
@@ -266,5 +315,6 @@ footer {
    font-size: 2em;
    text-align: center;
    font-family: sans-serif !important;
+   text-decoration: underline;
    z-index: 2;
 }
