@@ -5,10 +5,21 @@ Space Trades
 <br>
 <a href="https://spacetrades.hipchat.com/chat"> HIPCHAT SpaceTrades Page</a>
 <br>
-<h3>COMMIT SYNTAX</h3>
+<h3>SERVICES</h3>
 <pre>
-E COMMIT - Effective Commit -  Fix is actually fixed and wasn't before
-INITIAL - First of addition - Adding new feature with unsatisfactory code
+Add This
+Underscore
+Modernizr
+Gravitar
+Instagram API - Image processing
+Square
+placehold.it
+Toastr
+smoke.js
+http://paletton.com                                 
+http://imulus.github.io/retinajs/
+grunt autoshot
+Kinetic JS
 </pre>
 <h3>PASTEBIN</h3>
 <pre>
