@@ -13,6 +13,7 @@ Modernizr
 Gravitar
 Instagram API - Image processing
 Square
+Stripe
 placehold.it
 Toastr
 smoke.js
@@ -21,8 +22,21 @@ http://imulus.github.io/retinajs/
 grunt autoshot
 Kinetic JS
 </pre>
+<h3>FONTS</h3>
+<pre>
+Linotype Didot
+Helvetica Neue 35 Thin
+ITC Avant Garde Std Md
+Futura Futuris Medium
+FF Dax OT Regular
+Swiss 721 Heavy
+Helvetica Neue LT Std 63 Medium Extended
+</pre>
 <h3>PASTEBIN</h3>
 <pre>
+
+Stripe 
+
 npm cache clean
 bower cache clean
 bower install -S
@@ -57,5 +71,7 @@ This will push tags and branches.
 git ls-tree
 /* jshint ignore:start*/
 /* jshint ignore:end*/
+
+Root domain - site.com as opposed to www.site.com
 </pre>
 

@@ -113,11 +113,11 @@ module.exports = function(grunt) {
       default_options: {
         options: {
         // necessary config
-        path: "./packages/theme/assets/img/screenshots/",
+        path: './packages/theme/assets/img/screenshots/',
         // optional config, must set either remote or local
         remote: {
           files: [
-          { src: "http://www.spacetrades.com", dest: "screenshot.jpg", delay: 3000 }
+          { src: 'http://www.spacetrades.com', dest: 'screenshot.jpg', delay: 3000 }
           ]
         },
         viewport: ['1024x768', '1920x1080'] 
@@ -131,9 +131,9 @@ module.exports = function(grunt) {
 
   //Default task(s).
   if (process.env.NODE_ENV === 'production') {
-    grunt.registerTask('default', ['clean', 'cssmin', 'uglify', 'concurrent']);
+    grunt.registerTask('default', ['clean', 'cssmin', 'uglify', 'concurrent', 'autoshot']);
   } else {
-    grunt.registerTask('default', ['clean', 'jshint', 'csslint', 'concurrent']);
+    grunt.registerTask('default', ['clean', 'jshint', 'csslint', 'concurrent', 'autoshot']);
   }
 
   //Test task.
