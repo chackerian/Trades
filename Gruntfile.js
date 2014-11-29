@@ -90,10 +90,10 @@ module.exports = function(grunt) {
       options: {
         reporter: 'spec',
         require: [
-          'server.js',
-          function() {
-            require('meanio/lib/util').preload(__dirname + '/packages/**/server', 'model');
-          }
+        'server.js',
+        function() {
+          require('meanio/lib/util').preload(__dirname + '/packages/**/server', 'model');
+        }
         ]
       },
       src: ['packages/**/server/tests/**/*.js']
@@ -108,8 +108,23 @@ module.exports = function(grunt) {
       unit: {
         configFile: 'karma.conf.js'
       }
+    },
+    autoshot: {
+      default_options: {
+        options: {
+        // necessary config
+        path: "./packages/theme/assets/img/screenshots/",
+        // optional config, must set either remote or local
+        remote: {
+          files: [
+          { src: "http://www.spacetrades.com", dest: "screenshot.jpg", delay: 3000 }
+          ]
+        },
+        viewport: ['1024x768', '1920x1080'] 
+      }
     }
-  });
+  }
+});
 
   //Load NPM tasks
   require('load-grunt-tasks')(grunt);
