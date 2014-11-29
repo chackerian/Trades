@@ -11,6 +11,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'helvetica-light';
+    src: url("/theme/assets/fonts/helvetica-35.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 @font-face {

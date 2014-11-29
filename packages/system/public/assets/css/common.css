@@ -218,8 +218,8 @@ display: inline;
 .concise {
     color: #6600CC;
     font-size: 60px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'helvetica-light', sans-serif;
+    font-weight: normal;
 }
 
 /*.back-color{
