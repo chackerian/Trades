@@ -21,6 +21,7 @@ http://paletton.com
 http://imulus.github.io/retinajs/
 grunt autoshot
 Kinetic JS
+PAPER JS
 </pre>
 <h3>FONTS</h3>
 <pre>
