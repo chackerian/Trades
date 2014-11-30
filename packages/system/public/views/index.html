@@ -1,7 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="welcome container" data-ng-controller="IndexController">
   <div class="back">
-    <div class="back-color"> 
+    <div class="back-color">
+    <canvas id="myCanvas" class="myCanvas" resize="true" keepalive="true">
+    </canvas> 
       <div class="row describe">
         <div class="col-md-6 finnly" data-ng-hide="global.authenticated">
           <span class="concise">For</span> Local meetup and trade
@@ -99,7 +101,7 @@
       <br>
     </div>
 
-    <div class="row search">
+   <!--  <div class="row search">
       <div class="col-md-12">
         <h2 class="turquoise listing-title">Search</h2>
         <ul>
@@ -108,38 +110,37 @@
           </li>
         </ul>
       </div>
-    </div> 
+    </div>  -->
     <div class="row">
       <div class="col-md-12">
         <h2 class="turquoise listing-title">Newly Listed</h2>
-        <div class="square">
+        <div class="square bg">
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                <ul>This demo shows you can center multiple types of content :
-                    <li>Text</li>
+                <ul>Content :
+                    <li>User</li>
                     <li>Images</li>
                     <li>Lists</li>
-                    <li>... (you can also do it with forms)</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<div class="square">
+<div class="square bg">
     <div class="content">
         <div class="table">
-            <div class="table-cell numbers">
-                    98%
+            <div class="table-cell">
+                  2
             </div>
         </div>
     </div>
 </div>
-<div class="square">
+<div class="square bg">
     <div class="content">
         <div class="table">
-            <div class="table-cell numbers">               
-                3.9/5
+            <div class="table-cell">               
+                3
             </div>
         </div>
     </div>
@@ -147,32 +148,29 @@
 
 <!-- 2nd row verticaly centered images in square columns -->
 
-<div class="square">
+<div class="square bg">
    <div class="content">
         <div class="table">
             <div class="table-cell">
-                <img class="rs" src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg"/>
-                Responsive image.
+                1
             </div>
         </div>
     </div>
 </div>
-<div class="square">
+<div class="square bg">
     <div class="content">
         <div class="table">
             <div class="table-cell">
-               <img class="rs" src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg"/>
-                Responsive image.
+                2
             </div>
-        </div>
+        </div> 
     </div>
 </div>
-<div class="square">
+<div class="square bg">
    <div class="content">
         <div class="table">
             <div class="table-cell">
-                <img class="rs" src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg"/>
-                Responsive image.
+                3
             </div>
         </div>
     </div>
@@ -184,7 +182,7 @@
    <div class="content">
         <div class="table">
             <div class="table-cell">
-                Centered responsive images as background with centered content over it.
+                1
             </div>
         </div>
     </div>
@@ -193,7 +191,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                Again
+                2
             </div>
         </div>
     </div>
@@ -202,7 +200,7 @@
     <div class="content">
         <div class="table">
             <div class="table-cell">
-                And again
+                3
             </div>
         </div>
     </div>
@@ -218,6 +216,97 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="shoey listing-title">Shoes</h2>
+         <div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>Content :
+                    <li>User</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                  2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">               
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div>
         <div class="col-md-12 shoes" ng-repeat="image in shoes"> 
           <img ng-src="{{image}}">
           <h2>User: {{user}}</h2>
@@ -228,7 +317,98 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h2 class="electron listing-title">Electronics</h2> 
+        <h2 class="electron listing-title">Electronics</h2>
+         <div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>Content :
+                    <li>User</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                  2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">               
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div> 
         <div class="col-md-12 shoes" ng-repeat="image in electronics">
         <div class="listing">
           <img ng-src="{{image}}">
@@ -242,6 +422,97 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="other listing-title">Other</h2>
+         <div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>Content :
+                    <li>User</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                  2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">               
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="square bg">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                2
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                3
+            </div>
+        </div>
+    </div>
+</div>
         <div class="col-md-12 shoes" ng-repeat="image in other"> 
           <img ng-src="{{image}}">
           <h2>{{user}}</h2>

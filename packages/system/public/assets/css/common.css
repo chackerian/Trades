@@ -67,6 +67,16 @@ section{
     background-image: url(/theme/assets/img/space.jpg) !important;
 }
 
+.myCanvas{
+    position: absolute;
+    background-color: black !important;
+    /*height:160px !important;*/
+    width: 100% !important;
+    vertical-align: center;
+    margin: auto;
+    top: 25px; bottom: 0; right: 0;
+}
+
 .ui-dimmer{
     width: 300%;
 }
@@ -337,9 +347,9 @@ footer {
 }
 
 .content {
-    position:absolute;
-    height:90%; /* = 100% - 2*5% padding */
-    width:90%; /* = 100% - 2*5% padding */
+    position: absolute;
+    height: 90%; /* = 100% - 2*5% padding */
+    width: 90%; /* = 100% - 2*5% padding */
     padding: 5%;
     
 }
@@ -380,9 +390,10 @@ li{
     background-repeat:no-repeat;
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
     color:#fff;
+    font-size: 35px;
 }
 
-.img1{
+/*.img1{
     background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
 }
 .img2{
@@ -390,7 +401,7 @@ li{
 }
 .img3{
     background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
-}
+}*/
 
 /*  following just for the demo */
 
@@ -398,11 +409,11 @@ li{
 body {
     font-size:20px;
     font-family: 'Lato',verdana, sans-serif;
-    color: #fff;
+    color: yellow !important;
     text-align:center;
     background:#ECECEC;
 }
-p{
+p {
     margin:0;
     padding:0;
     text-align:left;
@@ -413,7 +424,7 @@ p{
     font-size:100px;
 }
 
-#bottom {
+.bottom {
     clear:both;
     margin:0 1.66%;
     width:89.68%;
@@ -421,11 +432,11 @@ p{
     background-color:#1E1E1E;
     color: #fff;
 }
-#bottom p{
+.bottom p{
     text-align:center;
     line-height:2em;
 }
-#bottom a{
+.bottom a{
     color: #000;
     text-decoration:none;
     border:1px solid #000;
@@ -438,7 +449,7 @@ p{
     border-radius: 5px;
 }
 
-#bottom a:hover{
+.bottom a:hover{
     background:#ECECEC;
     border:1px solid #fff;
 }
