@@ -118,9 +118,9 @@ color: #F20E0E;
 text-decoration: none !important;
 }
 
-/*.nav > li > a {
+.nav > li > a {
 display: inline;
-}*/
+}
 /*CUSTOM COLORS*/
 
 .turquoise {
@@ -276,7 +276,8 @@ display: inline;
 
 .content {
     margin-top: 1px;
-    width: 100%
+    width: 100%;
+    position: inherit !important;
 }
 
 .col-md-4 { 
