@@ -48,28 +48,29 @@ expect
 .toBe
 .not
 nodemon - reloads the page
-//Albania
-//Macedonia
-//beforeEach
-//afterEach
-//mean list
-//Dictionary 
-//Chai
-//Mocha
+Albania
+Macedonia
+beforeEach
+afterEach
+mean list
+Dictionary 
+Chai
+Mocha
 Sinon
 Qunit
 //addEventListener
 //font squirrel
 <!--[if IE 6>
 <![endif]-->
-//Rembrandt
-//:link Css
-//:visited Css
-// + Adjacent Selector Css
-//thead tbody tfoot
-//$index
-//$new
-//ARIA Accessible Rich Internet Applications
+Rembrandt
+:link Css
+:visited Css
+ + Adjacent Selector Css
+thead tbody tfoot
+$index
+$new
+ARIA Accessible Rich Internet Applications
+CORS - Cross Origin Resource Sharing
 </pre>
 <h3>FONTS</h3>
 <pre>
