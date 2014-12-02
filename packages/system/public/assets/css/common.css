@@ -358,6 +358,10 @@ footer {
     overflow:hidden;
 }
 
+.navbar-default{
+    background-color: inherit;
+}
+
 .content {
     position: absolute;
     height: 90%; /* = 100% - 2*5% padding */
@@ -459,6 +463,11 @@ p {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.margin{
+    margin-right: 1px !important;
+    margin-left: 1px !important;
 }
 
 .bottom a:hover{
