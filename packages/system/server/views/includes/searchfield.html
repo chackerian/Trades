@@ -1,1 +1,24 @@
-<h1>Example Text Example TextExample TextExample TextExample TextExample TextExample TextExample Text</h1>   
+<section>
+  <div class="col-md-12" style="vertical-align: middle">
+  <div class="input-group">
+        <span class="input-group-addon">
+          <select>
+            <option value="brookly">New York</option>
+            <option value="brookly">Brooklyn</option>
+            <option value="manhattan">Manhattan</option>
+            <option value="Queens">Queens</option>
+            <option value="bronx">Bronx</option>
+          </select>
+        </span> 
+        <input
+           type="text"
+           name="search"
+           class="form-control search"
+           placeholder="Brand, Name, Borough, Size, Price..."
+           data-ng-model="search.query"
+           data-ng-maxlength="20"
+          >
+          <button type="submit" class="btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+</section>

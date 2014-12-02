@@ -2,10 +2,11 @@
 <section class="welcome container" data-ng-controller="IndexController">
   <canvas id="myCanvas" class="myCanvas" resize="true" keepalive="true">
   </canvas> 
+  <div class="home-body">
   <div class="back">
     <div class="back-color">
     <div class="row">  
-<!--   <div class="col-lg-6">
+<!--   <div class="col-lg-6"> 
     <div class="input-group">
       <span class="input-group-addon">
         <select>
@@ -50,29 +51,6 @@
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
   </ul>
 </div> -->
-
-<div class="col-md-12" style="vertical-align: middle">
-<div class="input-group">
-      <span class="input-group-addon">
-        <select>
-          <option value="brookly">New York</option>
-          <option value="brookly">Brooklyn</option>
-          <option value="manhattan">Manhattan</option>
-          <option value="Queens">Queens</option>
-          <option value="bronx">Bronx</option>
-        </select>
-      </span> 
-      <input
-         type="text"
-         name="search"
-         class="form-control search"
-         placeholder="Brand, Name, Borough, Size, Price..."
-         data-ng-model="search.query"
-         data-ng-maxlength="20"
-        >
-        <button type="submit" class="btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
-    </div>
-  </div>
       <div class="row describe">
         <div class="col-md-6 finnly" data-ng-hide="global.authenticated">
           <span class="concise">For</span> Local meetup and trade
@@ -475,6 +453,7 @@
     <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
   </ul>
 </nav>
+</div>
 </div>
 </section>
 

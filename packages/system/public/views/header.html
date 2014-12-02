@@ -1,149 +1,149 @@
-<nav class="navbar navbar-default" role="navigation" data-ng-controller="HeaderController">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="heading">
-      <i class="united states flag top-left"></i>
-        <a class="navbar-brand" href="#">
-          <a href="/">
-            <span class="spaceblue">Space</span>
-            <span>Trades</span>
-            </span>
+<header>
+  <nav class="navbar navbar-default" role="navigation" data-ng-controller="HeaderController">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="heading">
+        <i class="united states flag top-left"></i>
+          <a class="navbar-brand" href="#">
+            <a href="/">
+              <span class="spaceblue">Space</span>
+              <span>Trades</span>
+              </span>
+            </a>
           </a>
-        </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="left pull-left">
-      <ul class="navbar-nav nav">
-        <li data-ng-repeat="item in menus.main" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-          <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
-        </li>
-      </ul>
-    </div>
-    <ul class="navbar-nav nav" data-ng-show="global.authenticated">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          {{global.user.name}} <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="/logout">Log Out</a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="left pull-left">
+        <ul class="navbar-nav nav">
+          <li data-ng-repeat="item in menus.main" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+            <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
           </li>
         </ul>
-      </li>
-    </ul>
-    <div class="account">
-      <div class="text-edit">
-        <div class="pull-right" data-ng-show="global.authenticated" mean-token-editable></div>
-        <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
       </div>
-      <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
-        <li><a ui-sref='auth.register' ng-click="open()" class="Join">Join</a>
+      <ul class="navbar-nav nav" data-ng-show="global.authenticated">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            {{global.user.name}} <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/logout">Log Out</a>
+            </li>
+          </ul>
         </li>
-        <li><a ui-sref='auth.login' ng-click="open()" class="Login">Log In</a>
-        </li>
-    </ul>
-    </div>
-
-    <div class="row categories">
-
-        <div class="col-md-4"> 
-          <div class="dropdown">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-              <span class="caret"></span>
-              Apparel
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu"> 
-              <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Jeans</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
-            </ul>
-          </div>
+      </ul>
+      <div class="account">
+        <div class="text-edit">
+          <div class="pull-right" data-ng-show="global.authenticated" mean-token-editable></div>
+          <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
         </div>
+        <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
+          <li><a ui-sref='auth.register' ng-click="open()" class="Join">Join</a>
+          </li>
+          <li><a ui-sref='auth.login' ng-click="open()" class="Login">Log In</a>
+          </li>
+      </ul>
+      </div>
 
-        <div class="col-md-4">
-          <div class="dropdown">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-              <span class="caret"></span>
-              Electronics
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
-            </ul>
+      <!-- Navigation -->
+      <div class="row categories">
+          <div class="col-md-4"> 
+            <div class="dropdown">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+                <span class="caret"></span>
+                Apparel
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu"> 
+                <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Jeans</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dropdown">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                <span class="caret"></span>
+                Electronics
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
+              </ul>
+            </div>
+          </div> 
+          <div class="col-md-4"> 
+            <div class="dropdown">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+                <span class="caret"></span>
+                Shoes
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu"> 
+                <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
+                <li role="presentation" class="divider"></li> 
+                <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-4"> 
+            <div class="dropdown">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+                <span class="caret"></span>
+                Other
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu"> 
+                <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
+              </ul>
+            </div>
           </div>
         </div> 
-        <div class="col-md-4"> 
-          <div class="dropdown">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-              <span class="caret"></span>
-              Shoes
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu"> 
-              <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
-              <li role="presentation" class="divider"></li> 
-              <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="col-md-4"> 
-          <div class="dropdown">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-              <span class="caret"></span>
-              Other
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu"> 
-              <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <br>
-    </div>
-    
-  </nav>
+    </nav>
+</header>
