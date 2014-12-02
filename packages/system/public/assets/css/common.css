@@ -232,6 +232,18 @@ display: inline;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
+.main-heading{
+    color: #F20E0E !important;
+    font-size: 75px !important;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: bold !important;
+    z-index: 1031;
+    opacity: 1.0 !important;
+    padding-left: 10px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-align: center;
+}
+
 .concise {
     color: #6600CC;
     font-size: 60px;
@@ -293,7 +305,7 @@ display: inline;
 }
 
 .search{
-    width: 400px !important;
+    width: 700px !important;
 }
 
 img {
