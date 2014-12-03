@@ -4,14 +4,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="../../../../../favicon.ico">
 
-  <title>{{appName}}</title>
+  <title>{{appName}} | NYC Buying and Selling</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
   <meta name="keywords" content="node.js, express, mongoose, mongodb, angularjs, swig">
   <meta name="description" content="Space Trades helps you meet and trade locally">
 
   <meta property="fb:app_id" content="403772073107923">
   <meta property="og:title" content="{{appName}}">
-  <meta property="og:description" content="Space Trades helps you meet and trade locally">
+  <meta property="og:description" content="SpaceTrades lets you buy and sell locally">
   <meta property="og:type" content="website">
   <meta property="og:url" content="spacetrades1.herokuapp.com">
   <meta property="og:image" content="">
@@ -20,12 +20,14 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="/modules/aggregated.css">
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/modules/aggregated.css">
   <script type="text/javascript" src="/modules/aggregated.js?group=header"></script>
   <script type="text/javascript" src="/bower_components/paper/dist/paper-full.js"></script>
   <script type="text/javascript" src="/bower_components/bootstrap/js/collapse.js"></script>
   <script type="text/paperscript" canvas="myCanvas">
+
+
 // The amount of symbol we want to place;
 var count = 60;
 
@@ -57,11 +59,12 @@ var vector = new Point({
 });
 
 var mouseVector = vector.clone();
+// var mouseVector = {x: -113.90909194946289, y: -2.230097460937486}
 
-function onMouseMove(event) {
-  mouseVector = view.center - event.point;
-  //Point {x: -113.90909194946289, y: -2.230097460937486}
-}
+// function onMouseMove(event) {
+//   mouseVector = view.center - event.point;
+//   mouseVector = {x: -113.90909194946289, y: -2.230097460937486}
+// }
 
 // The onFrame function is called up to 60 times a second:
 function onFrame(event) {
