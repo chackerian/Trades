@@ -160,6 +160,21 @@
         </div>
       </div -->
 
+    <div class="site-desc" data-ng-hide="global.authenticated">
+      <h6 class="desc-heading">Who We Are</h6>
+      <p class="desc-par">
+      Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Apparel to Electronics to Shoes and everything in<br> between. It's simple, signup and add a listing. 
+      </p>
+      <a class="discover-btn" href="">Discover</a>
+    </div> 
+
+    <div class="col-md-6 listing" data-ng-show="global.authenticated">
+      <button class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        <a href="#!/articles/create">Add Listing</a> 
+      </button>
+    </div>  
+
     <div class="row">
       <div class="col-md-12">
         <h2 class="turquoise listing-title">Newly Listed</h2>

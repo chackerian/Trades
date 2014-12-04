@@ -541,14 +541,10 @@ footer a:link, a:visited, a:active  {
     font-size: 8rem;
     font-weight: bold;
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    margin: 10px;
 
 }
 
-.input-group-addon {
-    width: 10%;
-    height: 40px;
-
-}
 
 
 
@@ -570,6 +566,52 @@ footer a:link, a:visited, a:active  {
 
 
 /**** HOME ****/
+
+/* description */
+
+.site-desc {
+    color: #333;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+
+}
+
+.desc-heading {
+    font-size:2em;
+    font-weight: bold;
+    color: #f8504b;
+    padding: 5px;
+}
+
+.desc-par {
+    font-size: 1em !important;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.discover-btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Helvetica, Arial, sans-serif ;
+  color: #ffffff;
+  font-size: 20px;
+  background: #f8504b;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px;
+}
+
+.discover-btn:hover {
+  background: #f53c39;
+  text-decoration: none;
+}
+
+
+
+
 
 /**** HOME END ****/
 
