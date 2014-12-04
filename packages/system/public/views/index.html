@@ -2,58 +2,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="welcome container" data-ng-controller="IndexController">
   <div class="home-body">
-  <div class="back">
-    <div class="back-color">
-    <div class="row">
-    <div class="col-md-12">
-     <div class="main-heading">
-        <a class="navbar-brand" href="#">
-          <a href="/">
-            <span class="spaceblue">Space</span>
-            <span>Trades</span>
-            </span>
+    <div class="back">
+      <div class="back-color">
+        <div class="row">
+          <div class="col-md-12">
+           <div class="main-heading">
+            <a class="navbar-brand" href="#">
+              <a href="/">
+                <span class="spaceblue">Space</span>
+                <span>Trades</span>
+              </span>
+            </a>
           </a>
-        </a>
+        </div>
       </div>
     </div>
-    </div>
     <div class="row">
 
-<div class="col-md-12" style="vertical-align: middle">
-<div class="input-group">
-      <span class="input-group-addon">
-        <select>
-          <option value="all" ng-model="all">New York</option>
-          <option value="brooklyn" ng-model="brooklyn">Brooklyn</option>
-          <option value="manhattan" ng-model="manhattan">Manhattan</option>
-          <option value="queens" ng-model="queens">Queens</option>
-          <option value="bronx" ng-model="bronx">Bronx</option>
-        </select>
-      </span>
-      <input
-         type="text"
-         name="search"
-         class="form-control search"
-         placeholder="Brand, Name, Borough, Size, Price..."
-         data-ng-model="search.query"
-         data-ng-maxlength="20"
-        >
-        <button type="submit" class="btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
-    </div>
+      <div class="col-sm-12 col-xs-12 col-md-12 search-full">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <select>
+              <option value="all" ng-model="all">New York</option>
+              <option value="brooklyn" ng-model="brooklyn">Brooklyn</option>
+              <option value="manhattan" ng-model="manhattan">Manhattan</option>
+              <option value="queens" ng-model="queens">Queens</option>
+              <option value="bronx" ng-model="bronx">Bronx</option>
+            </select>
+          </span>
+ <!--      </div>
+ <div class="input-group"> -->
+  <input
+  type="text"
+  name="search"
+  class="form-control form-text search"
+  placeholder="Brand, Name, Borough, Size, Price..."
+  data-ng-model="search.query"
+  data-ng-maxlength="20"
+  required>
+  <span class="input-group-btn">
+    <button type="submit" class="btn btn-default form-submit" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
+  </span>
+</div>
+</div>
+<div class="row describe">
+  <div class="col-md-6 finnly" data-ng-hide="global.authenticated">
+    <span class="concise">For</span> Local meetup and trade
+    <br>
+    <span class="concise">Strictly</span> Cash in hand  
   </div>
-      <div class="row describe">
-        <div class="col-md-6 finnly" data-ng-hide="global.authenticated">
-          <span class="concise">For</span> Local meetup and trade
-          <br>
-          <span class="concise">Strictly</span> Cash in hand  
-        </div>
 
-        <div class="col-md-6 listing" data-ng-show="global.authenticated">
-          <button class="btn btn-success">
-            <span class="glyphicon glyphicon-plus"></span>
-            <a href="#!/articles/create">Add Listing</a> 
-          </button>
-        </div>
+  <div class="col-md-6 listing" data-ng-show="global.authenticated">
+    <button class="btn btn-success">
+      <span class="glyphicon glyphicon-plus"></span>
+      <a href="#!/articles/create">Add Listing</a> 
+    </button>
+  </div>
+        <!-- <div class="col-md-6">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle">
+          <polygon points="0,0 100,0 50,100"/>
+          </svg>
+        </div> -->
         <div class="col-md-6 request" data-ng-show="global.authenticated">
           <button class="btn btn-success">
             <span class="glyphicon glyphicon-plus"></span>
@@ -70,104 +79,103 @@
       </div>
 
       <div class="row categories">
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Apparel
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jeans</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
-              </ul>
-            </div>
+        <div class="col-md-3"> 
+          <div class="dropdown">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+              <span class="caret"></span>
+              Apparel
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu"> 
+              <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Pants</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                <span class="caret"></span>
-                Electronics
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
-              </ul>
-            </div>
-          </div> 
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Shoes
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
-                <li role="presentation" class="divider"></li> 
-                <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Other
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
-              </ul>
-            </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              <span class="caret"></span>
+              Electronics
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
+            </ul>
           </div>
         </div> 
-      </div>
+        <div class="col-md-3"> 
+          <div class="dropdown">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+              <span class="caret"></span>
+              Shoes
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu"> 
+              <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
+              <li role="presentation" class="divider"></li> 
+              <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3"> 
+          <div class="dropdown">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
+              <span class="caret"></span>
+              Other
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu"> 
+              <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
 
+    <h2 class="turquoise listing-title">Newly Listed</h2>
     <div class="row">
       <div class="col-md-12">
-        <h2 class="turquoise listing-title">Newly Listed</h2>
         <div class="square bg">
           <div class="content">
             <div class="table">
               <div class="table-cell">
-                <img src="/theme/assets/img/nike-1.jpg">
               </div>
             </div>
           </div>
@@ -176,7 +184,6 @@
           <div class="content">
             <div class="table">
               <div class="table-cell">
-                <img src="/theme/assets/img/nike-2.jpg">
               </div>
             </div>
           </div>
@@ -185,56 +192,59 @@
           <div class="content">
             <div class="table">
               <div class="table-cell">               
-                <img src="/theme/assets/img/nike-3.jpg">
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
+    <div class="row">
+      <div class="col-md-12">
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                4
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                5
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div> 
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">               
+                6
+              </div> 
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <nav>
-  <ul class="pagination">
-    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
+      <ul class="pagination">
+        <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
 
-<div class="row">
+    <h2 class="electron listing-title">Apparel</h2>
+    <div class="row">
       <div class="col-md-12">
-        <h2 class="electron listing-title">Apparel</h2>
         <div class="square bg">
           <div class="content">
             <div class="table">
@@ -262,7 +272,10 @@
             </div>
           </div>
         </div>
-        <div class="row">
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-12">
         <div class="square bg">
           <div class="content">
@@ -291,95 +304,106 @@
             </div>
           </div>
         </div>
-        <nav>
-          <ul class="pagination">
-            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
-
-<!-- Electronics -->
-
-<div class="row">
-  <div class="col-md-12">
-    <h2 class="electron listing-title">Electronics</h2>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            1
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            2
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            3
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div>
-        </div>
       </div>
     </div>
     <nav>
-  <ul class="pagination">
-    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
+      <ul class="pagination">
+        <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
 
-        <!-- 2nd row verticaly centered images in square columns -->
- <div class="row">
+    <!-- Electronics Origin Row -->
+
+    <h2 class="electron listing-title">Electronics</h2>
+    <div class="row">
       <div class="col-md-12">
-        <h2 class="turquoise listing-title">Shoes</h2>
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                1
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                2
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">               
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Electronics Origin Row -->
+    <!-- Electronics Second Row -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                4
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">
+                5
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="square bg">
+          <div class="content">
+            <div class="table">
+              <div class="table-cell">               
+                6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Electronics Second Row -->
+    <nav>
+      <ul class="pagination">
+        <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
+
+    <!-- 2nd row verticaly centered images in square columns -->
+    <h2 class="turquoise listing-title">Shoes</h2>
+    <div ng-show="when new"></div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="square bg">
          <div class="content">
           <div class="table">
@@ -407,8 +431,10 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="row">
+<div class="row">
   <div class="col-md-12">
     <div class="square bg">
       <div class="content">
@@ -437,7 +463,9 @@
         </div>
       </div>
     </div>
-    <nav>
+  </div>
+</div>
+<nav>
   <ul class="pagination">
     <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
     <li><a href="#">1</a></li>
@@ -451,39 +479,37 @@
 
 
 <!-- Other -->
+<h2 class="turquoise listing-title">Other</h2>
+<div class="row">
+  <div class="col-md-12">
+    <div class="square bg">
+      <div class="content">
+        <div class="table">
+          <div class="table-cell">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="square bg">
+      <div class="content">
+        <div class="table">
+          <div class="table-cell">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="square bg">
+      <div class="content">
+        <div class="table">
+          <div class="table-cell">               
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="row">
-      <div class="col-md-12">
-        <h2 class="turquoise listing-title">Other</h2>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-1.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-2.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">               
-                <img src="/theme/assets/img/nike-3.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
+<div class="row">
   <div class="col-md-12">
     <div class="square bg">
       <div class="content">
@@ -505,14 +531,45 @@
     </div>
     <div class="square bg">
       <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
+        <div class="top">
+          <div class="row listing">
+            <div class="listing-name col-md-12 col-sm-12 col-xs-12">
+              Lebron X Jade Green
+            </div>
+          </div>
+          <div class="row listing preference">
+            <div class="preference col-md-6 col-sm-6 col-xs-6">
+              $
+            </div>
+            <div class="badge col-md-6 col-sm-6 col-xs-6">
+              8 / 10
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+        <img src="/theme/assets/img/lebron-x-jade-green.jpg">
+        <div class="bottom">
+          <div class="row">
+            <div class="username col-md-12 col-sm-12 col-xs-12 text-center">
+              Tyrone Billing Clyde
+            </div>
+          </div>
+          <div class="row">
+            <div class="buynow col-md-6 col-sm-6 col-xs-6">
+              <button>RESERVE</button>
+            </div>
+            <div class="auction col-md-6 col-sm-6 col-xs-6">
+              <button>AUCTION</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <nav>
+  </div>
+</div>
+</div>
+<nav>
   <ul class="pagination">
     <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
     <li><a href="#">1</a></li>
@@ -524,6 +581,16 @@
   </ul>
 </nav>
 </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="turquoise listing-title">Testing</h2>
+    <div data-ng-include src="'listing-card.html'">qwe</div>
+    <div data-ng-include src="'listing-card.html'">qwe</div>
+    <div data-ng-include src="'listing-card.html'">qwe</div>
+    <a href="'listing-card.html'"></a>
+  </div>
 </div>
 </section>
 

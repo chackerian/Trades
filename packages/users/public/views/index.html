@@ -1,24 +1,12 @@
-<div class="form main-form" ng-controller="AuthCtrl" ng-class="{'register-form' : global.registerForm}">
-    <div class="login-form__left" ui-view></div>
-    <div class="login-form__center">
-        <p>or</p>
-    </div>
-    <div class="row login-form__right " data-ng-controller="AuthCtrl">
-        <div class="social_wrap" ng-class="{bigger:socialButtonsCounter > 4 && !global.registerForm}">
+<div class="row login-form__right " data-ng-controller="AuthCtrl">
+        <div class="social_wrap col-md-12" ng-class="{bigger:socialButtonsCounter > 4 && !global.registerForm}">
             <ul class="social">
                 <li ng-if="socialButtons.hasOwnProperty('facebook')" class="social_icon social_icon_fb">
                     <a href="/auth/facebook" class="button">
                         <span>Log In With Facebook</span>
                     </a>
-                    Why? - Facebook profiles allow users to know the actual identity of those they are dealing with before a trade. This helps maintain the safety involved in each meetup.
-                </li>
-                <li ng-if="socialButtons.hasOwnProperty('google')" class="social_icon social_icon_google">
-                    <a href="/auth/google" class="button">
-                        <span>Log In With Google</span>
-                    </a>
+                    Why? - Facebook is a service with real information about users. One of the major issues in Buying and Selling is that people sometimes lie about information. This allows people to easily <span>flake<span> on other people and / or cheat them in one way or another. Anonymity is not a good thing when it comes to organizing meet ups. By having the actual Facebook account on record, user to user meetups are more secure. 
                 </li>
             </ul>
         </div>
     </div>
-
-</div>

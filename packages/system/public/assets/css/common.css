@@ -1,6 +1,10 @@
 .listing,
 .request {
     text-align: center;
+    border-radius: 0px !important;
+    background: inherit !important;
+    border-bottom: solid white;
+    margin-top: 1px !important;
 }
 
 /*.container{
@@ -96,13 +100,17 @@
     border-color: #db560d !important;
 }
 
+.form-control{
+    height: 33px;
+}
+
 a {
 color: #F20E0E;
 text-decoration: none !important;
 }
 
 .nav > li > a {
-display: inline;
+display: inline-block;
 }
 /*CUSTOM COLORS*/
 
@@ -186,7 +194,7 @@ display: inline;
 .row,
 .welcome {
     font-size: 15px;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     /*background-color: #fff !important;*/
 }
 
@@ -281,10 +289,7 @@ display: inline;
 }*/
 
 .content {
-    margin-top: 1px;
-    width: 100% !important;
-    position: inherit !important;
-    padding: 0 !important;
+    /*padding: 0 !important;*/
 }
 
 .col-md-4 { 
@@ -322,8 +327,7 @@ display: inline;
 .listing-title {
    font-size: 2em;
    text-align: center;
-   font-family: sans-serif !important;
-   text-decoration: underline;
+   font-family: 'helvetica-light', sans-serif;
    z-index: 2;
 }
 
@@ -353,22 +357,26 @@ display: inline;
 }
 
 .content {
+    margin-top: 1px !important;
+    width: 100% !important;
+    position: inherit !important;
+    padding-top: 1px !important;
     position: absolute;
-    padding-top:none !important;
     height: 90%; /* = 100% - 2*5% padding */
     width: 90%; /* = 100% - 2*5% padding */
     padding: 5%;
+    background-color: black !important;
     
 }
 .table{
     display:table;
     width:100%;
-    height:100%;
+    height:100%; 
 }
-.table-cell{
+/*.table-cell{
     display:table-cell;
     vertical-align:middle;
-}
+}*/
 /*  For list */
 
 
@@ -386,8 +394,8 @@ display: inline;
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
-    color:#fff;
     font-size: 35px;
+    color: white;
 }
 
 /*.img1{
@@ -410,11 +418,17 @@ display: inline;
 
 .bottom {
     clear:both;
-    margin:0 1.66%;
+   /* margin:0 1.66%;*/
     width:89.68%;
     padding: 3.5%;
     background-color:#1E1E1E;
     color: #fff;
+    position: absolute;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+
+
 }
 .bottom p{
     text-align:center;
@@ -451,7 +465,7 @@ display: inline;
 
 body {
     font-size: 1em;
-    font-family: sans-serif, arial;
+    font-family:'helvetica-light', sans-serif;
     color: #F5FC04;
     text-align: left;
     background-color: white;
@@ -469,13 +483,7 @@ ul {
 }
 
 li {
-    margin: 0 0 0 5%;
     padding:0;
-}
-
-img {
-    max-width: 30%;
-    max-height: 30%;
 }
 
 a {
@@ -547,7 +555,47 @@ footer {
     RESPONSIVE END 
 *********************/
 
+button, input, optgroup, select, textarea { 
+    font: serif;
+    color: black;
+}
 
+.input-group-addon{
+    padding: none !important;
+}
 
+.input-group-addon, 
+.input-group-btn {
+    width: 1px !important;
+}
+
+.svg-triangle{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  fill: blue; 
+  z-index: 10000;   
+}   
+
+.preference {
+    height: 20px;
+}
+
+.square, 
+.bg {
+    border: solid #1A1C8C;
+    font-family: 'helvetica-light', sans-serif;
+    /*background-image: url('/theme/assets/img/lebron-x-jade-green.jpg');*/
+}
+
+.badge{
+    border-radius: 0;
+    background-color: green;
+}
+
+.username{
+    color: aqua;
+    background-color: black;
+}
 
 
