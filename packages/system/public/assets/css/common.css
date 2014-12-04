@@ -1,7 +1,4 @@
-.listing,
-.request {
-    text-align: center;
-}
+
 
 /*.container{
 
@@ -74,18 +71,6 @@
     background: red !important;
 }*/
 
-
-@media screen and (max-width: 450px) {
-
-    .describe {
-        text-align: center !important;
-    }
-
-    .categories { 
-        text-align: center !important;
-    }
-
-}
 
 .ui.segment{
     width: 930px !important;
@@ -252,12 +237,7 @@ display: inline;
     color: blue !important;
     font-size: 30px !important;
 }
-.Join:hover {
-    color: #f21124 !important;
-}
-.Login:hover {
-    color: #f21124 !important;
-}
+
 
 .moneygreen {
     color:#339966;
@@ -314,10 +294,6 @@ display: inline;
 /*.categories {
     border-bottom: 2px solid #CCC;
 }*/
-
-.feedback {
-   width: 100%;
-}
 
 .listing-title {
    font-size: 2em;
@@ -443,34 +419,39 @@ display: inline;
     border:1px solid #fff;
 }
 
+/**********************
+    DESKTOP  
+**********************/
+
 /**** UNIVERSAL ****/
 
 ::selection { 
-    background: yellow;
+    background: #f8504b;
 } 
 
 body {
+    width: 100%;
     font-size: 1em;
-    font-family: sans-serif, arial;
+    font-family: 'helvetica-light', sans-serif;
     color: #F5FC04;
-    text-align: left;
+    text-align: center;
     background-color: white;
 }
 
 p {
-    text-align: left;
+   font-size: 1.5em;
+   color: #333; 
 }
 
 ul {
-    text-align:left;
-    margin:5% 0 0;
-    padding:0;
-    list-style-position:inside;
+    margin: 5% 0 0;
+    padding: 0;
+    list-style-position: inside;
 }
 
 li {
     margin: 0 0 0 5%;
-    padding:0;
+    padding: 0;
 }
 
 img {
@@ -478,9 +459,20 @@ img {
     max-height: 30%;
 }
 
+/* links */
 a {
     color: #F20E0E;
-    text-decoration: none !important;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active  {
+    color: #f8504b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff504b;
+    text-decoration: none;
 }
 
 section {
@@ -489,32 +481,56 @@ section {
 
 
 
+
 /**** UNIVERSAL END ****/
 
 
 /**** HEADER ****/
+
+.Join:hover {
+    color: #f21124 !important;
+}
+.Login:hover {
+    color: #f21124 !important;
+}
 
 
 /**** HEADER END ****/
 
 
 /**** FOOTER ****/
-footer {
+.footer-items{
     position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 30px;
+    padding: 0.5em 0 0.5em 0;
     width: 100%;
-    background: #ddd;
-    -webkit-box-shadow: 0 8px 6px 6px black;
-    -moz-box-shadow: 0 8px 6px 6px black;
-    box-shadow: 0 8px 6px 6px black
+    color: #fff;
+    background: #f8504b;
+    text-align: center;
+    font-size: 1.5rem;
 }
+
+.copyright {
+    font-size: 1.2rem;
+}
+
+
+footer a:link, a:visited, a:active  {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 /**** FOOTER END ****/
 
 
 /**** SEARCHFIELD ****/
+
+.logospace {
+    color: #f8504b ;
+}
+
+
 
 /**** SEARCHFIELD END ****/
 
@@ -537,10 +553,143 @@ footer {
 
 /**** HOME END ****/
 
+/**********************
+    DESKTOP END
+**********************/
+
+
+/**********************
+    POST AUTH 
+**********************/
+
+/**** UNIVERSAL ****/
+
+/**** UNIVERSAL END ****/
+
+
+/**** HEADER ****/
+
+/**** HEADER END ****/
+
+
+/**** FOOTER ****/
+
+/**** FOOTER END ****/
+
+
+/**** SEARCHFIELD ****/
+
+/**** SEARCHFIELD END ****/
+
+
+/**** ERROR ****/
+
+/* 404 */
+
+
+/* 500 */
+
+/**** ERROR END ****/
+
+
+/**** HOME ****/
+
+.listing, /* .request */ {
+    text-align: center;
+}
+
+/**** HOME END ****/
+
+/**********************
+    POST AUTH END
+**********************/
+
 
 /**********************
     RESPONSIVE 
 **********************/
+
+@media screen and (max-width: 480px) {
+
+/**** UNIVERSAL ****/
+
+/**** UNIVERSAL END ****/
+
+
+/**** HEADER ****/
+
+/**** HEADER END ****/
+
+
+/**** FOOTER ****/
+
+/**** FOOTER END ****/
+
+
+/**** SEARCHFIELD ****/
+
+/**** SEARCHFIELD END ****/
+
+
+/**** ERROR ****/
+
+/* 404 */
+
+
+/* 500 */
+
+/**** ERROR END ****/
+
+
+/**** HOME ****/
+ 
+
+    .describe {
+        text-align: center !important;
+    }
+
+    .categories { 
+        text-align: center !important;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+/**** UNIVERSAL ****/
+
+/**** UNIVERSAL END ****/
+
+
+/**** HEADER ****/
+
+/**** HEADER END ****/
+
+
+/**** FOOTER ****/
+
+/**** FOOTER END ****/
+
+
+/**** SEARCHFIELD ****/
+
+/**** SEARCHFIELD END ****/
+
+
+/**** ERROR ****/
+
+/* 404 */
+
+
+/* 500 */
+
+/**** ERROR END ****/
+
+
+/**** HOME ****/
+   
+
+}
 
 
 /*********************
