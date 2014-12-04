@@ -6,8 +6,22 @@ Space Trades
 <br>
 <a href="https://spacetrades.hipchat.com/chat"> HIPCHAT SpaceTrades Page</a>
 <br>
+<h3>SaaS Used</h3>
+<pre>
+Add This
+Masonry
+Modernizr
+Underscore
+Gravitar
+Instagram API - Image processing
+Maybe(Square, Stripe)
+Toastr
+PAPER JS
+</pre>
+<br>
 <h3>SaaS</h3>
 <pre>
+Masonry
 Add This
 Underscore
 Modernizr
@@ -57,13 +71,10 @@ mean list
 Dictionary 
 Chai
 Mocha
-Sinon
-Qunit
 //addEventListener
 //font squirrel
 <!--[if IE 6>
 <![endif]-->
-Rembrandt
 :link Css
 :visited Css
  + Adjacent Selector Css

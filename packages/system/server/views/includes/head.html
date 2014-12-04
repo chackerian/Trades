@@ -13,10 +13,15 @@
   <meta property="og:title" content="{{appName}}">
   <meta property="og:description" content="SpaceTrades lets you buy and sell locally">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="spacetrades1.herokuapp.com">
+  <meta property="og:url" content="www.spacetrades.com">
   <meta property="og:image" content="">
   <meta property="og:site_name" content="SpaceTrades">
   <meta property="fb:admins" content="APP_ADMIN">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@SpaceTrades" />
+  <meta name="twitter:url" content="www.spacetrades.com" />
+  <meta name="twitter:title" content="SpaceTrades"/>
+  <meta name="twitter:description" content="A site organizing local trade meetups" />
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
@@ -24,7 +29,16 @@
   <link rel="stylesheet" href="/modules/aggregated.css">
   <script type="text/javascript" src="/modules/aggregated.js?group=header"></script>
   <script type="text/javascript" src="/bower_components/paper/dist/paper-full.js"></script>
+  <script src="/bower_components/dist/masonry.pkgd.min.js"></script>
   <script type="text/javascript" src="/bower_components/bootstrap/js/collapse.js"></script>
+  <script type="text/javascript">
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 200,
+  itemSelector: '.item'
+});
+  </script>
   <script type="text/paperscript" canvas="myCanvas">
 
 

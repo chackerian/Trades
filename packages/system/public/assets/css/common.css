@@ -3,7 +3,7 @@
     text-align: center;
     /*border-radius: 0px !important;*/
     background: inherit !important;
-    border-bottom: solid white;
+    border-bottom: solid 1px #1E1E1E;
     margin-top: 1px !important;
 }
 
@@ -26,6 +26,11 @@
     position: fixed;
     left: 1px;
     top: -8px;
+}
+
+.top{
+    background-color: white;
+    color: black;
 }
 
 .back {
@@ -357,10 +362,9 @@ display: inline-block;
 }
 
 .content {
-    margin-top: 1px !important;
+    margin-top: 0.1px !important;
     width: 100% !important;
     position: inherit !important;
-    padding-top: 1px !important;
     height: 90%; /* = 100% - 2*5% padding */
     /* = 100% - 2*5% padding */
     background-color: black !important;
@@ -396,18 +400,6 @@ display: inline-block;
     color: white;
 }
 
-/*.img1{
-    background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
-}
-.img2{
-    background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
-}
-.img3{
-    background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
-}*/
-
-/*  following just for the demo */
-
 .numbers{
     font-weight:900;
     font-size:100px;
@@ -417,10 +409,9 @@ display: inline-block;
 .bottom {
     clear:both;
    /* margin:0 1.66%;*/
-    width:89.68%;
     padding: 3.5%;
-    background-color:#1E1E1E;
-    color: #fff;
+    background-color: white;
+    color: black;
     /*padding-bottom: 0px;
     padding-top: 0px;
     margin-top: 0px;*/
@@ -575,14 +566,14 @@ button, input, optgroup, select, textarea {
 
 .preference {
     height: 20px;
+    color: yellow;
 }
 
 .square, 
 .bg {
-    border: solid #1A1C8C;
+    border: solid #30b880;
     padding-bottom: 1px;
     font-family: 'helvetica-light', sans-serif;
-    /*background-image: url('/theme/assets/img/lebron-x-jade-green.jpg');*/
 }
 
 .badge{
@@ -591,11 +582,15 @@ button, input, optgroup, select, textarea {
 }
 
 .username{
-    color: aqua;
+    color: aqua !important;
     background-color: black;
 }
 
+img{
+    margin: 10% 10%;
+}
 
-.auction:hover{
-    color: salmon !important;
+.buynow
+.auction{
+    background-color: white;
 }
