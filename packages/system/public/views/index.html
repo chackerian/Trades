@@ -1,532 +1,101 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<section class="welcome container" data-ng-controller="IndexController">
+<section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="home-body">
   <div class="back">
     <div class="back-color">
     <div class="row">
-    <!-- div class="col-md-12">
-     <div class="main-heading">
-        <a class="navbar-brand" href="#">
-          <a href="/">
-            <span class="logospace">Space</span>
-            <span class="logotrades">Trades</span>
-            </span>
-          </a>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="row">
-
-<div class="col-md-12" style="vertical-align: middle">
-<div class="input-group">
-      <span class="input-group-addon">
-        <select>
-          <option value="all" ng-model="all">New York</option>
-          <option value="brooklyn" ng-model="brooklyn">Brooklyn</option>
-          <option value="manhattan" ng-model="manhattan">Manhattan</option>
-          <option value="queens" ng-model="queens">Queens</option>
-          <option value="bronx" ng-model="bronx">Bronx</option>
-        </select>
-      </span>
-      <input
-         type="text"
-         name="search"
-         class="form-control search"
-         placeholder="Brand, Name, Borough, Size, Price..."
-         data-ng-model="search.query"
-         data-ng-maxlength="20"
-        >
-        <button type="submit" class="btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
-    </div>
-  </div>
-      <div class="row describe">
-        <div class="col-md-6 finnly" data-ng-hide="global.authenticated">
-          <span class="concise">For</span> Local meetup and trade
-          <br>
-          <span class="concise">Strictly</span> Cash in hand  
-        </div>
-
-        <div class="col-md-6 listing" data-ng-show="global.authenticated">
-          <button class="btn btn-success">
-            <span class="glyphicon glyphicon-plus"></span>
-            <a href="#!/articles/create">Add Listing</a> 
-          </button>
-        </div>
-        <div class="col-md-6 request" data-ng-show="global.authenticated">
-          <button class="btn btn-success">
-            <span class="glyphicon glyphicon-plus"></span>
-            <a href="#!/articles/create">Make a request</a>
-          </button>
-        </div>
-        <div class="col-md-6 text-right" data-ng-hide="global.authenticated"> 
-          <span class="concise">Faster</span> than the mail
-          <i class="fa fa-envelope-o"></i>
-          <br>
-          <span class="concise">Better</span> than Facebook
-          <i class="fa fa-facebook-square"></i>
-        </div>
-      </div>
-
-      <div class="row categories">
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Apparel
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jeans</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                <span class="caret"></span>
-                Electronics
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
-              </ul>
-            </div>
-          </div> 
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Shoes
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
-                <li role="presentation" class="divider"></li> 
-                <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Other
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div -->
-
     <div class="site-desc" data-ng-hide="global.authenticated">
       <h6 class="desc-heading">Who We Are</h6>
       <p class="desc-par">
-      Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Apparel to Electronics to Shoes and everything in<br> between. It's simple, signup and add a listing. 
+      Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Clothing to Electronics to Shoes and everything in<br> between. It's simple, signup and add a listing. 
       </p>
-      <a class="discover-btn" href="">Discover</a>
-    </div> 
+      <a class="discover-btn" href="#!/about">Discover</a>
+    </div>  
 
     <div class="col-md-6 listing" data-ng-show="global.authenticated">
       <button class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span>
         <a href="#!/articles/create">Add Listing</a> 
       </button>
-    </div>  
+    </div> 
 
     <div class="row">
-      <div class="col-md-12">
-        <h2 class="turquoise listing-title">Newly Listed</h2>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-1.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-2.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">               
-                <img src="/theme/assets/img/nike-3.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- <h2 class="turquoise listing-title">Newly Listed</h2> -->
+    <h2 class="turquoise listing-title">Newly Listed</h2>
+    <hr>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+      <p><a href="/user/tyrone">Joe</a></p>
+        <h3>Air Force One</h3>
+        <p>$230</p>
+        <p><a href="#" class="btn btn-success" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+        <p><a href="/user/tyrone">Tyrone</a></p>
+        <h3>Air Force One</h3>
+        <p>$230 OR Swap</p>
+        <p><a href="#" class="btn btn-success" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
+      </div>
+    </div>
+    </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+      <p><a href="/user/tyrone">Bill</a></p>
+        <h3>Air Force One</h3>
+        <p>$230</p>
+        <p><a href="#" class="btn btn-success" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
 
-        <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
-          </div>
-        </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+        <h3>Air Force One</h3>
+        <p>$230</p>
+        <p><a href="#" class="btn btn-primary" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
       </div>
     </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
-          </div>
-        </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+        <h3>Air Force One</h3>
+        <p>$230</p>
+        <p><a href="#" class="btn btn-primary" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
       </div>
     </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div> 
-        </div>
+    </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+      <div class="caption">
+        <h3>Air Force One</h3>
+        <p>$230</p>
+        <p><a href="#" class="btn btn-primary" role="button">Reserve</a> 
+        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
       </div>
     </div>
-    <nav>
-  <ul class="pagination">
-    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
-
-<div class="row">
-      <div class="col-md-12">
-        <h2 class="electron listing-title">Apparel</h2>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                1
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                2
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">               
-                3
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-      <div class="col-md-12">
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                4
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                5
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">               
-                6
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <ul class="pagination">
-            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
-
-<!-- Electronics -->
-
-<div class="row">
-  <div class="col-md-12">
-    <h2 class="electron listing-title">Electronics</h2>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            1
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            2
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            3
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav>
-  <ul class="pagination">
-    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
-
-        <!-- 2nd row verticaly centered images in square columns -->
- <div class="row">
-      <div class="col-md-12">
-        <h2 class="turquoise listing-title">Shoes</h2>
-        <div class="square bg">
-         <div class="content">
-          <div class="table">
-            <div class="table-cell">
-              1
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="square bg">
-        <div class="content">
-          <div class="table">
-            <div class="table-cell">
-              2
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="square bg">
-       <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            3
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav>
-  <ul class="pagination">
-    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
-
-
-<!-- Other -->
-
-  <div class="row">
-      <div class="col-md-12">
-        <h2 class="turquoise listing-title">Other</h2>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-1.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">
-                <img src="/theme/assets/img/nike-2.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="square bg">
-          <div class="content">
-            <div class="table">
-              <div class="table-cell">               
-                <img src="/theme/assets/img/nike-3.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-  <div class="col-md-12">
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            4
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">
-            5
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="square bg">
-      <div class="content">
-        <div class="table">
-          <div class="table-cell">               
-            6
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+  </div>
     <nav>
   <ul class="pagination">
     <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>

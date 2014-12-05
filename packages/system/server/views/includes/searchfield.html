@@ -8,17 +8,34 @@
         </a>
       </div>
     </div>
-  </div>
 
   <div class="col-md-12" style="vertical-align: middle">
+  <div class="col-md-3">
+            <div class="dropdown">
+              <button class="btn btn-success btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                <span class="caret"></span> 
+                Categories
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Shoes</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Clothing</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Other</a></li>
+              </ul>
+            </div>
+          </div> 
     <div class="input-group">
           <span class="input-group-addon">
-            <select>
-              <option value="New York">New York</option>
-              <option value="Brooklyn">Brooklyn</option>
-              <option value="Manhattan">Manhattan</option>
-              <option value="Queens">Queens</option>
-              <option value="Bronx">Bronx</option>
+            <select class="selecter">
+              <option value="1">New York City</option>
+              <option value="2">Brooklyn</option>
+              <option value="3">Manhattan</option>
+              <option value="4">Queens</option>
+              <option value="5">Bronx</option>
             </select>
           </span> 
           <input
@@ -27,12 +44,12 @@
              class="form-control search"
              placeholder="Brand, Name, Borough, Size, Price..."
              data-ng-model="search.query"
-             data-ng-maxlength="20"
-            >
-            <button type="submit" class="search-btn btn btn-default" ng-click="submit()"><span class="glyphicon glyphicon-search"></span></button>
+             data-ng-maxlength="20">
+            <button type="submit" class="search-btn btn btn-default" ng-click="submit()">
+            <span class="glyphicon glyphicon-search"></span></button>
     </div>
   </div>
-
+<!-- <div class="drops">
   <div class="row categories">
           <div class="col-md-3"> 
             <div class="dropdown">
@@ -48,7 +65,7 @@
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
                 <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jeans</a></li>
+                <li role="presentation"> <a role="menuitem" href="#">Pants</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
                 <li role="presentation" class="divider"></li>
@@ -122,5 +139,5 @@
             </div>
           </div>
         </div> 
-      </div>  
+      </div> -->  
 </section>

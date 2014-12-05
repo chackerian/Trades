@@ -49,12 +49,14 @@
 
 .myCanvas {
     position: absolute;
-    background-color: #1A1C8C !important;
+    /*background-color: #1A1C8C !important;*/
+    background-color: black !important;
     /*height:160px !important;*/
     width: 100% !important;
     vertical-align: center;
     margin: auto;
     top: 0.1px; bottom: 0; right: 0;
+    z-index: 0;
 }
 
 .ui-dimmer {
@@ -94,6 +96,7 @@ display: inline;
 .turquoise {
     color: #22CAA8;
     font-weight: bold;
+    position: relative;
 }
 
 .faq {
@@ -177,6 +180,10 @@ display: inline;
     font-size: 20px;
 }
 
+.welcome h3{
+    text-transform: none !important;
+}
+
 .btn-lg, .btn-group-lg > .btn{
     font-size: 25px;
 }
@@ -186,9 +193,10 @@ display: inline;
 }*/
 
 .dropdown {
-    vertical-align: middle;
+   /* vertical-align: middle;*/
     display: inline-block;
 }
+
 
 .right {
     right: 50px;
@@ -280,7 +288,7 @@ display: inline;
 }
 
 .search{
-    width: 700px !important;
+    width: 40em !important;
 }
 
 .electronics {
@@ -493,12 +501,12 @@ header {
     display: block;
 }
 
-.navbar-default{
+/*.navbar-default{
     background-color: #f8504b !important;
 }
-
+*/
 .join, .login {
-    color: #fff !important;
+    color: black !important;
     font-size: 2rem;
     display: inline-block;
 }
@@ -542,7 +550,11 @@ footer a:link, a:visited, a:active  {
     font-weight: bold;
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
     margin: 10px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
 
+.logospace:hover{
+     text-shadow: 2px 0 0 yellow, -2px 0 0 yellow, 0 2px 0 yellow, 0 -2px 0 yellow, 1px 1px yellow, -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow;
 }
 
 
@@ -574,20 +586,28 @@ footer a:link, a:visited, a:active  {
     text-align: center;
     padding: 1em;
     margin: 1em;
+    z-index: 1;
+    position: relative;
 
+}
+
+.pagination{
+    float: left !important;
 }
 
 .desc-heading {
     font-size:2em;
     font-weight: bold;
-    color: #f8504b;
+    color: #1A1C8C;
     padding: 5px;
+    /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
 }
 
 .desc-par {
-    font-size: 1em !important;
+    font-size: 1.3em !important;
     padding: 5px;
     margin-bottom: 10px;
+    color: white !important;
 }
 
 .discover-btn {
@@ -656,7 +676,7 @@ footer a:link, a:visited, a:active  {
 
 /**** HOME ****/
 
-.listing, /* .request */ {
+.listing /* .request */ {
     text-align: center;
 }
 
@@ -689,6 +709,15 @@ footer a:link, a:visited, a:active  {
 
 
 /**** SEARCHFIELD ****/
+.search-btn {
+    position: absolute !important;
+    left:50em !important;
+}
+
+.input-group,
+.search{
+    height: 55px !important;
+}
 
 /**** SEARCHFIELD END ****/
 
