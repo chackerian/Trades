@@ -386,7 +386,7 @@ display: inline;
 }
 
 .listing-title-inner {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 
 .pagination > li > a, .pagination > li > span{
