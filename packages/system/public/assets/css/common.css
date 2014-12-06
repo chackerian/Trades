@@ -73,10 +73,17 @@
     background: red !important;
 }*/
 
+.card{
+    text-align: left;
+}
 
 .ui.segment{
     width: 930px !important;
     height: 80px !important;
+}
+
+.form-control {
+    height: 3.5em !important;
 }
 
 .form-control:focus {
@@ -177,7 +184,8 @@ display: inline;
 .welcome {
     font-size: 15px;
     border-radius: 15px;
-    /*background-color: #fff !important;*/
+    background-color: #fff !important;
+    font-family: 'helvetica-light';
 }
 
 /*.selecter{
@@ -359,9 +367,14 @@ display: inline;
     border-bottom: 2px solid #CCC;
 }*/
 
+.category{
+    text-align: left;
+}
+
 .listing-title {
    font-size: 2em;
-   text-align: center;
+   text-align: left;
+   color: black;
    font-family: sans-serif !important;
    text-decoration: none;
    z-index: 2;
@@ -369,10 +382,11 @@ display: inline;
 
 .money{
     color: green;
+    font-weight: bold;
 }
 
-.listing-title-inner{
-    margin-top: none !important;
+.listing-title-inner {
+    margin-top: 0px !important;
 }
 
 .pagination > li > a, .pagination > li > span{
@@ -616,10 +630,10 @@ footer a:link, a:visited, a:active  {
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
-.logospace:hover{
+/*.logospace:hover{
      text-shadow: 2px 0 0 yellow, -2px 0 0 yellow, 0 2px 0 yellow, 0 -2px 0 yellow, 1px 1px yellow, -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow;
 }
-
+*/
 
 
 
@@ -645,12 +659,16 @@ footer a:link, a:visited, a:active  {
 /* description */
 
 .site-desc {
-    color: #333;
-    text-align: center;
+    color: #2A2626;
+    text-align: left;
     padding: 1em;
     margin: 1em;
     z-index: 1;
     position: relative;
+    border-bottom: 2px solid grey;
+    background-image: -webkit-linear-gradient(left, white, #F8504B);
+    background-image: -o-linear-gradient(left, white, #F8504B);
+    background-image: linear-gradient(to right, white, #F8504B);
 
 }
 
@@ -670,8 +688,12 @@ footer a:link, a:visited, a:active  {
     font-size: 1.3em !important;
     padding: 5px;
     margin-bottom: 10px;
-    color: white !important;
+    color: #2A2626 !important;
 }
+
+.head-search{
+    border-bottom: 2px solid grey;
+}   
 
 .discover-btn {
   -webkit-border-radius: 7;
@@ -738,6 +760,9 @@ footer a:link, a:visited, a:active  {
 
 
 /**** HOME ****/
+.categories { 
+        text-align: left !important;
+    }
 
 .listing /* .request */ {
     text-align: center;
@@ -779,7 +804,7 @@ footer a:link, a:visited, a:active  {
 
 .input-group,
 .search{
-    height: 55px !important;
+    height: 3.5em !important;
 }
 
 /**** SEARCHFIELD END ****/
@@ -803,7 +828,7 @@ footer a:link, a:visited, a:active  {
     }
 
     .categories { 
-        text-align: center !important;
+        text-align: left !important;
     }
 
 }

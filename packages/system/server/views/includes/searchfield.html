@@ -1,143 +1,69 @@
-<section>
-  <div class="col-md-12">
+<section class="head-search">
+  <div class="row">
+    <div class="col-md-12">
      <div class="main-heading">
-        <a class="navbar-brand" href="#">
-          <a href="/">
-            <span class="logospace">SpaceTrades</span>
-          </a>
+      <a class="navbar-brand" href="#">
+        <a href="/">
+          <span class="logospace">SpaceTrades</span>
         </a>
-      </div>
-    </div>
-
-  <div class="col-md-12" style="vertical-align: middle">
-  <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-success btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                <span class="caret"></span> 
-                Categories
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Shoes</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Electronics</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Clothing</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Other</a></li>
-              </ul>
-            </div>
-          </div> 
-    <div class="input-group">
-          <span class="input-group-addon">
-            <select class="selecter">
-              <option value="1">New York City</option>
-              <option value="2">Brooklyn</option>
-              <option value="3">Manhattan</option>
-              <option value="4">Queens</option>
-              <option value="5">Bronx</option>
-            </select>
-          </span> 
-          <input
-             type="text"
-             name="search"
-             class="form-control search"
-             placeholder="Brand, Name, Borough, Size, Price..."
-             data-ng-model="search.query"
-             data-ng-maxlength="20">
-            <button type="submit" class="search-btn btn btn-default" ng-click="submit()">
-            <span class="glyphicon glyphicon-search"></span></button>
+      </a>
     </div>
   </div>
-<!-- <div class="drops">
-  <div class="row categories">
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Apparel
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Hats</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Shirts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Hoodies</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Pants</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Belts</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Other</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                <span class="caret"></span>
-                Electronics
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> 
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Phones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Tablets</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Headphones</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Game Consoles</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Games</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Laptops</a></li>
-              </ul>
-            </div>
-          </div> 
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Shoes
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Nike</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Adidas</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Asic</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Jordans</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Converse</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Reebok</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Supra</a></li>
-                <li role="presentation" class="divider"></li> 
-                <li role="presentation"> <a role="menuitem" href="#">Vans</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3"> 
-            <div class="dropdown">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown">
-                <span class="caret"></span>
-                Other
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu"> 
-                <li role="presentation"> <a role="menuitem" href="#">Clothing</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Sunglasses</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"> <a role="menuitem" href="#">Acessories</a></li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-      </div> -->  
-</section>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <div class="dropdown">
+      <button class="btn btn-success btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        <span class="caret"></span> 
+        Categories
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu categories" role="menu" aria-labelledby="dropdownMenu1"> 
+        <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"><b>Shoes</b>
+        <br />
+        Nike, Adidas, Asic,
+        <br />
+        Jordans, Converse, Reebok,
+        <br />
+        Supras, Vans</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"><b>Electronics</b>
+        <br /> 
+        Phones, Tablets, Headphones<br />
+        Game Consoles, Games, Laptops
+        </a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"><b>Clothing</b>
+        <br />
+        Hats, Shirts, Hoodies,<br />
+        Pants, Belts, Other
+        </a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"><b>Other</b></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-9"> 
+    <div class="input-group">
+      <span class="input-group-addon">
+        <select class="selecter">
+          <option value="1">New York City</option>
+          <option value="2">Brooklyn</option>
+          <option value="3">Manhattan</option>
+          <option value="4">Queens</option>
+          <option value="5">Bronx</option>
+        </select>
+      </span> 
+      <input
+      type="text"
+      name="search"
+      class="form-control search"
+      placeholder="Brand, Name, Borough, Size, Price..."
+      data-ng-model="search.query"
+      data-ng-maxlength="20">
+      <button type="submit" class="search-btn btn btn-default" ng-click="submit()">
+        <span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+  </div> 
+    </section>
