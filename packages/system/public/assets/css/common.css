@@ -203,7 +203,7 @@ display: inline;
   background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
   background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
   border-radius: 4px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+  /*box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);*/
 }
 .squaredThree label:after {
   content: '';
@@ -372,7 +372,7 @@ display: inline;
 }
 
 .listing-title-inner{
-    margin-top: 0px !important;
+    margin-top: none !important;
 }
 
 .pagination > li > a, .pagination > li > span{
