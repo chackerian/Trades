@@ -4,15 +4,21 @@
   <div class="home-body">
     <div class="back">
       <div class="back-color">
-        <div class="row">
           <div class="site-desc" data-ng-hide="global.authenticated">
             <h6 class="desc-heading">Who We Are</h6>
             <p class="desc-par">
-              Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Clothing to Electronics to Shoes and everything in<br> between. It's simple, signup and add a listing.  
+              Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Clothing to Electronics to Shoes and everything in<br> between. It's simple! Sign up and add a listing.  
             </p>
             <a class="discover-btn" href="#!/about">Discover</a>
-          </div>  
-
+          </div> 
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#juan">Large modal</button>
+           <div class="modal fade" id="juan" tabindex="-1" role="dialog" aria-labelledby="myJuan" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                Join With FB
+              </div>
+            </div>
+           </div>
           <div class="col-md-6 listing" data-ng-show="global.authenticated">
             <button class="btn btn-success">
               <span class="glyphicon glyphicon-plus"></span>
