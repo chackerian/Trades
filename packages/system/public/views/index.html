@@ -40,11 +40,17 @@
     <div class="thumbnail">
       <img src="/theme/assets/img/shoe.jpg" alt="shoe">
       <div class="caption">
-        <p><a href="/user/tyrone">Tyrone</a></p>
-        <h3>Air Force One</h3>
-        <p>$230 OR Swap</p>
-        <p><a href="#" class="btn btn-success" role="button">Reserve</a> 
-        <a href="#" class="btn btn-primary" role="button">Auction</a></p>
+        <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
+        <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
+        <span class="money">$230</span> OR Swap {{price}}
+        <br />
+        '12 {{size}}
+        <div class="squaredThree">
+      <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+      <label for="squaredThree"></label>
+    </div>
+        <a href="#" class="btn btn-success" role="button">Reserve</a>
+
       </div>
     </div>
     </div>
