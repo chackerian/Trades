@@ -7,18 +7,10 @@
           <div class="site-desc" data-ng-hide="global.authenticated">
             <h6 class="desc-heading">Who We Are</h6>
             <p class="desc-par">
-              Use SpaceTrades to Buy, Sell, or Trade your stuff through local<br> meetups. From Clothing to Electronics to Shoes and everything in<br> between. It's simple! Sign up and add a listing.  
+              Use SpaceTrades to Buy, Sell, or Trade your stuff through local meetups. <!-- From Clothing to Electronics to Shoes and everything in<br> between. It's simple! Sign up and add a listing.   -->
             </p>
             <a class="discover-btn" href="#!/about">Discover</a>
           </div> 
-         <!--   <button type="button" class="btn btn-primary" ng-click="open()">Login</button>
-           <div class="modal fade" id="juan" tabindex="-1" role="dialog" aria-labelledby="myJuan" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                Join With FB
-              </div>
-            </div>
-           </div> -->
           <div class="col-md-6 listing" data-ng-show="global.authenticated">
             <button class="btn btn-success">
               <span class="glyphicon glyphicon-plus"></span>
@@ -32,7 +24,7 @@
             <div class="row">
            <div class="col-sm-6 col-md-4 card">
                 <div class="thumbnail">
-                  <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+                  <a ng-href="dsa"><img src="/theme/assets/img/shoe.jpg" alt="shoe"></a>
                   <div class="caption">
                     <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
                     <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
@@ -42,7 +34,7 @@
                     <b>{{loction}}Brooklyn, New York</b>
                     <!-- <div class="actions"> -->
                     <div class="squaredThree">
-                      <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+                      <input type="checkbox" value="None" name="check" checked />
                       <label for="squaredThree"></label>
                     </div>
                     <div class="row action">
@@ -70,7 +62,7 @@
                     <b>{{loction}}Brooklyn, New York</b>
                     <!-- <div class="actions"> -->
                     <div class="squaredThree">
-                      <input type="checkbox" value="None" id="squaredThree" name="check" checked />
+                      <input type="checkbox" value="None" name="check" checked />
                       <label for="squaredThree"></label>
                     </div>
                     <div class="row action">
