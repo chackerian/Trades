@@ -11,14 +11,14 @@
             </p>
             <a class="discover-btn" href="#!/about">Discover</a>
           </div> 
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#juan">Large modal</button>
+         <!--   <button type="button" class="btn btn-primary" ng-click="open()">Login</button>
            <div class="modal fade" id="juan" tabindex="-1" role="dialog" aria-labelledby="myJuan" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 Join With FB
               </div>
             </div>
-           </div>
+           </div> -->
           <div class="col-md-6 listing" data-ng-show="global.authenticated">
             <button class="btn btn-success">
               <span class="glyphicon glyphicon-plus"></span>
@@ -60,7 +60,7 @@
 
               <div class="col-sm-6 col-md-4 card">
                 <div class="thumbnail">
-                  <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+                  <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
                   <div class="caption">
                     <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
                     <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 

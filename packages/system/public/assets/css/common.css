@@ -215,8 +215,8 @@ display: inline;
   position: absolute;
   top: 17em;
   right: 1em;
-  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
-  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  background: -webkit-linear-gradient(top, #F4FF8E 0%, #45484d 100%);
+  background: linear-gradient(to bottom, #F4FF8E 0%, #45484d 100%);
   border-radius: 4px;
   /*box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);*/
 }
@@ -519,7 +519,7 @@ body {
     font-family: 'helvetica-light', sans-serif;
     color: #333;
     text-align: center;
-    background-color: white;
+    background-image: url(/theme/assets/img/new_york.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -672,9 +672,9 @@ footer > a:link, a:visited, a:active  {
     margin: 1em;
     z-index: 1;
     position: relative;
-    background-image: -webkit-linear-gradient(left, #5F5F5F, #F8504B);
-    background-image: -o-linear-gradient(left, #5F5F5F, #F8504B);
-    background-image: linear-gradient(to right, #5F5F5F, #F8504B);
+    background-image: -webkit-linear-gradient(left, #F4FF8E, #F8504B);
+    background-image: -o-linear-gradient(left, #F4FF8E, #F8504B);
+    background-image: linear-gradient(to right, #F4FF8E, #F8504B);
 
 }
 
@@ -683,9 +683,9 @@ footer > a:link, a:visited, a:active  {
 }
 
 .desc-heading {
-    font-size:2em;
+    font-size:2.5em;
     font-weight: bold;
-    color: #1A1C8C;
+    color: #F8504B;
     padding: 5px;
     /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
 }
@@ -806,8 +806,8 @@ footer > a:link, a:visited, a:active  {
 .search-btn {
     position: relative !important;
     left:-4em !important;
-    height: 3em !important;
-    width: 3em !important;
+    height: 3.5em !important;
+    width: 3.5em !important;
 }
 
 .input-group,
@@ -844,8 +844,8 @@ footer > a:link, a:visited, a:active  {
 .search-btn {
     position: relative !important;
     left:-4em !important;
-    height: 3em !important;
-    width: 3em !important;
+    height: 3.5em !important;
+    width: 3.5em !important;
 }
 
 .btn-blue{
