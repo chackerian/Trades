@@ -128,6 +128,10 @@ display: inline;
     font-weight: bold;
 }
 
+.faqwhole {
+    padding-left: 3em;
+}
+
 .shoey {
     color: #1A1C8C;
 }
