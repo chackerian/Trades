@@ -18,6 +18,9 @@
     "gsap": "~1.14.2",
     "hammerjs": "~2.0.4",
     "hammer.js": "~2.0.4",
-    "paper": "~0.9.21"
+    "paper": "~0.9.21",
+    "ng-file-upload": "~2.0.4",
+    "ng-file-upload-shim": "~2.0.4",
+    "ng-flow": "~2"
   }
 }

@@ -205,7 +205,7 @@ display: inline;
 .welcome {
     font-size: 15px;
     /*border-radius: 15px;*/
-    background-color: #fff !important;
+    background-color: #F4F1F1 !important;
     font-family: 'helvetica-light';
 }
 
@@ -325,7 +325,7 @@ display: inline;
     z-index: 1;
 }*/
 
-.pull-left,
+/*.pull-left,
 .left,
 .Join,
 .Login {
@@ -333,7 +333,7 @@ display: inline;
     color: blue !important;
     font-size: 30px !important;
 }
-
+*/
 
 .moneygreen {
     color:#339966;
@@ -410,12 +410,28 @@ display: inline;
 }
 
 .listing-title {
-   font-size: 2em;
-   text-align: left;
-   color: black;
-   font-family: sans-serif !important;
-   text-decoration: none;
-   z-index: 2;
+    font-size: 2em;
+    text-align: left;
+    color: #F8504B;
+    font-family: 'helvetica-light', sans-serif !important;
+    font-weight: bold !important;
+    text-decoration: none;
+    padding-top: 0 !important;
+    z-index: 2;
+    width: 103%;
+    padding-left: 1.5em;
+    margin-top: 0.2em !important;
+    text-shadow: #000 1px 2px;
+}
+
+.listing-title-div{
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.listing-title:hover{
+    opacity: 0.8;
 }
 
 .money{
@@ -709,7 +725,7 @@ footer > a:link, a:visited, a:active  {
 }
 
 .pagination{
-    float: left !important;
+    float: center !important;
 }
 
 .desc-heading {
@@ -806,6 +822,11 @@ footer > a:link, a:visited, a:active  {
 
 .listing /* .request */ {
     text-align: center;
+}
+
+.creation {
+    background-color: wheat !important;
+    height:100em;
 }
 
 /**** HOME END ****/

@@ -1,5 +1,4 @@
 'use strict';
-//Single Quotes
 
 angular.module('mean.system').
   controller('HeaderController',

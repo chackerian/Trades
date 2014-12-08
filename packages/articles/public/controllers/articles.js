@@ -1,5 +1,5 @@
 'use strict';
-
+// angular.module('mean.articles', ['flow']);
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$stateParams', '$location', 'Global', 'Articles',
   function($scope, $stateParams, $location, Global, Articles) {
     $scope.global = Global;
@@ -13,7 +13,9 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
       if (isValid) {
         var article = new Articles({
           title: this.title,
-          content: this.content
+          content: this.content,
+          price: this.price
+
         });
         article.$save(function(response) {
           $location.path('articles/' + response._id);
@@ -21,6 +23,8 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
 
         this.title = '';
         this.content = '';
+        this.price = '';
+
       } else {
         $scope.submitted = true;
       }
@@ -73,3 +77,41 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     };
   }
 ]);
+
+
+
+angular.module('mean.articles').controller('DatepickerDemoCtrl', function ($scope) {
+  $scope.today = function() {
+    $scope.dt = new Date();
+  };
+  $scope.today();
+
+  $scope.clear = function () {
+    $scope.dt = null;
+  };
+
+  // Disable weekend selection
+  $scope.disabled = function(date, mode) {
+    return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+  };
+
+  $scope.toggleMin = function() {
+    $scope.minDate = $scope.minDate ? null : new Date();
+  };
+  $scope.toggleMin();
+
+  $scope.open = function($event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+
+    $scope.opened = true;
+  };
+
+  $scope.dateOptions = {
+    formatYear: 'yy',
+    startingDay: 1
+  };
+
+  $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+  $scope.format = $scope.formats[0];
+});
