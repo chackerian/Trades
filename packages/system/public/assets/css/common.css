@@ -8,6 +8,12 @@ html {
     overflow-x: hidden;
 }
 
+.add{
+    float: left;
+    color: white !important;
+    background-color: red !important;
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important; 
@@ -214,6 +220,11 @@ display: inline;
 }*/
 
 
+.welcome p{
+    text-align: right;
+    margin-left: 0 !important;
+}
+
 
 .welcome h2{
     font-size: 20px;
@@ -283,6 +294,21 @@ display: inline;
     display: inline-block;
 }
 
+.dropdown:hover{
+    background-color: skyblue !important;
+    color: white !important;
+}
+
+.dropdown-toggle{
+    background-color: skyblue;
+    color: white !important;
+}
+
+.reason{
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid grey;
+}
 
 .right {
     right: 50px;
@@ -312,6 +338,10 @@ display: inline;
 }
 
 */
+
+.main-heading{
+    text-align: center !important; 
+}
 
 .concise {
     color: #6600CC;
@@ -389,9 +419,6 @@ display: inline;
     border-radius: 10%;
 }
 
-.search{
-    width: 40em !important;
-}
 
 .electronics {
     color: blue;
@@ -566,7 +593,7 @@ body {
     font-size: 1em;
     font-family: 'helvetica-light', sans-serif;
     color: #333;
-    text-align: center;
+/*    text-align: center;*/
     background-image: url(/theme/assets/img/new_york.jpg);
 }
 
@@ -678,7 +705,7 @@ footer > a:link, a:visited, a:active  {
 
 .logospace {
     color: #f8504b ;
-    font-size: 8rem;
+    font-size: 400%;
     font-weight: bold;
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
     margin: 10px;
@@ -840,6 +867,16 @@ footer > a:link, a:visited, a:active  {
 /**********************
     RESPONSIVE 
 **********************/
+.search-btn {
+    position: relative !important;
+    height: 3.5em !important;
+    width: 3.5em !important;
+    border-radius: 0;
+}
+.input-group .form-control {
+    width: 75% !important;
+}
+
 
 @media screen and (max-width: 480px) {
 
@@ -861,14 +898,15 @@ footer > a:link, a:visited, a:active  {
 /**** SEARCHFIELD ****/
 .search-btn {
     position: relative !important;
-    left:-3.1em !important;
     height: 3.5em !important;
     width: 3.5em !important;
+    border-radius: 0;
 }
 
 .input-group,
 .search{
     height: 3.5em !important;
+    /*width: 75%;*/
 }
 
 /**** SEARCHFIELD END ****/
@@ -897,13 +935,13 @@ footer > a:link, a:visited, a:active  {
 
 }
 
-.search-btn {
+/*.search-btn {
     position: relative !important;
     left:-3.1em !important;
     height: 3.5em !important;
     width: 3.5em !important;
 }
-
+*/
 .btn-blue{
     background: #F8504B;
     color: black;
