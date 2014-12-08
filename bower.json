@@ -21,6 +21,7 @@
     "paper": "~0.9.21",
     "ng-file-upload": "~2.0.4",
     "ng-file-upload-shim": "~2.0.4",
-    "ng-flow": "~2"
+    "ng-flow": "~2",
+    "mobile-angular-ui": "~1.1.0-beta.30"
   }
 }
