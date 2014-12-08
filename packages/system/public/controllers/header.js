@@ -47,4 +47,4 @@ angular.module('mean.system').
 
     }
   ]);
-//console.log(menus.main);
+// console.log(menus.main);

@@ -36,23 +36,14 @@
           <div class="pull-right" data-ng-show="global.authenticated" mean-translate></div>
         </div>
         <ul class="navbar-nav nav" data-ng-hide="global.authenticated">
-          <li><a ui-sref='auth.register' ng-click="open()" class="join">Join</a>
+          <li><a ui-sref='auth.register' class="join">Join</a>
           </li>
-          <li><a ui-sref='auth.login' ng-click="open()" class="login" data-toggle="modal" data-target="#myModal">Login</a>
-   <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bs-example-modal-lg">Large modal</button> -->
-
-<!-- <div class="modal fade bs-example-modal-lg" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
-    </div> 
-  </div>
-</div> -->
+          <li><a ui-sref='auth.login' class="login" data-toggle="modal" data-target="#myModal">Login</a>
           </li>
 
-          <li><a ui-sref='auth.login' ng-click="open()" class="login">Learn</a>
+          <li><a ui-sref='learn' class="login">Learn</a>
           </li>
-          <li><a ui-sref='auth.login' ng-click="open()" class="login">Community</a>
+          <li><a ui-sref='auth.login' class="login">Community</a>
           </li>
       </ul>
       </div>

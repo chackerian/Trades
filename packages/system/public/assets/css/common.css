@@ -325,6 +325,8 @@ display: inline;
     z-index: 1;
 }*/
 
+.pull-left,
+.left,
 .Join,
 .Login {
     font-family: 'Lato', sans-serif !important;

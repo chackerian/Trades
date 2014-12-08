@@ -17,12 +17,12 @@ Listing.register(function(app, auth, database) {
   Listing.routes(app, auth, database);
 
   //We are adding a link to the main menu for all authenticated users
-  Listing.menus.add({
-    title: 'listing example page',
-    link: 'listing example page',
-    roles: ['authenticated'],
-    menu: 'main'
-  });
+  // Listing.menus.add({
+  //   title: 'listing example page',
+  //   link: 'listing example page',
+  //   roles: ['authenticated'],
+  //   menu: 'main'
+  // });
   
   Listing.aggregateAsset('css', 'listing.css');
 
