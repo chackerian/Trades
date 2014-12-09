@@ -303,6 +303,10 @@ display: inline;
 
 .username{
     text-decoration: underline !important;
+    color: #737171 !important;
+}
+
+.thumbnail .caption{
     color: black !important;
 }
 
@@ -384,7 +388,7 @@ display: inline;
 .money{
     color: green !important;
     font-weight: bold;
-    font-family: 'helvetica-light'; 
+    font-family: 'helvetica-light', helvetica; 
 }
 
 .listing-title-inner {
@@ -508,7 +512,7 @@ body {
     font-size: 1em;
     font-family: 'helvetica-light', sans-serif;
     color: #333;
-    /*background-image: url(/theme/assets/img/new_york.jpg);*/
+    background-image: url(/theme/assets/img/new_york.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
