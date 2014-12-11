@@ -20,7 +20,7 @@ exports.article = function(req, res, next, id) {
   });
 };
 
-/**
+/** 
  * Create an article
  */
 exports.create = function(req, res) {
@@ -35,7 +35,7 @@ exports.create = function(req, res) {
     }
     res.json(article);
 
-  });
+  }); 
 };
 
 /**

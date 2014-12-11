@@ -12,7 +12,7 @@ var should = require('should'),
  * Globals
  */
 var user;
-var article;
+var article;   
 
 /**
  * Test Suites

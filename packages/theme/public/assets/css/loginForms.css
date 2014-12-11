@@ -50,9 +50,10 @@ html {
 }
 
 .main-form {
-    width: 748px;
-    height: 435px;
-    margin-left: -374px;
+    width: 60%;
+    height: 18em;
+    margin: auto;
+    left: 0;
 }
 
 .main-form.register-form {
@@ -285,19 +286,19 @@ html {
 }
 
 .login-form__right {
-    height: 100%;
-    float: left;
-    width: 270px;
-    padding-left: 26px;
+    width: 100%;
+    padding-left: 0;
+    background: #2B2D39;
+    font-size: 23px;
 }
-.login-form__right .social_wrap {
+/*.login-form__right .social_wrap {
     width: 235px;
     height: 270px;
     margin-top: 36px;
     padding-left: 0;
     display: block;
     position:relative;
-}
+}*/
 
 .register-form .login-form__right .social_wrap {
     height: 483px;
@@ -330,18 +331,19 @@ html {
 }
 
 .login-form__right .social_icon {
-    width: 230px;
+    width: 12em;
     height: 60px;
     border: 1px solid #e1e1e0;
     border-radius: 5px;
     margin-bottom: 10px;
     list-style-type: none;
     vertical-align: middle;
-    display: inline-block;
+    /*display: inline-block;*/
+    margin: auto;
 }
 
 .login-form__right .social_icon:hover {
-    background: #f1f1f1;
+     border-color: crimson;
 }
 
 .login-form__right .social_icon .button {
@@ -349,8 +351,12 @@ html {
     text-decoration: none;
     padding: 22px 0 22px 60px;
     line-height: 1;
-    color: #959595;
+    color: white;
     position: relative;
+}
+
+.login-form__right .social_icon .button:hover {
+    color: crimson;  
 }
 
 .login-form__right .social_icon .button:active {
@@ -358,7 +364,7 @@ html {
 }
 
 .login-form__right .social_icon .button span {
-    font-size: 15px;
+    font-size: 23px;
     font-family: 'open_sans_hebrewlight';
 }
 

@@ -186,9 +186,9 @@ display: inline;
 
 .row,
 .welcome {
-    font-size: 15px;
+    font-size: 20px;
     /*border-radius: 15px;*/
-    background-color: #F4F1F1 !important;
+    /*background-color: #F4F1F1 !important;*/
     /*font-family: 'helvetica-light';*/
 }
 
@@ -268,14 +268,17 @@ display: inline;
 }
 
 .dropdown-toggle{
-    background-color: skyblue;
+    background-color: crimson;
     color: white !important;
 }
 
 .reason{
     margin-top: 1em;
     padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
     border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .right {
@@ -532,7 +535,7 @@ ul {
 }
 
 li {
-    margin: 0 0 0 5%;
+    margin: 0 1em 1em;
     padding: 0;
 }
 
@@ -584,8 +587,9 @@ header {
 */
 .join, .login {
     color: black !important;
-    font-size: 2rem;
+    font-size: 1.5em;
     display: inline-block;
+    top: 0.5em;
 }
 
 
@@ -624,7 +628,7 @@ footer > a:link, a:visited, a:active  {
 .logospace {
     color: #f8504b ;
     font-size: 400%;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-family: 'Oswald', Helvetica, Arial, sans-serif;
     margin: 10px;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
