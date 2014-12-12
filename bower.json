@@ -22,6 +22,7 @@
     "ng-file-upload": "~2.0.4",
     "ng-file-upload-shim": "~2.0.4",
     "ng-flow": "~2",
-    "mobile-angular-ui": "~1.1.0-beta.30"
+    "mobile-angular-ui": "~1.1.0-beta.30",
+    "elasticsearch": "~3.0.1"
   }
 }
