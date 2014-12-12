@@ -17,7 +17,33 @@
     font-weight: normal;
     font-style: normal;
 }
+/*@font-face {
+  font-family: 'bank';
+    src: url("/theme/assets/fonts/bank.ttf");
+    font-weight: normal;
+    font-style: normal;
+}*/
 
+/*@font-face {
+  font-family: 'orbitron';
+    src: url("/theme/assets/fonts/orbitron-medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'orbitron-bold';
+    src: url("/theme/assets/fonts/orbitron-bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'orbitron-bolder';
+    src: url("/theme/assets/fonts/orbitron-black.otf");
+    font-weight: normal;
+    font-style: normal;
+}*/
 
 @font-face {
     font-family: 'open_sans_hebrewregular';

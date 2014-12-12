@@ -305,7 +305,7 @@ html {
 }
 
 .login-form__right .bigger {
-    height: 345px;
+    height: 11em;
     margin-top: 35px;
 }
 
@@ -332,7 +332,7 @@ html {
 
 .login-form__right .social_icon {
     width: 12em;
-    height: 60px;
+    height: 4em;
     border: 1px solid #e1e1e0;
     border-radius: 5px;
     margin-bottom: 10px;
