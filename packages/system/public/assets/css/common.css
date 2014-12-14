@@ -415,10 +415,13 @@ display: inline;
 .pagination > li > a, .pagination > li > span{
     border: none;
     padding: 7px 17px;
-    background-color: #F8504B;
-    color: white;
+    background-color: #F8504B !important;
+    color: white !important;
 }
 
+.pagination > li > a:hover{
+    background-color: blue !important;
+}
 
 
 .square {
