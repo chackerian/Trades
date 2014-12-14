@@ -1,5 +1,8 @@
 'use strict';
-
+// var server = http.createServer(app);
+// var io = socketio.listen(server);
+// app.set('socketio', io);
+// app.set('server', server);
 /**
  * Module dependencies.
  */
@@ -16,6 +19,8 @@ var mean = require('meanio'),
   mongoStore = require('connect-mongo')(session),
   helpers = require('view-helpers'),
   flash = require('connect-flash'),
+  // http = require('http'),
+  // socketio = require('socket.io'),
   config = mean.loadConfig();
 
 module.exports = function(app, passport, db) {

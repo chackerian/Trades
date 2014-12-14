@@ -317,6 +317,10 @@ display: inline;
     color: black !important;
 }
 
+.thumbnail{
+    margin-bottom: 0 !important;
+}
+
 .account {
     text-align:right;
 }
@@ -329,7 +333,7 @@ display: inline;
     margin-top: 1px;
     width: 100% !important;
     position: inherit !important;
-    padding: 5em !important;
+    /*padding: 5em !important;*/
 }
 
 .col-md-4 { 
@@ -411,7 +415,11 @@ display: inline;
 .pagination > li > a, .pagination > li > span{
     border: none;
     padding: 7px 17px;
+    background-color: #F8504B;
+    color: white;
 }
+
+
 
 .square {
     float:left;
@@ -429,7 +437,7 @@ display: inline;
     /*padding-top:0 !important;*/
     height: 90%; /* = 100% - 2*5% padding */
     width: 100%; /* = 100% - 2*5% padding */
-    padding: 5%;
+    /*padding: 5%;*/
     
 }
 .table{
