@@ -1,4 +1,3 @@
-
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     .logospace {
@@ -274,6 +273,10 @@ display: inline;
 .dropdown-toggle{
     background-color: crimson;
     color: white !important;
+}
+
+.dropdown-toggle:hover{
+    background-color: blue !important;
 }
 
 .reason{
