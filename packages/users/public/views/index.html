@@ -1,8 +1,8 @@
 <div class="form main-form" ng-controller="AuthCtrl" ng-class="{'register-form' : global.registerForm}">
-    <div class="row login-form__right " data-ng-controller="AuthCtrl">
+    <div class="row login-form__right">
         <div class="social_wrap" ng-class="{bigger:socialButtonsCounter > 4 && !global.registerForm}">
             <ul class="social">
-                <li ng-if="socialButtons.hasOwnProperty('facebook')" class="social_icon social_icon_fb">
+                <li class="social_icon social_icon_fb">
                     <a href="/auth/facebook" class="button">
                         <span>Log In / Sign Up With Facebook</span>
                     </a>

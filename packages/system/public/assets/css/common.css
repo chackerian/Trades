@@ -454,14 +454,12 @@ display: inline;
 }
 /*  For responsive images as background */
 
-.bg{
+/*.bg{
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
-    color:#fff;
-    font-size: 35px;
+    background-size:cover; 
 }
-
+*/
 .numbers{
     font-weight:900;
     font-size:100px;
@@ -519,7 +517,8 @@ body {
     font-size: 1em;
     font-family: 'helvetica-light', sans-serif;
     color: #333;
-    background-image: url(/theme/assets/img/new_york.jpg);
+  /*  background-image: url(/theme/assets/img/new_york.jpg);
+    background-repeat: round;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -577,7 +576,6 @@ section {
 /**** HEADER ****/
 
 header {
-    background-color: #f8504b !important;
     color: #fff;
     width: 100%;
     text-align: center !important;
@@ -591,7 +589,7 @@ header {
 */
 .join, .login {
     color: black !important;
-    font-size: 1.5em;
+    font-size: 20px;
     display: inline-block;
     top: 0.5em;
 }
@@ -646,10 +644,10 @@ footer > a:link, a:visited, a:active  {
 
 /* 404 */
 
-.error-pic {
+/*.error-pic {
     background-image: url(/theme/assets/img/static_2.png) !important;
-    background-repeat: repeat !important;
-}
+    background-repeat: no-repeat !important;
+}*/
 
 /* 500 */
 
