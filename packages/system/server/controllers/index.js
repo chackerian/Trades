@@ -5,7 +5,7 @@ var elasticsearch = require('elasticsearch');
 
 exports.render = function(req, res) {
 var client = new elasticsearch.Client({
-  host: 'localhost:9200',
+  host: 'https://nb42ha8u:jfkip3b5uto4poyp@cedar-1096806.us-east-1.bonsai.io:443/',
   log: 'trace'
 });
 // console.log(client);

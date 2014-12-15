@@ -20,12 +20,12 @@ MeanSocket.register(function(app, auth, database, http) {
     MeanSocket.routes(io);
 
     //We are adding a link to the main menu for all authenticated users
-    MeanSocket.menus.add({
-        title: 'Mean Socket',
-        link: 'Mean socket help page',
-        roles: ['authenticated'],
-        menu: 'main'
-    });
+    // MeanSocket.menus.add({
+    //     title: 'Mean Socket',
+    //     link: 'Mean socket help page',
+    //     roles: ['authenticated'],
+    //     menu: 'main'
+    // });
 
     return MeanSocket;
 });

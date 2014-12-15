@@ -14,14 +14,14 @@ angular.module('mean.listing').controller('ListingController', ['$scope', '$stat
 
     $scope.create = function(isValid) {
       if (isValid) {
-        var article = new Articles({
+        var listing = new Listing({
           title: this.title,
           content: this.content,
           price: this.price
 
         });
-        article.$save(function(response) {
-          $location.path('articles/' + response._id);
+        listing.$save(function(response) {
+          $location.path('listing/' + response._id);
         });
 
         this.title = '';
@@ -37,14 +37,14 @@ angular.module('mean.listing').controller('ListingController', ['$scope', '$stat
       if (article) {
         article.$remove();
 
-        for (var i in $scope.articles) {
-          if ($scope.articles[i] === article) {
-            $scope.articles.splice(i, 1);
+        for (var i in $scope.listing) {
+          if ($scope.listing[i] === article) {
+            $scope.listing.splice(i, 1);
           }
         }
       } else {
         $scope.article.$remove(function(response) {
-          $location.path('articles');
+          $location.path('listing');
         });
       }
     };
@@ -58,7 +58,7 @@ angular.module('mean.listing').controller('ListingController', ['$scope', '$stat
         article.updated.push(new Date().getTime());
 
         article.$update(function() {
-          $location.path('articles/' + article._id);
+          $location.path('listing/' + article._id);
         });
       } else {
         $scope.submitted = true;
@@ -66,13 +66,13 @@ angular.module('mean.listing').controller('ListingController', ['$scope', '$stat
     };
 
     $scope.find = function() {
-      Articles.query(function(articles) {
-        $scope.articles = articles;
+      Listing.query(function(listing) {
+        $scope.listing = listing;
       });
     };
 
     $scope.findOne = function() {
-      Articles.get({
+      Listing.get({
         articleId: $stateParams.articleId
       }, function(article) {
         $scope.article = article;

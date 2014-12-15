@@ -11,11 +11,11 @@ var mongoose = require('mongoose'),
 /**
  * Find article by id
  */
-exports.article = function(req, res, next, id) {
-  Article.load(id, function(err, article) {
+exports.listing = function(req, res, next, id) {
+  Listing.load(id, function(err, listing) {
     if (err) return next(err);
-    if (!article) return next(new Error('Failed to load article ' + id));
-    req.article = article;
+    if (!listing) return next(new Error('Failed to load article ' + id));
+    req.listing = listing;
     next();
   });
 };
@@ -24,16 +24,16 @@ exports.article = function(req, res, next, id) {
  * Create an article
  */
 exports.create = function(req, res) {
-  var article = new Article(req.body);
-  article.user = req.user;
+  var listing = new Listing(req.body);
+  listing.user = req.user;
 
-  article.save(function(err) {
+  listing.save(function(err) {
     if (err) {
       return res.json(500, {
-        error: 'Cannot save the article'
+        error: 'Cannot save the listing'
       });
     }
-    res.json(article);
+    res.json(listing);
 
   }); 
 };
@@ -42,17 +42,17 @@ exports.create = function(req, res) {
  * Update an article
  */
 exports.update = function(req, res) {
-  var article = req.article;
+  var listing = req.listing;
 
-  article = _.extend(article, req.body);
+  listing = _.extend(listing, req.body);
 
-  article.save(function(err) {
+  listing.save(function(err) {
     if (err) {
       return res.json(500, {
         error: 'Cannot update the article'
       });
     }
-    res.json(article);
+    res.json(listing);
 
   });
 };
@@ -61,15 +61,15 @@ exports.update = function(req, res) {
  * Delete an article
  */
 exports.destroy = function(req, res) {
-  var article = req.article;
+  var listing = req.listing;
 
-  article.remove(function(err) {
+  listing.remove(function(err) {
     if (err) {
       return res.json(500, {
         error: 'Cannot delete the article'
       });
     }
-    res.json(article);
+    res.json(listing);
 
   });
 };
@@ -78,20 +78,20 @@ exports.destroy = function(req, res) {
  * Show an article
  */
 exports.show = function(req, res) {
-  res.json(req.article);
+  res.json(req.listing);
 };
 
 /**
  * List of Articles
  */
 exports.all = function(req, res) {
-  Article.find().sort('-created').populate('user', 'name username').exec(function(err, articles) {
+  Listing.find().sort('-created').populate('user', 'name username').exec(function(err, listing) {
     if (err) {
       return res.json(500, {
         error: 'Cannot list the articles'
       });
     }
-    res.json(articles);
+    res.json(listing);
 
   });
 };
