@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('mean.listing').controller('ListingController', ['$scope', '$stateParams', '$location', 'Global', 'Listing',
-  function($scope, $stateParams, $location, Global, Listing) {
+angular.module('mean.listing').controller('ListingController', ['$scope', '$stateParams', '$location', 'resource', 'Global', 'Listing',
+  function($scope, $stateParams, $location, $resource, Global, Listing) {
     $scope.global = Global;
+    $scope.star = $resource('http://example.com/resource.json');
+    console.log($scope.star);
     $scope.package = {
       name: 'listing'
     };
