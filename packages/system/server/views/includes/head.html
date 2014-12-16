@@ -27,20 +27,6 @@
         window.analytics.page();
    </script>
    <script src="/bower_components/ng-socket-io/ng-socket-io.js"></script>
-   <script>
-    var myApp = angular.module('myApp', ['socket-io']);
-    myApp.controller('MyCtrl', function($scope, socket) {
-        // Listening to an event
-        socket.on('someEvent', function(data) {
-            $scope.data = data;
-        });
-
-        // Raising an event
-        $scope.raise = function(message) {            
-            socket.emit('otherEvent', message);
-        };
-    });
-</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5479b6574ba8fdfa" async="async"></script>
   {% for file in assets.core.css %}
     <link rel="stylesheet" href="/{{file}}">
