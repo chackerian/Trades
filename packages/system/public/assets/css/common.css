@@ -55,6 +55,12 @@
 }
 
 
+.userlog{
+    position: absolute;
+    margin-left: 300%;
+    font-size: 1.5em;
+}
+
 html {
     overflow-x: hidden;
 }
