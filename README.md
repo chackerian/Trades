@@ -8,6 +8,58 @@ Space Trades
 <br>
 <h3>SaaS</h3>
 <pre>
+
+Navbar
+	Home  
+	Saved
+	Orders
+	Profile picture small w/ name --- Logout button
+	Preferences
+
+
+Shoe page
+
+4 Different Create listings for different items
+Shoes
+	Image - From the side facing right on box both shoes. This is a link to the listing page
+	Reference Title - Actual retail name of shoe. NOTHING ELSE
+	Reserve Now Price - Price to reserve now
+	Size - Shoe size
+	Location - City, State
+	Save Button
+	Name of seller linked to seller page
+	Reserve Now
+	Negotiate
+
+
+Electronics
+
+Clothing
+
+Other
+
+
+The Cycle
+	#1 Seller Lists item and required info. We are not Responsible for your loss of items or anything that occurs. 
+
+	#2 Buyer Either Reserves or Negotiates
+
+		Reserve - Directly to purchase page. If completed listing is taken off public DB.
+
+		Negotiate - Page for Messaging between Lister and Consumer via FB maybe. Lists phone number also and other contact info.
+
+	#3 Seller confirms meetup
+
+
+
+
+Bundles
+
+Product info
+Reference Name
+Price 
+Size
+
 Add This
 Underscore
 Modernizr
@@ -49,8 +101,6 @@ expect
 .toBe
 .not
 nodemon - reloads the page
-Albania
-Macedonia
 beforeEach
 afterEach
 mean list

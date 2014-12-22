@@ -18,6 +18,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
 
         });
         article.$save(function(response) {
+          //Changes path to the assigned
           $location.path('articles/' + response._id);
         });
 
