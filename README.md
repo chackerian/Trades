@@ -19,18 +19,76 @@ Navbar
 
 Shoe page
 
+Shoe listing
+
 4 Different Create listings for different items
+_______________________________________________________________________________
 Shoes
-	Image - From the side facing right on box both shoes. This is a link to the listing page
-	Reference Title - Actual retail name of shoe. NOTHING ELSE
+	Image - From the side facing right on box both shoes. This is a link to the 
+		Lighting should be sufficient. Possibly option for a few instagram filters after upload with preview. Same size
+
+	Reference Title - Actual retail name of shoe. NOTHING ELSE. This is the searchable title. The same as on any actual vendor site. Blue
+
+
 	Reserve Now Price - Price to reserve now
+
+
 	Size - Shoe size
+
+
 	Location - City, State
-	Save Button
+
+	+ AUTOMATICALLY ADDED...
+
 	Name of seller linked to seller page
 	Reserve Now
 	Negotiate
+_______________________________________________________________________________
+View
+	Mobile
+		2 listing per row
 
+	Laptop
+		3 listings per row
+
+	Desktop
+		4 listings per row
+
+
+
+
+
+
+_______________________________________________________________________________
+
+
+
+
+
+
+
+_______________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+_______________________________________________________________________________
+
+
+
+
+
+
+
+
+
+_______________________________________________________________________________
 
 Electronics
 
@@ -49,6 +107,7 @@ The Cycle
 		Negotiate - Page for Messaging between Lister and Consumer via FB maybe. Lists phone number also and other contact info.
 
 	#3 Seller confirms meetup
+
 
 
 
