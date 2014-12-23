@@ -202,6 +202,10 @@ display: inline;
     /*font-family: 'helvetica-light';*/
 }
 
+.welcome .row{
+    margin-top: 5px;
+}
+
 .welcome p{
     text-align: center;
     margin-left: 0 !important;
@@ -209,7 +213,7 @@ display: inline;
 
 
 .welcome h2{
-    font-size: 30px;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -398,16 +402,27 @@ display: inline;
     opacity: 0.6;
 }
 
+.white{
+    background-color: white !important;
+    marigin-top: 5px !important;
+}
+
 .money{
     color: green !important;
     font-weight: bold;
     font-family: 'helvetica-light', helvetica; 
 }
 
+.size,
+.location{
+    font-size: 0.8em !important;
+}
+
 .listing-title-inner {
     margin-top: 0 !important;
     color: blue !important;
     font-weight: bold !important;
+    font-size: 1.2em !important;
 }
 
 .listing-title-inner:hover {
@@ -554,6 +569,10 @@ img {
     max-height: 30%;
 }
 
+hovercraft:hover{
+    opacity: 0.8; 
+}
+
 /* links */
 a {
     color: #F20E0E;
@@ -642,6 +661,7 @@ footer > a:link, a:visited, a:active  {
     font-family: 'orbitron-bold', Helvetica, Arial, sans-serif;
     margin: 10px;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    letter-spacing: 0.2em;
 }
 
 
