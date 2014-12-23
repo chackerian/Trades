@@ -207,7 +207,7 @@ display: inline;
 }
 
 .welcome p{
-    text-align: center;
+    text-align: left;
     margin-left: 0 !important;
 }
 
@@ -216,6 +216,15 @@ display: inline;
     font-size: 1em;
     font-weight: bold;
 }
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
 
 .squaredThree {
   width: 30px;
