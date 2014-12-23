@@ -58,32 +58,89 @@
           </div>
         </div>
 
-        <div data-ng-include="'listing-card.html'">
+        <div class="col-sm-6 col-md-4 card">
+          <div class="thumbnail">
+            <a ng-href="#!/{{shoe}}">
+              <img class="hovercraft" src="/theme/assets/img/shoe.jpg" alt="shoe">
+            </a>     
+            <div class="caption">
+              <div class="row white">
+                <div class="col-md-9">
+                  <a ng-href="#!/{{shoe}}">
+                    <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
+                  </a>   
+                </div>
+                <div class="col-md-3">
+                  <span class="money">$230 {{price}}</span>
+                </div>
+              </div>
+              <span ng-show="enabled">OR</span> 
+              <a ng-href="#!/{{shoe}}" ng-show="swap">Swap</a> 
+              <div class="row white">    
+                <div class="col-md-3">
+                  <b class="size">'12 {{size}}</b> 
+                </div>
+                <div class="col-md-9 text-right">  
+                  <b class="location">Brooklyn, New York {{location}}</b>
+                  <!-- We want some Google Api location stuff here -->
+                </div>
+              </div>  
+              <div class="row action white">
+                <div class="col-md-6">
+                <p class="text-left">    
+                    <a href="#" class="btn btn-warning" role="button">Save</a>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <a ng-href="#!/user/{{username}}" class="username pull-right">Tyrone {{username}}</a>
+                  </p>
+                </div>
+              </div>
+            </div>   
+          </div>
         </div>
 
         <div class="col-sm-6 col-md-4 card">
           <div class="thumbnail">
-            <img src="/theme/assets/img/shoe.jpg" alt="shoe">
+            <a ng-href="#!/{{shoe}}">
+              <img class="hovercraft" src="/theme/assets/img/shoe.jpg" alt="shoe">
+            </a>     
             <div class="caption">
-              <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-              <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-              <br />
-              <b>'12 {{size}}</b>
-              <br />  
-              <b>{{loction}}Brooklyn, New York</b>
-              <div class="squaredThree">
-                <input type="checkbox" value="None" name="check3" checked />
-                <label for="squaredThree"></label>
-              </div>
-              <div class="row action">
-                <div class="col-md-6">
-                  <a href="#" class="btn btn-success" role="button">Reserve</a>
+              <div class="row white">
+                <div class="col-md-9">
+                  <a ng-href="#!/{{shoe}}">
+                    <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
+                  </a>   
                 </div>
-                <div class="col-md-6">
-                  <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
+                <div class="col-md-3">
+                  <span class="money">$230 {{price}}</span>
                 </div>
               </div>
-            </div>
+              <span ng-show="enabled">OR</span> 
+              <a ng-href="#!/{{shoe}}" ng-show="swap">Swap</a> 
+              <div class="row white">    
+                <div class="col-md-3">
+                  <b class="size">'12 {{size}}</b> 
+                </div>
+                <div class="col-md-9 text-right">  
+                  <b class="location">Brooklyn, New York {{location}}</b>
+                  <!-- We want some Google Api location stuff here -->
+                </div>
+              </div>  
+              <div class="row action white">
+                <div class="col-md-6">
+                <p class="text-left">    
+                    <a href="#" class="btn btn-warning" role="button">Save</a>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <a ng-href="#!/user/{{username}}" class="username pull-right">Tyrone {{username}}</a>
+                  </p>
+                </div>
+              </div>
+            </div>   
           </div>
         </div>
       </div>
