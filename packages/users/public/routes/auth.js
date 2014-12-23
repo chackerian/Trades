@@ -32,7 +32,7 @@ angular.module('mean.users').config(['$stateProvider',
       })
       .state('auth.login', {
         url: '/login',
-        templateUrl: 'users/views/login.html',
+        templateUrl: 'users/views/index.html',
         resolve: {
           loggedin: checkLoggedOut
         }

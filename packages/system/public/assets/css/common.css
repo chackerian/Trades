@@ -56,9 +56,13 @@
 
 
 .userlog{
-    position: absolute;
-    margin-left: 300%;
+    position: inherit;
     font-size: 1.5em;
+    margin-top: 0 !important;
+}
+
+.userlog li{
+    color: black !important;
 }
 
 html {
@@ -179,7 +183,7 @@ display: inline;
     float: left !important;
     z-index: 1000;
     margin-bottom: 1px !important;
-    display: flex;
+    width: 100%;
 }
 
 .navbar-nav{
@@ -543,6 +547,11 @@ display: inline;
     background: #f8504b;
 } 
 
+.selector2{
+    margin-bottom: 6%;
+    border-bottom: 2px solid #E7E7E7;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -610,12 +619,16 @@ section {
 
 /**** HEADER ****/
 
-header {
+/*header {
     color: #fff;
     width: 100%;
     text-align: center !important;
     font-family: 'helvetica-light', sans-serif;
     display: block;
+}*/
+
+.header{
+    width: 100% !important;
 }
 
 /*.navbar-default{
@@ -627,6 +640,11 @@ header {
     font-size: 1.5em;
     display: inline-block;
     top: 0.5em;
+}
+
+.logout{
+    font-weight: bold;
+    color: #f8504b !important;
 }
 
 
@@ -806,7 +824,7 @@ footer > a:link, a:visited, a:active  {
 }
 
 .creation {
-    background-color: wheat !important;
+    background-color: white !important;
     height:100em;
 }
 

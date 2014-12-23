@@ -1,62 +1,83 @@
 <section data-ng-controller="ArticlesController" class="creation">
-  <form name="articleForm" class="form-horizontal col-md-6" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
-    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
-      <label mean-token="'create-title'" class="col-md-3 control-label">Listing Title</label>
-      <div class="col-md-9">
-        <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of the product" required>
-        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
-          <p ng-show="articleForm.title.$error.required">Title is required</p>
-        </div> 
-      </div>  
-    </div> 
-<input type="file" flow-btn flow-directory />
-  Input OR Other element as upload button
-<span flow-btn>Upload File</span>
 
-<div ng-controller="DatepickerDemoCtrl">
+  <!-- Badges and alerts on home-->
+  <h1>Add Listing</h1>
+  <div class="row selector2">
+  <div class="col-md-12">
+  <label>Choose A Category</label>
+    <select ng-model="checked">
+      <option value="1">Choose</option>
+      <option value="2">Shoes</option>
+      <option value="3">Electronics</option>
+      <option value="4">Clothing</option>
+    </select>
+  </div> 
+</div>
+
+
+<form name="articleForm" class="form-horizontal" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
+  <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
+    <label mean-token="'create-title'" class="col-md-3 control-label">Listing Title</label>
+    <div class="col-md-9">
+      <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of the product" required>
+      <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
+        <p ng-show="articleForm.title.$error.required">Title is required</p>
+      </div> 
+    </div>  
+  </div>
+  <h2>
+  Shoes
+  Clothing
+  Electronics
+  Your first image should  
+  <input type="file" flow-btn flow-directory />
+  Image
+  <span flow-btn>Upload File</span>
+
+  <div ng-controller="DatepickerDemoCtrl">
     <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
 
     <h4>Inline</h4>
     <div style="display:inline-block; min-height:290px;">
-        <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
+      <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
     </div>
 
     <h4>Date</h4>
     <div class="row">
-        <div class="col-md-6">
-            <p class="input-group">
-              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-              <span class="input-group-btn">
-                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
-              </span>
-            </p>
-        </div>
+      <div class="col-md-12">
+        <p class="input-group">
+          <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+      </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
-            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
-        </div>
+      <div class="col-md-12">
+        <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+      </div>
     </div>
     <hr />
     <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
     <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
     <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
     <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
-</div>
+  </div>
 
-    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.content.$invalid }">
-      <label mean-token="'create-content'" for="content" class="col-md-3 control-label">Content</label>
-      <div class="col-md-9">
-        <textarea name="content" data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content" class="form-control" required></textarea>
-        <div ng-show="submitted && articleForm.content.$invalid" class="help-block">
-          <p ng-show="articleForm.content.$error.required">Content is required</p>
-        </div>
+  <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.content.$invalid }">
+    <label mean-token="'create-content'" for="content" class="col-md-3 control-label">Content</label>
+    <div class="col-md-9">
+      <textarea name="content" data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content" class="form-control" required></textarea>
+      <div ng-show="submitted && articleForm.content.$invalid" class="help-block">
+        <p ng-show="articleForm.content.$error.required">Content is required</p>
       </div>
     </div>
-    <div class="form-group">
-      <div class="col-md-offset-3 col-md-9">
-        <button mean-token="'create-submit'" type="submit" class="btn btn-info">Submit</button>
-      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-3 col-md-9">
+      <button mean-token="'create-submit'" type="submit" class="btn btn-info">Submit</button>
     </div>
-  </form>
+  </div>
+</form>
 </section>

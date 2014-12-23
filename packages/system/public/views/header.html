@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-default" role="navigation" data-ng-controller="HeaderController">
-    <div class="container-fluid">
+    <div class="container-fluid header">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -10,10 +10,9 @@
           <span class="icon-bar"></span>
         </button>     
       </div>             
-   
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="account">
-
         <ul class="navbar-nav nav">
           <li data-ng-repeat="item in menus.main" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" class="join add">
             <a mean-token="item.link" ui-sref='{{item.link}}' class="add">{{item.title}}</a> 
@@ -22,20 +21,25 @@
           </li>
           <li data-ng-show="global.authenticated"><a ui-sref='auth.login' class="login">Community</a>
           </li>
+          <ul class="nav userlog" data-ng-show="global.authenticated">
+            <li class="pull-right">
+            <a href="/logout" class="login logout">Log Out</a>
+            </li>
+            <li class="pull-right">
+              <a href="/logout" class="login">Preferences</a>
+            </li>
+            <li class="pull-right">
+              <a href="/logout" class="login">Profile</a>
+            </li>
+            <li class="pull-right">
+              <a href="/logout" class="login">Orders</a>
+            </li>                                
+            <li class="pull-right">
+              <a href="/logout" class="login">Home</a>
+            </li>                        
+          </ul>   
         </ul>
       </div>
-
-      <ul class="userlog" data-ng-show="global.authenticated">
-        <li class="dropdown pull-right">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            {{global.user.name}} <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="/logout">Log Out</a>
-            </li>
-          </ul>
-        </li>
-      </ul>   
 
       <div class="account">
         <div class="text-edit">
@@ -51,7 +55,7 @@
           </li>
           <li><a ui-sref='auth.login' class="login">Community</a>
           </li>
-      </ul>
+        </ul>
       </div>
     </nav>
-</header>
+  </header>
