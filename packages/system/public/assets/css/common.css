@@ -429,7 +429,7 @@ display: inline;
 
 .listing-title-inner {
     margin-top: 0 !important;
-    color: blue !important;
+    color: #F8504B !important;
     font-weight: bold !important;
     font-size: 1.2em !important;
 }
@@ -574,8 +574,8 @@ li {
 }
 
 img {
-    max-width: 30%;
-    max-height: 30%;
+    width: 13em !important;
+    height: 10em !important;
 }
 
 hovercraft:hover{
