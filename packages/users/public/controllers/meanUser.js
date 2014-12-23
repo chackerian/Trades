@@ -10,7 +10,7 @@ angular.module('mean.users')
       $scope.socialButtons = {};
       $scope.socialButtonsCounter = 0;
       $scope.global = Global;
-      $http.get('/get-config')
+      $http.get('/get-config')   
         .success(function(config) {
           for (var conf in config) {
             // Do not show auth providers that have the value DEFAULT as their clientID

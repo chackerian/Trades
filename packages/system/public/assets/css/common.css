@@ -484,13 +484,13 @@ display: inline;
 }
 /*  For responsive images as background */
 
-.bg{
+/*.bg{
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    background-size:cover; 
     color:#fff;
     font-size: 35px;
-}
+}*/
 
 .numbers{
     font-weight:900;
@@ -498,14 +498,14 @@ display: inline;
 }
 
 
-.bottom {
+/*.bottom {
     clear:both;
     margin:0 1.66%;
     width:89.68%;
     padding: 3.5%;
     background-color:#1E1E1E;
     color: #fff;
-}
+}*/
 .bottom p{
     text-align:center;
     line-height:2em;
@@ -549,7 +549,7 @@ body {
     font-size: 1em;
     font-family: 'helvetica-light', sans-serif;
     color: #333;
-    background-image: url(/theme/assets/img/new_york.jpg);
+    /*barckground-image: ul(/theme/assets/img/new_york.jpg);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -611,7 +611,6 @@ section {
 /**** HEADER ****/
 
 header {
-    background-color: #f8504b !important;
     color: #fff;
     width: 100%;
     text-align: center !important;
@@ -683,7 +682,7 @@ footer > a:link, a:visited, a:active  {
 
 .error-pic {
     background-image: url(/theme/assets/img/static_2.png) !important;
-    background-repeat: repeat !important;
+   /* background-repeat: repeat !important;*/
 }
 
 /* 500 */
@@ -744,8 +743,7 @@ footer > a:link, a:visited, a:active  {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   text-align: center;
-  margin: 5px;
-  margin: 10% 87%;
+  margin-left: 80%;
 }
 
 .discover-btn:hover {
