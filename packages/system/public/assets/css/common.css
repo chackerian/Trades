@@ -294,9 +294,15 @@ display: inline;
     display: inline-block;
 }
 
+.pagination > li > a, .pagination > li > span{
+    color: #560AF2;
+}
+
 .dropdown-toggle{
-    background-color: crimson;
-    color: white !important;
+    background-color: white;
+    color: black !important;
+    font-family: helvetica;
+    border: 2px solid black;
 }
 
 .reason{
@@ -402,7 +408,7 @@ display: inline;
     width: 103%;
     padding-left: 0;
     margin-top: 0.2em !important;
-    text-shadow: #000 1px 2px;
+    /*text-shadow: #000 1px 2px;*/
 }
 
 .listing-title-div{
@@ -443,7 +449,6 @@ display: inline;
 }
 
 .pagination > li > a, .pagination > li > span{
-    border: none;
     padding: 7px 17px;
 }
 
