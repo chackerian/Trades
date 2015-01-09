@@ -1,17 +1,12 @@
 <div class="form main-form" ng-controller="AuthCtrl" ng-class="{'register-form' : global.registerForm}">
-    <div class="row login-form__right " data-ng-controller="AuthCtrl">
-        <div class="social_wrap" ng-class="{bigger:socialButtonsCounter > 4 && !global.registerForm}">
-            <ul class="social">
-                <li ng-if="socialButtons.hasOwnProperty('facebook')" class="social_icon social_icon_fb">
-                    <a href="/auth/facebook" class="button">
-                        <span>Log In / Sign Up With Facebook</span>
-                    </a>
-                    <li class="reason">
-                    We won't ever post without your permission
-                    </li>
-                </li>
-            </ul> 
-        </div> 
+    <div class="row" data-ng-controller="AuthCtrl">
+        <ul class="social">
+            <a href="/auth/facebook">
+                <span>Log In / Sign Up With Facebook</span>
+            </a>
+            <li class="reason">
+                We won't ever post without your permission
+            </li>
+        </ul>  
     </div>
-</div>
-   
+</div>s

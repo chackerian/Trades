@@ -3,44 +3,90 @@
   <!-- Badges and alerts on home-->
   <h1>Add Listing</h1>
   <div class="row selector2">
-  <div class="col-md-12">
-  <label>Choose A Category</label>
-    <select ng-model="checked">
-      <option value="2" selected="selected">Shoes</option>
-      <option value="3">Electronics</option>
-      <option value="4">Clothing</option>
-    </select>
-  </div> 
-</div>
-
-
-<form name="articleForm" class="form-horizontal" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
-  <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
-    <label mean-token="'create-title'" class="col-md-3">Listing Title</label>
-    <div class="col-md-9">
-      <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of the product" required>
-      <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
-        <p ng-show="articleForm.title.$error.required">Title is required</p>
-      </div> 
-    </div>  
+    <div class="col-md-12">
+      <label>Choose A Category</label>
+      <select ng-model="checked" ng-options="item.name for item in items">
+      </select>
+    </div> 
   </div>
-  <h2>
-  Shoes
-  Clothing
-  Electronics
-  Your first image should
-  <br />  
-  <input type="file" flow-btn flow-directory />
-  Image
-  <span flow-btn>Upload File</span>
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="checked-name">{{checked.name}}</h2>
+    </div>
+  </div>
+  <div class="row selector2" ng-if="checked.name=='Shoes' ">
+    <div class="col-md-12">
+      <label>Choose an Item</label>
+      <select ng-model="category" ng-options="shoe.name for shoe in shoes">
+      </select>
+    </div> 
+  </div>
 
-  <div ng-controller="DatepickerDemoCtrl">
-    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+  <div class="row selector2" ng-if="checked.name=='Electronics' ">
+    <div class="col-md-12">
+      <label>Choose an Item</label>
+      <select ng-model="category" ng-options="electronic.name for electronic in electronics">
+      </select>
+    </div> 
+  </div>
 
-    <h4>Inline</h4>
+  <div class="row selector2" ng-if="checked.name == 'Clothing' ">
+    <div class="col-md-12">
+      <label>Choose an Item</label>
+      <select ng-model="category" ng-options="clothing.name for clothing in clothings">
+      </select>
+    </div> 
+  </div>
+
+  <form name="articleForm" class="form-horizontal" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
+    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <h2>Listing Title</h2>
+      <div class="col-md-8">
+        <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of your item" required>
+        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
+          <p ng-show="articleForm.title.$error.required">Title is required</p>
+        </div> 
+      </div>
+    </div>  
+
+    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <h2>Price</h2>
+      <div class="col-md-4">
+      <span class="dollar">$</span>
+      <input name="title" type="number" class="form-control moneygreen right-right" data-ng-model="price" id="title" placeholder="The price your asking for" required>
+        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
+          <p ng-show="articleForm.title.$error.required">Price is required</p>
+        </div> 
+      </div>  
+    </div>
+
+    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid } " ng-if="checked.name">
+      <h2>Size</h2>
+      <label>Choose an Item</label>
+      <select ng-model="category" ng-options="size.name for size in sizes">
+      </select>  
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <h2>Location</h2>
+      <h3>City, State</h3>
+      <div class="col-md-9">
+        <input name="title" type="text" class="form-control" data-ng-model="location" id="title" placeholder="The general location you can meetup" required>
+        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
+          <p ng-show="articleForm.title.$error.required">Size is required</p>
+        </div> 
+      </div>  
+    </div>  
+    <input type="file" flow-btn flow-directory />
+    Image
+    <!--   <span flow-btn>Upload Image</span> -->
+
+    <div ng-controller="DatepickerDemoCtrl">
+      <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+ <!--    <h4>Inline</h4>
     <div style="display:inline-block; min-height:290px;">
       <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
-    </div>
+    </div> -->
 
     <h4>Date</h4>
     <div class="row">

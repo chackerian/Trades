@@ -9,6 +9,54 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
       return $scope.global.isAdmin || article.user._id === $scope.global.user._id;
     };
 
+    $scope.items = [
+      {name:'Shoes'},
+      {name:'Electronics'},
+      {name:'Clothing'}
+    ];
+
+    $scope.shoes = [
+      {name:'Addidas'},
+      {name:'Asic'},
+      {name:'Converse'},
+      {name:'Ewing Athletics'},
+      {name:'Fila'},
+      {name:'Jordan'},
+      {name:'Li Ning'},
+      {name:'New Balance'},
+      {name:'Nike'},
+      {name:'Puma'},
+      {name:'Radii'},
+      {name:'Reebok'},
+      {name:'Sperry'},
+      {name:'Saucony'},
+      {name:'Supras'},
+      {name:'Timberland'},
+      {name:'Toms'},
+      {name:'Vans'},
+      {name:'Other'}
+    ];
+
+    $scope.electronics = [
+      {name:'Phone'},
+      {name:'Tablet'},
+      {name:'Headphones'},
+      {name:'Game Console'},
+      {name:'Games'},
+      {name:'Laptop'},
+      {name:'Other'}
+    ];
+
+    $scope.clothings = [
+      {name:'Hat'},
+      {name:'Shirt'},
+      {name:'Hoodie'},
+      {name:'Pants'},
+      {name:'Belts'},
+      {name:'Other'}
+    ];
+
+
     $scope.create = function(isValid) {
       if (isValid) {
         var article = new Articles({
