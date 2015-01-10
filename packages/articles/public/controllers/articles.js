@@ -1,5 +1,10 @@
 'use strict';
 // angular.module('mean.articles', ['flow']);
+angular.module('mean.articles', ['uiGmapgoogle-maps'])
+    .controller('mainCtrl', function($scope) {
+        $scope.map = {center: {latitude: 51.219053, longitude: 4.404418 }, zoom: 14 };
+        $scope.options = {scrollwheel: false};
+    });
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$stateParams', '$location', 'Global', 'Articles',
   function($scope, $stateParams, $location, Global, Articles) {
     $scope.global = Global;
@@ -7,13 +12,37 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     $scope.hasAuthorization = function(article) {
       if (!article || !article.user) return false;
       return $scope.global.isAdmin || article.user._id === $scope.global.user._id;
-    };
+    }; 
+
+    $scope.sizes = [
+      {name:'6 inches'},
+      {name:'6.5 inches'},
+      {name:'7 inches'},
+      {name:'7.5 inches'},
+      {name:'8 inches'},
+      {name:'8.5 inches'},
+      {name:'9 inches'},
+      {name:'9.5 inches'},
+      {name:'10 inches'},
+      {name:'10.5 inches'},
+      {name:'11 inches'},
+      {name:'11.5 inches'},
+      {name:'12 inches'},
+      {name:'12.5 inches'},
+      {name:'13 inches'},
+      {name:'13.5 inches'},
+      {name:'14 inches'},
+      {name:'14.5 inches'},
+      {name:'15 inches'},
+      {name:'15.5 inches'},
+      {name:'16 inches'}
+    ]; 
 
     $scope.items = [
       {name:'Shoes', selected:'true'},
       {name:'Electronics'},
       {name:'Clothing'}
-    ];
+    ];   
 
     $scope.shoes = [
       {name:'Addidas', selected:'true'},
@@ -126,41 +155,3 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     };
   }
 ]);
-
-
-
-angular.module('mean.articles').controller('DatepickerDemoCtrl', function ($scope) {
-  $scope.today = function() {
-    $scope.dt = new Date();
-  };
-  $scope.today();
-
-  $scope.clear = function () {
-    $scope.dt = null;
-  };
-
-  // Disable weekend selection
-  $scope.disabled = function(date, mode) {
-    return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-  };
-
-  $scope.toggleMin = function() {
-    $scope.minDate = $scope.minDate ? null : new Date();
-  };
-  $scope.toggleMin();
-
-  $scope.open = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-
-    $scope.opened = true;
-  };
-
-  $scope.dateOptions = {
-    formatYear: 'yy',
-    startingDay: 1
-  };
-
-  $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-  $scope.format = $scope.formats[0];
-});

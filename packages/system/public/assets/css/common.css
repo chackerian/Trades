@@ -77,6 +77,15 @@ html {
     font-size: 1.5em;
 }
 
+.angular-google-map-container { 
+    height: 200px;
+    background-color: white !important; 
+}
+
+.add:hover{
+    opacity: 0.5 !important; 
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important; 
@@ -665,6 +674,18 @@ section {
     top: 0.5em;
 }
 
+.loginfb{
+    color: red;
+    font-size: 1.5em;
+    margin-left: 2em;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.loginfb:hover{
+    color: black;
+}
+
 .logout{
     font-weight: bold;
     color: #f8504b !important;
@@ -672,7 +693,11 @@ section {
 
 .logouter{
     font-size: 1.5em;
-    color: blue;
+    color: #CB0000;
+}
+
+.anti-margin{
+    margin-bottom: 0 !important;
 }
 
 .plus{
@@ -691,6 +716,7 @@ section {
     background: #f8504b;
     text-align: center;
     font-size: 1.5rem;
+    bottom: 0 !important;
 }
 
 .copyright {
@@ -834,6 +860,7 @@ footer > a:link, a:visited, a:active  {
 
 /**** FOOTER ****/
 
+
 /**** FOOTER END ****/
 
 
@@ -863,7 +890,6 @@ footer > a:link, a:visited, a:active  {
 
 .creation {
     background-color: white !important;
-    height:100em;
 }
 
 /**** HOME END ****/
