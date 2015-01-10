@@ -59,6 +59,7 @@
     position: inherit;
     font-size: 1.5em;
     margin-top: 0 !important;
+    list-style-type: none;
 }
 
 .userlog li{
@@ -311,8 +312,10 @@ display: inline;
     padding-top: 1em;
     padding-bottom: 1em;
     color: #F8504B;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    font-size: 1.5em;
+    list-style-type: none;
+/*    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;*/
 }
 
 .right {
@@ -603,8 +606,12 @@ img {
     height: 10em !important;
 }
 
-hovercraft:hover{
+.hovercraft:hover{
     opacity: 0.8; 
+}
+
+.hovercraft2:hover{
+    opacity: 0.5; 
 }
 
 /* links */

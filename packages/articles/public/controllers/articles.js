@@ -10,13 +10,13 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     };
 
     $scope.items = [
-      {name:'Shoes'},
+      {name:'Shoes', selected:'true'},
       {name:'Electronics'},
       {name:'Clothing'}
     ];
 
     $scope.shoes = [
-      {name:'Addidas'},
+      {name:'Addidas', selected:'true'},
       {name:'Asic'},
       {name:'Converse'},
       {name:'Ewing Athletics'},
@@ -38,7 +38,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     ];
 
     $scope.electronics = [
-      {name:'Phone'},
+      {name:'Phone', selected:'true'},
       {name:'Tablet'},
       {name:'Headphones'},
       {name:'Game Console'},
@@ -48,7 +48,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     ];
 
     $scope.clothings = [
-      {name:'Hat'},
+      {name:'Hat', selected:'true'},
       {name:'Shirt'},
       {name:'Hoodie'},
       {name:'Pants'},

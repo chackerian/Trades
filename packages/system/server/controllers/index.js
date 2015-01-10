@@ -21,7 +21,7 @@ client.ping({
     console.log('All is well');
   }
 });
-console.log(client);
+// console.log(client);
 
   var modules = [];
   // Preparing angular modules list with dependencies
