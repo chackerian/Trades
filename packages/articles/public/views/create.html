@@ -110,9 +110,8 @@
       <h2>Date</h2>
       <h3>Select the days you are able to meetup</h3>
       <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
+      <pre>Selected date: <em>{{dt | date:'fullDate' }}</em></pre>
     </div>
-    <pre>Selected date: <em>{{dt | date:'fullDate' }}</em></pre>
-    
 
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
       <h2>Description</h2>
