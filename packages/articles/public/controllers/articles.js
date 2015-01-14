@@ -1,10 +1,5 @@
 'use strict';
 // angular.module('mean.articles', ['flow']);
-angular.module('mean.articles', ['uiGmapgoogle-maps'])
-.controller('mainCtrl', function($scope) {
-  $scope.map = {center: {latitude: 51.219053, longitude: 4.404418 }, zoom: 14 };
-  $scope.options = {scrollwheel: false};
-});
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$stateParams', '$location', 'Global', 'Articles',
   function($scope, $stateParams, $location, Global, Articles) {
     $scope.global = Global;
