@@ -14,19 +14,19 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
       return $scope.global.isAdmin || article.user._id === $scope.global.user._id;
     }; 
 
-    //  $scope.upload = function readURL(input) {
+    //  function readURL(input) {
     //     if (input.files && input.files[0]) {
     //         var reader = new FileReader();
 
     //         reader.onload = function (e) {
-    //             angular.element('#blah').attr('src', e.target.result);
-    //         }
+    //             angular.element('#blah')[0].attr('src', e.target.result);
+    //         };
 
     //         reader.readAsDataURL(input.files[0]);
     //     }
-    // };
+    // }
     
-    // $("#imgInp").change(function(){
+    //  angular.element('#imgInp')[0].change(function(){
     //     readURL(this);
     // });
 

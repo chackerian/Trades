@@ -70,6 +70,10 @@ html {
     overflow-x: hidden;
 }
 
+.star{
+    font-size: 2.5em !important;
+}
+
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info{
     background-color: red;
 }
@@ -232,7 +236,7 @@ display: inline;
 
 
 .welcome h2{
-    font-size: 1em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -350,8 +354,12 @@ display: inline;
     color:#339966 !important;
 }
 
-.glyphicon-usd {
-    color:red !important;
+.add-listing{
+    font-size: 6em !important;
+}
+
+label{
+    font-size: 1.3em !important;
 }
 
 .username{
@@ -615,7 +623,7 @@ li {
 }
 
 img {
-    width: 13em !important;
+    width: 18em !important;
     height: 10em !important;
 }
 

@@ -1,7 +1,7 @@
 <section data-ng-controller="ArticlesController" class="creation">
 
   <!-- Badges and alerts on home-->
-  <h1>Add Listing</h1>
+  <h1 class="add-listing">Add Listing</h1>
   <div class="row selector2">
     <div class="col-md-12">
       <label>Choose A Category</label>
@@ -41,7 +41,7 @@
   <form name="articleForm" class="form-horizontal" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
       <h2>Listing Title</h2>
-      <div class="col-md-8">
+      <div class="col-md-6">
         <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of your item" required>
         <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
           <p ng-show="articleForm.title.$error.required">Title is required</p>
@@ -52,25 +52,29 @@
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
       <h2>Price</h2>
       <div class="col-md-3">
-        <span class="dollar">$</span>
-        <input name="title" type="number" class="form-control moneygreen right-right" data-ng-model="price" id="title" placeholder="The price your asking for" required>
+        <input name="title" type="number" class="form-control moneygreen" data-ng-model="price" id="title" placeholder="Your buy it now price" required>
         <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
           <p ng-show="articleForm.title.$error.required">Price is required</p>
         </div> 
       </div>  
     </div>
 
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid } " ng-if="checked.name">
-      <h2>Size</h2>
-      <select ng-model="category" ng-options="size.name for size in sizes">
-      </select>  
+    <div class="row selector2 anti-margin" ng-if="checked.name">
+      <div class="col-md-12">
+        <h2>Size</h2>
+        <label>Choose a Size</label>
+        <select ng-model="category" ng-options="size.name for size in sizes">
+        </select>  
+      </div>
     </div>
 
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <h2>Location</h2>
-      <label>Choose a State</label>
-      <select ng-model="state" ng-options="state.name for state in states">
-      </select>
+    <div class="row selector2 anti-margin" ng-if="checked.name">
+      <div class="col-md-12">
+        <h2>Location</h2>
+        <label>Choose a State</label>
+        <select ng-model="state" ng-options="state.name for state in states">
+        </select>
+      </div>
     </div>
 
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
@@ -92,9 +96,9 @@
     </div>
 
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <input type="file" class="upload" flow-btn flow-directory ng-if="checked.name" />
-      <input type="file" class="upload" flow-btn flow-directory ng-if="checked.name" />
-      <input type="file" class="upload" flow-btn flow-directory ng-if="checked.name" />
+      <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
+      <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
+      <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
       <h2>Images</h2>
       <div class="row">
         <div class="col-md-12 uploads" ng-if="checked.name">
@@ -106,7 +110,7 @@
     </div>
     
 
-    <div style="display:inline-block; min-height:290px;" ng-if="checked.name">
+    <div class="anti-margin" style="display:inline-block; min-height:290px;" ng-if="checked.name">
       <h2>Date</h2>
       <h3>Select the days you are able to meetup</h3>
       <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
@@ -115,10 +119,9 @@
 
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
       <h2>Description</h2>
-      <textarea class="form-control" rows="10" placeholder="Describe details someone might be interested in, try to be brief.">
+      <textarea class="form-control" rows="5" placeholder="Describe details someone might be interested in, try to be brief.">
       </textarea>
     </div>
-    <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
 
     <div class="form-group anti-margin">
       <div class="col-md-offset-10 col-md-2">
@@ -129,6 +132,7 @@
     </div>
   </form> 
 </section>
+<br />
 
 
 
