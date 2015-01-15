@@ -110,16 +110,17 @@
     </div>
     
 
-    <div class="anti-margin" style="display:inline-block; min-height:290px;" ng-if="checked.name">
-      <h2>Date</h2>
-      <h3>Select the days you are able to meetup</h3>
+  <!--   <div class="anti-margin" style="display:inline-block; min-height:290px;" ng-if="checked.name">
+      <h2>Date</h2> -->
+     <!--  <h3>Select the days you are able to meetup</h3>
       <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
       <pre>Selected date: <em>{{dt | date:'fullDate' }}</em></pre>
     </div>
-
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+ -->
+    <div>
       <h2>Description</h2>
-      <textarea class="form-control" rows="5" placeholder="Describe details someone might be interested in, try to be brief.">
+      <p>Describe specific details someone might be interested in, try to be brief.</p>
+      <textarea rows="5">
       </textarea>
     </div>
 
@@ -127,7 +128,7 @@
       <div class="col-md-offset-10 col-md-2">
         <br />
         <button mean-token="'create-submit'" type="submit" class="btn btn-danger">Submit</button>
-        <br />
+        <br /> 
       </div>
     </div>
   </form> 

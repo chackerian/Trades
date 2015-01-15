@@ -236,7 +236,6 @@ display: inline;
 
 
 .welcome h2{
-    font-size: 3em;
     font-weight: bold;
 }
 
@@ -246,6 +245,19 @@ display: inline;
 
 .text-right{
     text-align: right !important;
+}
+
+.bordify{
+    border: none !important;
+    background-color: #F8F8F8 !important;
+}
+
+.black{
+    color: black !important;
+}
+
+.badge{
+    margin-left: 3em;
 }
 
 
@@ -433,7 +445,7 @@ label{
 }
 
 .listing-title {
-    font-size: 2em;
+    font-size: 3em !important;
     text-align: left;
     color: #F8504B;
     font-family: 'helvetica-light', sans-serif !important;
