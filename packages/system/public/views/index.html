@@ -2,20 +2,26 @@
 <section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="home-body">
     <div class="back">
-      <div class="site-desc" data-ng-hide="global.authenticated">
-        <h6 class="desc-heading">Who We Are</h6>
-        <p class="desc-par">
-          Use SpaceTrades to Buy, Sell, or Trade your stuff through local meetups. 
-        </p>   
-        <a class="discover-btn" ui-sref='learn'>Discover</a>
-      </div> 
-      <a href="/home">
-        <div class="listing-title-div">
-          <h2 class="listing-title">Newly Listed</h2>
+      <div class="row blue">
+        <div class="col-xs-12 col-sm-12 col-md-12" data-ng-hide="global.authenticated">
+          <h6 class="desc-heading">Who We Are</h6>
+          <p class="desc-par">
+            Use SpaceTrades to Buy, Sell, or Trade your stuff through local meetups. 
+          </p>     
+          <a class="discover-btn" ui-sref='learn'>Discover</a>
         </div>
-      </a>       
+      </div>
+
+      <div class="row white">   
+        <div class="col-xs-12 col-sm-12">
+          <a href="/home">
+            <h2 class="listing-title purple">Newly Listed</h2>
+          </a>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-sm-6 col-md-4 card">
+        <div class="col-xs-12 col-sm-6 col-md-4 card">
           <div class="thumbnail">
             <a ng-href="#!/{{shoe}}">
               <img class="hovercraft" src="/theme/assets/img/shoe.jpg" alt="shoe">
@@ -38,13 +44,14 @@
                   <b class="size">'12 {{size}}</b> 
                 </div>
                 <div class="col-md-9 text-right">  
-                  <b class="location">Brooklyn, New York {{location}}</b>
+                  <b class="city">Bronx{{city}},</b>
+                  <b class="state">New York {{location}}</b>
                   <!-- We want some Google Api location stuff here -->
                 </div>
               </div>  
               <div class="row action white">
                 <div class="col-md-6">
-                <p class="text-left">    
+                  <p class="text-left">    
                     <span class="glyphicon glyphicon-star-empty  star"> </span>
                     Save
                   </p>  
@@ -63,7 +70,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 card">
+        <div class="col-xs-12 col-sm-6 col-md-4 card">
           <div class="thumbnail">
             <a ng-href="#!/{{shoe}}">
               <img class="hovercraft" src="/theme/assets/img/retro8.jpg" alt="shoe">
@@ -86,13 +93,14 @@
                   <b class="size">'10 {{size}}</b> 
                 </div>
                 <div class="col-md-9 text-right">  
-                  <b class="location">Manhattan, New York {{location}}</b>
+                  <b class="city">Manhattan{{city}},</b>
+                  <b class="state">New York {{location}}</b>
                   <!-- We want some Google Api location stuff here -->
                 </div>
               </div>  
               <div class="row action white">
                 <div class="col-md-6">
-                <p class="text-left">    
+                  <p class="text-left">    
                     <span class="glyphicon glyphicon-star-empty  star"> </span>
                     Save
                   </p>
@@ -107,7 +115,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 card">
+        <div class="col-xs-12 col-sm-6 col-md-4 card">
           <div class="thumbnail">
             <a ng-href="#!/{{shoe}}">
               <img class="hovercraft" src="/theme/assets/img/4columbia.jpg" alt="shoe">
@@ -130,13 +138,14 @@
                   <b class="size">'9 {{size}}</b> 
                 </div>
                 <div class="col-md-9 text-right">  
-                  <b class="location">Bronx, New York {{location}}</b>
+                  <b class="city">Manhattan{{city}},</b>
+                  <b class="state">New York {{location}}</b>
                   <!-- We want some Google Api location stuff here -->
                 </div>
               </div>  
               <div class="row action white">
                 <div class="col-md-6">
-                <p class="text-left">    
+                  <p class="text-left">    
                     <span class="glyphicon glyphicon-star-empty  star"> </span>
                     Save
                   </p>
@@ -152,711 +161,30 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-6 col-md-4 card">
-          <div class="thumbnail">
-            <a ng-href="#!/{{shoe}}">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-            </a>   
-            <div class="caption">
-              <a ng-href="#!/{{shoe}}">
-                <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-              </a>
-              <p>
-                <button ng-href="#!/save/{{username}}" class="pull-right">
-                  Save
-                </button>
-              </p> 
-              <span class="money">$230 {{price}}</span>
-              <span ng-show="enabled">OR</span> 
-              <a ng-href="#!/{{shoe}}" ng-show="swap">Swap</a> 
-              <br />
-              <b>'12 {{size}}</b> 
-              <br />  
-              <b>Brooklyn, New York {{location}}</b>
-              <!-- We want some Google Api location stuff here -->
-              <div class="row action">
-                <div class="col-md-6">
-                  <a ng-href="#!/{{shoe}}" class="btn btn-success" role="button">Reserve
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <p>
-                    <a ng-href="#!/user/{{username}}" class="username">Tyrone {{username}}</a>
-                  </p>
-                </div>
-              </div>
-            </div>   
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 card">
-          <div class="thumbnail">
-            <a ng-href="#!/{{shoe}}">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-            </a>   
-            <div class="caption">
-              <a ng-href="#!/{{shoe}}">
-                <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-              </a>
-              <p>
-                <button ng-href="#!/save/{{username}}" class="pull-right username">
-                  Save {{username}}
-                </button>
-              </p> 
-              <span class="money">$230 {{price}}</span>
-              <span ng-show="enabled">OR</span> 
-              <a ng-href="#!/{{shoe}}" ng-show="swap">Swap</a> 
-              <br />
-              <b>'12 {{size}}</b> 
-              <br />  
-              <b>Brooklyn, New York {{location}}</b>
-              <!-- We want some Google Api location stuff here -->
-              <div class="row action">
-                <div class="col-md-6">
-                  <a ng-href="#!/{{shoe}}" class="btn btn-success" role="button">Reserve
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <p>
-                    <a ng-href="#!/user/{{username}}" class="username">Tyrone {{username}}</a>
-                  </p>
-                </div>
-              </div>
-            </div>   
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 card">
-          <div class="thumbnail">
-            <a ng-href="#!/{{shoe}}">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-            </a>   
-            <div class="caption">
-              <a ng-href="#!/{{shoe}}">
-                <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-              </a>
-              <p>
-                <button ng-href="#!/save/{{username}}" class="pull-right username">
-                  Save {{username}}
-                </button>
-              </p> 
-              <span class="money">$230 {{price}}</span>
-              <span ng-show="enabled">OR</span> 
-              <a ng-href="#!/{{shoe}}" ng-show="swap">Swap</a> 
-              <br />
-              <b>'12 {{size}}</b> 
-              <br />  
-              <b>Brooklyn, New York {{location}}</b>
-              <!-- We want some Google Api location stuff here -->
-              <div class="row action">
-                <div class="col-md-6">
-                  <a ng-href="#!/{{shoe}}" class="btn btn-success" role="button">Reserve
-                  </a>
-                </div>
-                <div class="col-md-6">
-                  <p>
-                    <a ng-href="#!/user/{{username}}" class="username">Tyrone {{username}}</a>
-                  </p>
-                </div>
-              </div>
-            </div>   
-          </div>
+        <div class="row white">   
+        <div class="col-xs-12 col-sm-12">
+          <a href="/home">
+            <h2 class="listing-title moss">Shoes</h2>
+          </a>
         </div>
       </div>
-      <nav>
-        <ul class="pagination">
-          <li>
-            <a href="#">
-              <span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-              <a href="#">
-                <span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a href="/home">
-          <div class="listing-title-div">
-            <h2 class="listing-title">Shoes</h2>
-          </div>
-        </a>
 
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row white">   
+        <div class="col-xs-12 col-sm-12">
+          <a href="/home">
+            <h2 class="listing-title blue">Electronics</h2>
+          </a>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row white">   
+        <div class="col-xs-12 col-sm-12">
+          <a href="/home">
+            <h2 class="listing-title orange">Clothing</h2>
+          </a>
         </div>
-        <nav>
-          <ul class="pagination">
-            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
-        <a href="/home">
-          <div class="listing-title-div">
-            <h2 class="listing-title">Electronics</h2>
-          </div>
-        </a>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <ul class="pagination">
-            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
-        <a href="/home">
-          <div class="listing-title-div">
-            <h2 class="listing-title">Clothing</h2>
-          </div>
-        </a>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <a ng-href="dsa">
-                <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              </a>
-              <div class="caption">
-                <a ng-href="test">
-                  <h2 class="listing-title-inner">Air Force One {{shoe}}</h2>
-                </a>
-                <span class="money">$230 {{price}}</span> 
-                <span ng-hide>OR</span> 
-                <a ng-href="ds" ng-hide="swap">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>Brooklyn, New York {{location}}</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check1" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      <a href="/user/tyrone" class="username">Tyrone {{username}}</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="{{shoe}}">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check2" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 card">
-            <div class="thumbnail">
-              <img src="/theme/assets/img/shoe.jpg" alt="shoe">
-              <div class="caption">
-                <a ng-href="test"><h2 class="listing-title-inner">Air Force One {{shoe}}</h2></a>
-                <span class="money">$230 {{price}}</span> OR <a ng-href="ds">Swap</a> 
-                <br />
-                <b>'12 {{size}}</b>
-                <br />  
-                <b>{{loction}}Brooklyn, New York</b>
-                <div class="squaredThree">
-                  <input type="checkbox" value="None" name="check3" checked />
-                  <label for="squaredThree"></label>
-                </div>
-                <div class="row action">
-                  <div class="col-md-6">
-                    <a href="#" class="btn btn-success" role="button">Reserve</a>
-                  </div>
-                  <div class="col-md-6">
-                    <p><a href="/user/tyrone" class="username">Tyrone {{username}}</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <ul class="pagination">
-            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
       </div>
     </div>
   </section>

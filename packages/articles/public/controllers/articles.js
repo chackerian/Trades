@@ -26,27 +26,27 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
     // });
 
 $scope.sizes = [
-{name:'US - 6 inches'},
-{name:'US - 6.5 inches'},
-{name:'US - 7 inches'},
-{name:'US - 7.5 inches'},
-{name:'US - 8 inches'},
-{name:'US - 8.5 inches'},
-{name:'US - 9 inches'},
-{name:'US - 9.5 inches'},
-{name:'US - 10 inches'},
-{name:'US - 10.5 inches'},
-{name:'US - 11 inches'},
-{name:'US - 11.5 inches'},
-{name:'US - 12 inches'},
-{name:'US - 2.5 inches'},
-{name:'US - 13 inches'},
-{name:'US - 13.5 inches'},
-{name:'US - 14 inches'},
-{name:'US - 14.5 inches'},
-{name:'US - 15 inches'},
-{name:'US - 15.5 inches'},
-{name:'US - 16 inches'}
+{name:'US - 6'},
+{name:'US - 6.5'},
+{name:'US - 7'},
+{name:'US - 7.5'},
+{name:'US - 8'},
+{name:'US - 8.5'},
+{name:'US - 9'},
+{name:'US - 9.5'},
+{name:'US - 10'},
+{name:'US - 10.5'},
+{name:'US - 11'},
+{name:'US - 11.5'},
+{name:'US - 12'},
+{name:'US - 2.5'},
+{name:'US - 13'},
+{name:'US - 13.5'},
+{name:'US - 14'},
+{name:'US - 14.5'},
+{name:'US - 15'},
+{name:'US - 15.5'},
+{name:'US - 16'}
 ]; 
 
 $scope.states = [

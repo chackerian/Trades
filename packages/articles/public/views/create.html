@@ -6,7 +6,7 @@
     <div class="col-md-12">
       <label>Choose A Category</label>
       <select ng-model="checked" ng-options="item.name for item in items">
-      </select>
+      </select> 
     </div> 
   </div>
   <div class="row">
@@ -39,20 +39,22 @@
   </div>
 
   <form name="articleForm" class="form-horizontal" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <h2>Listing Title</h2>
-      <div class="col-md-6">
+
+    <div class="row form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <h2 class="add-param">Listing Title</h2>
+      <div class="ol-xs-6 col-sm-6 col-md-6">
         <input name="title" type="text" class="form-control" data-ng-model="title" id="title" placeholder="The retail name of your item" required>
         <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
           <p ng-show="articleForm.title.$error.required">Title is required</p>
         </div> 
-      </div>
+      </div>      
     </div>  
 
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <h2>Price</h2>
-      <div class="col-md-3">
-        <input name="title" type="number" class="form-control moneygreen" data-ng-model="price" id="title" placeholder="Your buy it now price" required>
+    <div class="row form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <h2 class="add-param">Price</h2>
+      <p>This is your buy it now price. Buyers can negotiate it later.</p>
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <input name="title" type="number" class="form-control moneygreen" data-ng-model="price" id="title" placeholder="Buy Now $" required>
         <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
           <p ng-show="articleForm.title.$error.required">Price is required</p>
         </div> 
@@ -61,7 +63,7 @@
 
     <div class="row selector2 anti-margin" ng-if="checked.name">
       <div class="col-md-12">
-        <h2>Size</h2>
+        <h2 class="add-param">Size</h2>
         <label>Choose a Size</label>
         <select ng-model="category" ng-options="size.name for size in sizes">
         </select>  
@@ -70,68 +72,57 @@
 
     <div class="row selector2 anti-margin" ng-if="checked.name">
       <div class="col-md-12">
-        <h2>Location</h2>
+        <h2 class="add-param">State</h2>
         <label>Choose a State</label>
         <select ng-model="state" ng-options="state.name for state in states">
         </select>
-      </div>
-    </div>
-
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <div class="col-md-9">
-        <input name="title" type="text" class="form-control" data-ng-model="location" id="title" placeholder="The city or general area of the meetup" required>
-        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
-          <p ng-show="articleForm.title.$error.required">Size is required</p>
-        </div> 
-      </div>
-    </div>
-
-    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
-      <div class="col-md-9">
-        <input name="title" type="text" class="form-control" data-ng-model="location" id="title" placeholder="The general location you can meetup" required>
-        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
-          <p ng-show="articleForm.title.$error.required">Size is required</p>
-        </div> 
       </div>  
+    </div>  
+   
+    <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+      <h2 class="add-param">Neighborhood</h2>
+        <input name="title" type="text" class="form-control" data-ng-model="location" id="title" placeholder="Neighborhood, Borough, Town..." required>
+        <div ng-show="submitted && articleForm.title.$invalid" class="help-block">
+          <p ng-show="articleForm.title.$error.required">Required</p>
+        </div> 
+      </div>
     </div>
 
     <div class="form-group anti-margin" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }" ng-if="checked.name">
       <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
-      <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
-      <input type="file" class="upload" onchange="handleFiles(this.files)" flow-btn flow-directory ng-if="checked.name" />
-      <h2>Images</h2>
+      <h2 class="add-param">Images</h2>
       <div class="row">
         <div class="col-md-12 uploads" ng-if="checked.name">
-          <img id="one" src="#" alt="Image 1" />
-          <img id="two" src="#" alt="Image 2" />
-          <img id="three" src="#" alt="Image 3" />
+          <img ng-show="d" id="one" src="#" alt="Image 1" />
+          <img ng-show="d" id="two" src="#" alt="Image 2" />
+          <img ng-show="d" id="three" src="#" alt="Image 3" />
+          <img ng-show="d" id="four" src="#" alt="Image 4" />
+          <img ng-show="d" id="five" src="#" alt="Image 5" />
+          <img ng-show="d" id="six" src="#" alt="Image 6" />
         </div>
       </div>
     </div>
     
-
-  <!--   <div class="anti-margin" style="display:inline-block; min-height:290px;" ng-if="checked.name">
-      <h2>Date</h2> -->
-     <!--  <h3>Select the days you are able to meetup</h3>
-      <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker>
-      <pre>Selected date: <em>{{dt | date:'fullDate' }}</em></pre>
-    </div>
- -->
-    <div>
-      <h2>Description</h2>
-      <p>Describe specific details someone might be interested in, try to be brief.</p>
-      <textarea rows="5">
-      </textarea>
-    </div>
-
-    <div class="form-group anti-margin">
-      <div class="col-md-offset-10 col-md-2">
-        <br />
-        <button mean-token="'create-submit'" type="submit" class="btn btn-danger">Submit</button>
-        <br /> 
+  <div ng-if="checked.name">
+    <h2 class="add-param">Description</h2>
+    <p>Describe specific details someone might be interested in, try to be brief.</p>
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <textarea rows="3" cols="37">
+        </textarea>
       </div>
     </div>
-  </form> 
+  </div>
+
+  <div class="form-group anti-margin">
+    <div class="col-md-offset-10 col-md-2">
+      <br />
+      <button mean-token="'create-submit'" type="submit" class="btn btn-danger">Submit</button>
+      <br /> 
+    </div>
+  </div>
+</form> 
 </section>
 <br />
 
