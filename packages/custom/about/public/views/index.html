@@ -1,17 +1,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<section class="welcome container-fluid" data-ng-controller="IndexController">
+<section class="welcome container-fluid" data-ng-controller="AboutController">
      <h1 style="text-align: left">Frequently Asked Questions</h1>
      <div style="text-align: left" class="col-md-12 faqwhole">
-      <div>
+      <div class="description">
+        <span class="faq">How Does it All Work?</span><br />
+        It's very similar to any Facebook Buying and Selling Group. <br />
+        <b>1.</b> <sell>Seller</sell> creates a listing and fills out all necessary information. This listing becomes searchable throught the main search and appears on the home categories.<br /> 
+        <b>2.</b> <buy>Buyer</buy> responds to <sell>Seller's</sell> listing through the built-in messaging system.<br />
+        <b>3.</b> When <buy>Buyer</buy> and <sell>Seller</sell> have discussed price and specific location sufficiently, <buy>Buyer</buy> sends a <b>Meetup Request</b> to <sell>Seller</sell>. <sell>Seller</sell> can either <b>Accept</b> or <b>Decline</b> it.<br />
+        If <sell>Seller</sell> <b>Accepts</b> than the Meetup Information goes into <b>Active Meetups</b>. <buy>Buyer</buy> and <sell>Seller</sell> can use the built-in chat until the meetup occurs.<br />
+        If <sell>Seller</sell> <b>Declines</b> than the chat remains but the Meetup    
+        <b>4.</b> <sell>Seller</sell> and <buy>Buyer</buy> receive a Reflection message and are able to rate one another.
+
         <span class="faq">How Do I Send Feedback?</span><br />
         Send an email to example@spacetrades.com
         or call us at 111-111-1111
         We really do appreciate any amount of feedback and will take whatever it is your commenting on into consideration. 
-      </div> 
-    <!-- We will message new users this: Hey, I'm one of the founders of SpaceTrades. Was wondering how you felt about the site. Would you want to possibly talk about it over the phone?. 
-  
-  When "founders" message users they feel privelaged and will most likely respond.
-  -->
+      </div>
+
+   <button ng-click="fire()">click ME</button>
 <br />
 <div>
   <span class="faq">Can I Advertise?</span><br />

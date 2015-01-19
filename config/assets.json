@@ -1,7 +1,9 @@
 {
   "core": {
     "css": {
-      "bower_components/build/css/dist.min.css": []
+      "bower_components/build/css/dist.min.css": [
+        "bower_components/angular-toastr/dist/angular-toastr.css"
+      ]
     },
     "js": {
       "bower_components/build/js/dist.min.js": [
@@ -15,7 +17,8 @@
         "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
         "//maps.googleapis.com/maps/api/js?sensor=false",
         "bower_components/lodash/dist/lodash.js",
-        "bower_components/angular-google-maps/dist/angular-google-maps.js"
+        "bower_components/angular-google-maps/dist/angular-google-maps.js",
+        "bower_components/angular-toastr/dist/angular-toastr.js"
       ]
     }
   }

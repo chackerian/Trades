@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('mean.about', []);
+angular.module('mean.about', ['toastr']);

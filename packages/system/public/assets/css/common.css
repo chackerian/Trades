@@ -130,6 +130,11 @@ html {
     padding-top: 10px;
 }
 
+.description{
+    font-family: helvetica;
+    color: black;
+}
+
 .myCanvas {
     position: absolute;
     /*background-color: #1A1C8C !important;*/
@@ -377,26 +382,26 @@ display: inline;
     color:#339966 !important;
 }
 
-.add-listing{
+.add-listing {
     font-size: 6em !important;
     font-weight: bold !important;
 }
 
-.add-param{
+.add-param {
     font-weight: bold !important;
 }
 
-label{
+label {
     font-size: 1em !important;
     color: #F8504B !important;
 }
-
-.username{
+ 
+.username {
     text-decoration: underline !important;
     color: #737171 !important;
 }
 
-.dollar{
+.dollar {
     position: absolute;
     font-size: 4em;
     color: green;
@@ -858,6 +863,7 @@ footer > a:link, a:visited, a:active  {
 
 .checked-name {
     color: #f8504b;
+    text-align: center;
 }
 
 .downer {
@@ -1017,6 +1023,8 @@ footer > a:link, a:visited, a:active  {
     color: #FF5700 !important;
 }
 
-
+.redskin {
+    background-color: firebrick !important;
+}
 
 
